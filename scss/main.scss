@@ -1,13 +1,16 @@
 
 $color-primary: rgb(250,250,250);
-$color-secondary: rgb(230, 134, 166);
+$color-secondary: #FF79DA;
 $color-tertiary: rgb(0,172,193);
-$cd-btn: #011c37;
+$cd-btn: #9356DC;
 $cd-txt: #15DEA5;
 body {
     margin: 0%;
     padding: 0%;
-     background: rgb(255,255,255); 
+     background: rgb(220,220,220); 
+     box-sizing: border-box;
+     width: 100vw;
+     height: 100vh;
    }
    
    img {
@@ -16,7 +19,7 @@ body {
    /*header*/
    header{
      width: 100vw;
-     background:$color-primary;
+     background:rgb(255,255,255);
      h1 {
         width: 100vw;
         font-family: 'Shrikhand', cursive;
@@ -43,9 +46,11 @@ body {
                 margin-top: 0%;
                 font-family: 'Roboto', sans-serif;
 
-        
-            }
-
+     }
+             p{
+                font-family: 'Roboto', sans-serif;
+              
+             }
        
             button{
                 background: $color-secondary;
@@ -57,30 +62,92 @@ body {
             } 
         }
    }
+
+   // section 2
+   .section2{
+       background-color: rgb(255,255,255);
+       
+        h2{
+            font-family: 'Roboto', sans-serif;
+        }
+        .work {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(255,255,255);
+            .un{
+                background: rgb(220,220,220);
+                height: 76px;
+                border-radius: 20px;
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 5%;
+                
+            }
+            .deux{
+                @extend .un;
+
+                
+            }
+            .trois{
+                @extend .un;
+                
+                
+            }
+        }
+       
+          
+          
+    
+   }
   // main
-  main {
-      background: rgb(220,220,220);
+   main{
+      background-color: rgb(220,220,220);
       
+
+      
+      
+    }
+  // section3 
+  .section3{
+      h2{
+          margin-top: 15%;
+          padding-left: 5%;
+          font-family: 'Roboto', sans-serif;
+          
+         
+
+      }
   }
 // menu 1
 
 .menu1{
-    background-color: $color-primary ;
+    background-color: rgb(255,255,255);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr  ;
     grid-template-rows: 1fr 1fr 1fr ;
+    border-radius: 25px;
+    margin-bottom: 10%;
     margin-left: 5%;
     margin-right: 5%;
-    border-radius: 30px;
-  
     
+    width: 90%;
+    
+   
   
       figure {
           grid-column: 1 / span 4;
           grid-row: 1 / span 3;
           margin: 0%;
           padding: 0%;
-          
+
+            img{
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
        
         }
       
@@ -88,42 +155,49 @@ body {
          background: rgb(255,255,255);
          grid-row: 5;
          grid-column: 1 / span 3;
-         margin-top: 0%;
+         margin-top: 2%;
          margin-bottom: 0%;
          padding-left: 5%;
+         border-bottom-left-radius: 25px;
          width: 80%;
+        
          justify-content: center;
          align-self: center;
          font-family: 'Roboto', sans-serif;
      }
      h4 {
          background: rgb(255,255,255);
-         grid-row: 6 ;
+         grid-row: 4 / span 6 ;
          grid-column: 1 / span 3;
-         margin-top: 0%;
+         margin-top: 5%;
          margin-bottom: 0%;
          padding-left: 5%;
          width: 80%;
          justify-content: center;
          align-self: center;
          font-family: 'Roboto', sans-serif;
+        
      }
      .new{
-         background: $color-primary;
+         background: #99E2D0;
          grid-row: 1;
-         grid-column: 2 ;
-         justify-content: center;
-         align-self: center;
-         width: 50%;
+         grid-column: 4 ;
+         text-align: center;
+         place-self: center;
+         border: none;
+
+         
+         font-family: 'Roboto', sans-serif;
        
         }
      .coeur{
          background: $color-primary;
-         grid-row: 3 / span 6;
-         grid-column: 2 / span 3;
-         width: 10%;
-         justify-self: end;
-         border-radius: 30px;
+         grid-row: 5 / span 6;
+         grid-column: 4 /  5;
+         width: 20%;
+         justify-self: center;
+         border: none;
+         
          
      }
      
@@ -132,12 +206,31 @@ body {
 
 }
 
+.menu2{
+    @extend .menu1;
+}
+.menu3{
+    @extend .menu1;
+    .new {
+        display: none;
+    }
+}
+.menu4{
+    @extend .menu1;
+    .new {
+        display: none;
+    }
+   
+    
+}
 
 //footer
 footer{
     background-color: rgb(33,33,33);
     color: rgb(255,255,255);
     padding-left: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
      h2 {
         font-family: 'Shrikhand', cursive;
      }

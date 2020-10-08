@@ -1,7 +1,10 @@
 body {
   margin: 0%;
   padding: 0%;
-  background: white; }
+  background: gainsboro;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh; }
 
 img {
   width: 100%; }
@@ -9,7 +12,7 @@ img {
 /*header*/
 header {
   width: 100vw;
-  background: #fafafa; }
+  background: white; }
   header h1 {
     width: 100vw;
     font-family: 'Shrikhand', cursive;
@@ -29,70 +32,112 @@ header {
     .section1 .book h2 {
       margin-top: 0%;
       font-family: 'Roboto', sans-serif; }
+    .section1 .book p {
+      font-family: 'Roboto', sans-serif; }
     .section1 .book button {
-      background: #e686a6;
+      background: #FF79DA;
       margin-bottom: 10%;
-      border: 2px solid #e686a6;
+      border: 2px solid #FF79DA;
       border-radius: 20%;
       color: #fafafa;
       font-size: 1rem; }
 
-main {
-  background: gainsboro; }
+.section2 {
+  background-color: white; }
+  .section2 h2 {
+    font-family: 'Roboto', sans-serif; }
+  .section2 .work {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white; }
+    .section2 .work .un, .section2 .work .deux, .section2 .work .trois {
+      background: gainsboro;
+      height: 76px;
+      border-radius: 20px;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5%; }
 
-.menu1 {
-  background-color: #fafafa;
+main {
+  background-color: gainsboro; }
+
+.section3 h2 {
+  margin-top: 15%;
+  padding-left: 5%;
+  font-family: 'Roboto', sans-serif; }
+
+.menu1, .menu2, .menu3, .menu4 {
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 25px;
+  margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  border-radius: 30px; }
-  .menu1 figure {
+  width: 90%; }
+  .menu1 figure, .menu2 figure, .menu3 figure, .menu4 figure {
     grid-column: 1 / span 4;
     grid-row: 1 / span 3;
     margin: 0%;
     padding: 0%; }
-  .menu1 h3 {
+    .menu1 figure img, .menu2 figure img, .menu3 figure img, .menu4 figure img {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px; }
+  .menu1 h3, .menu2 h3, .menu3 h3, .menu4 h3 {
     background: white;
     grid-row: 5;
     grid-column: 1 / span 3;
-    margin-top: 0%;
+    margin-top: 2%;
     margin-bottom: 0%;
     padding-left: 5%;
+    border-bottom-left-radius: 25px;
     width: 80%;
     justify-content: center;
     align-self: center;
     font-family: 'Roboto', sans-serif; }
-  .menu1 h4 {
+  .menu1 h4, .menu2 h4, .menu3 h4, .menu4 h4 {
     background: white;
-    grid-row: 6;
+    grid-row: 4 / span 6;
     grid-column: 1 / span 3;
-    margin-top: 0%;
+    margin-top: 5%;
     margin-bottom: 0%;
     padding-left: 5%;
     width: 80%;
     justify-content: center;
     align-self: center;
     font-family: 'Roboto', sans-serif; }
-  .menu1 .new {
-    background: #fafafa;
+  .menu1 .new, .menu2 .new, .menu3 .new, .menu4 .new {
+    background: #99E2D0;
     grid-row: 1;
-    grid-column: 2;
-    justify-content: center;
-    align-self: center;
-    width: 50%; }
-  .menu1 .coeur {
+    grid-column: 4;
+    text-align: center;
+    place-self: center;
+    border: none;
+    font-family: 'Roboto', sans-serif; }
+  .menu1 .coeur, .menu2 .coeur, .menu3 .coeur, .menu4 .coeur {
     background: #fafafa;
-    grid-row: 3 / span 6;
-    grid-column: 2 / span 3;
-    width: 10%;
-    justify-self: end;
-    border-radius: 30px; }
+    grid-row: 5 / span 6;
+    grid-column: 4 /  5;
+    width: 20%;
+    justify-self: center;
+    border: none; }
+
+.menu3 .new {
+  display: none; }
+
+.menu4 .new {
+  display: none; }
 
 footer {
   background-color: #212121;
   color: white;
-  padding-left: 5%; }
+  padding-left: 5%;
+  margin-top: 0%;
+  margin-bottom: 0%; }
   footer h2 {
     font-family: 'Shrikhand', cursive; }
