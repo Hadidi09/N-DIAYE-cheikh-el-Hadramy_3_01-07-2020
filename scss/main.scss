@@ -9,6 +9,7 @@ body {
     padding: 0%;
      background: rgb(220,220,220); 
      box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;;
      width: 100vw;
      height: 100vh;
    }
@@ -23,7 +24,6 @@ body {
      h1 {
         width: 100vw;
         font-family: 'Shrikhand', cursive;
-        
         text-align: center;
         margin:0%;
 
@@ -33,32 +33,45 @@ body {
        text-align: center;
 
        .localisation{
-           background: rgb(158,158,158);
-           text-align: center;
+           background: rgb(220,220,220);
+           display: flex;
+           align-items: center;
            margin-bottom: 0%;
+           padding-left: 25%;
+           height: 9vh;
+           font-family: 'Roboto', sans-serif;
+           font-size: 1.15rem;
+           font-weight: bold;
+           
            i{
-               margin-right: 2%;
+               margin-right: 6%;
            }
         }
         .book{
             background: rgb(238,238,238);
             h2{
                 margin-top: 0%;
+                padding-top: 10%;
                 font-family: 'Roboto', sans-serif;
+                font-weight: bold;
 
      }
              p{
                 font-family: 'Roboto', sans-serif;
+                font-size: 1.15rem;
+                font-weight: 400;
               
              }
        
             button{
-                background: $color-secondary;
-                margin-bottom: 10%;
-                border: 2px solid $color-secondary;
-                border-radius: 20%;
+                background: rgb(186,85,211);
+                margin-top: 5%;
+                margin-bottom: 17%;
+                width: 70%;
+                height: 8vh;
+                border-radius: 40px;
                 color: $color-primary;
-                font-size: 1rem;
+                font-size: 1.15rem;
             } 
         }
    }
@@ -69,31 +82,50 @@ body {
        
         h2{
             font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            margin-top: 0%;
+            padding-top: 14%;
         }
         .work {
             display: flex;
-            justify-content: center;
             flex-direction: column;
             align-items: center;
-            background-color: rgb(255,255,255);
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            background-color: rgba(255,255,255 ,1);
+            margin-left: 5%;
             .un{
-                background: rgb(220,220,220);
+                background: rgba(245,245,245 ,1);
                 height: 76px;
                 border-radius: 20px;
-                width: 80%;
+                width: 90%;
                 display: flex;
-                justify-content: center;
                 align-items: center;
+                flex-direction: row;
                 margin-bottom: 5%;
+                  .fa-mobile-alt{
+                      padding-left: 10%;
+                      padding-right: 5%;
+                  }
                 
             }
             .deux{
                 @extend .un;
+                 .fa-list-ul{
+                    padding-left: 10%;
+                    padding-right: 5%;
+                 }
 
                 
             }
             .trois{
                 @extend .un;
+                margin-bottom: 20%;
+                .fa-store{
+                    padding-left: 10%;
+                    padding-right: 5%;
+                    
+                }
                 
                 
             }
@@ -105,7 +137,7 @@ body {
    }
   // main
    main{
-      background-color: rgb(220,220,220);
+      background-color:  rgb(238,238,238);
       
 
       
@@ -117,7 +149,8 @@ body {
           margin-top: 15%;
           padding-left: 5%;
           font-family: 'Roboto', sans-serif;
-          
+          font-weight: bolder;
+        
          
 
       }
@@ -127,7 +160,7 @@ body {
 .menu1{
     background-color: rgb(255,255,255);
     display: grid;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
     
     border-radius: 25px;
     margin-bottom: 10%;
@@ -155,24 +188,23 @@ body {
             background: rgb(255,255,255);
             grid-row: 4;
             grid-column: 1 / span 3;
-            /*align-self: flex-start;
-            margin-top: 2%;
-            margin-bottom: 0%;
             padding-left: 5%;
             padding-bottom: 0%;
-            padding-top: 5%;*/
+            padding-top: 3%;
+            margin-top: 0%;
+            margin-bottom: 0%;
             border-bottom-left-radius: 25px;
             width: 80%;
             font-family: 'Roboto', sans-serif;
         }
         h4 {
             background: rgb(255,255,255);
-            grid-row:  5  ;
+            grid-row:  4  ;
             grid-column: 1 / span 3;
-            /*margin-top: 0%;
+            margin-top: 10%;
             margin-bottom: 0%;
             padding-left: 5%;
-            padding-bottom: 5%;*/
+            padding-bottom: 0%;
             border-bottom-left-radius: 25px;
             width: 80%;    
             font-family: 'Roboto', sans-serif;
@@ -193,11 +225,13 @@ body {
         }
      .coeur{
          background: $color-primary;
-         grid-row: 5 / span 6;
-         grid-column: 4 /  5;
+         grid-row: 4;
+         grid-column: 3;
          width: 40%;
-         justify-self: center;
+        
          border: none;
+         padding-top: 45%;   
+        
          
          
      }
@@ -212,16 +246,16 @@ body {
 }
 .menu3{
     @extend .menu1;
-    .new {
+  /*  .new {
         display: none;
-    }
+    }*/
 }
 .menu4{
     @extend .menu1;
-    .new {
+   /* .new {
         display: none;
     }
-   
+   */
     
 }
 
@@ -241,10 +275,9 @@ footer{
    
      h2 {
         font-family: 'Shrikhand', cursive;
+        font-weight: 400;
         margin-top: 7%;
         margin-bottom: 4%;
      }
-    article {
-        
-    }
+   
 }

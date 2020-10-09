@@ -3,6 +3,7 @@ body {
   padding: 0%;
   background: gainsboro;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
   height: 100vh; }
 
@@ -22,58 +23,87 @@ header {
 .section1 {
   text-align: center; }
   .section1 .localisation {
-    background: #9e9e9e;
-    text-align: center;
-    margin-bottom: 0%; }
+    background: gainsboro;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0%;
+    padding-left: 25%;
+    height: 9vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold; }
     .section1 .localisation i {
-      margin-right: 2%; }
+      margin-right: 6%; }
   .section1 .book {
     background: #eeeeee; }
     .section1 .book h2 {
       margin-top: 0%;
-      font-family: 'Roboto', sans-serif; }
+      padding-top: 10%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold; }
     .section1 .book p {
-      font-family: 'Roboto', sans-serif; }
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 400; }
     .section1 .book button {
-      background: #FF79DA;
-      margin-bottom: 10%;
-      border: 2px solid #FF79DA;
-      border-radius: 20%;
+      background: mediumorchid;
+      margin-top: 5%;
+      margin-bottom: 17%;
+      width: 70%;
+      height: 8vh;
+      border-radius: 40px;
       color: #fafafa;
-      font-size: 1rem; }
+      font-size: 1.15rem; }
 
 .section2 {
   background-color: white; }
   .section2 h2 {
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 0%;
+    padding-top: 14%; }
   .section2 .work {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: white; }
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    margin-left: 5%; }
     .section2 .work .un, .section2 .work .deux, .section2 .work .trois {
-      background: gainsboro;
+      background: whitesmoke;
       height: 76px;
       border-radius: 20px;
-      width: 80%;
+      width: 90%;
       display: flex;
-      justify-content: center;
       align-items: center;
+      flex-direction: row;
       margin-bottom: 5%; }
+      .section2 .work .un .fa-mobile-alt, .section2 .work .deux .fa-mobile-alt, .section2 .work .trois .fa-mobile-alt {
+        padding-left: 10%;
+        padding-right: 5%; }
+    .section2 .work .deux .fa-list-ul {
+      padding-left: 10%;
+      padding-right: 5%; }
+    .section2 .work .trois {
+      margin-bottom: 20%; }
+      .section2 .work .trois .fa-store {
+        padding-left: 10%;
+        padding-right: 5%; }
 
 main {
-  background-color: gainsboro; }
+  background-color: #eeeeee; }
 
 .section3 h2 {
   margin-top: 15%;
   padding-left: 5%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder; }
 
 .menu1, .menu2, .menu3, .menu4 {
   background-color: white;
   display: grid;
-  grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+  grid-template: repeat(4, 1fr)/repeat(2, 1fr);
   border-radius: 25px;
   margin-bottom: 10%;
   margin-left: 5%;
@@ -91,23 +121,22 @@ main {
     background: white;
     grid-row: 4;
     grid-column: 1 / span 3;
-    /*align-self: flex-start;
-            margin-top: 2%;
-            margin-bottom: 0%;
-            padding-left: 5%;
-            padding-bottom: 0%;
-            padding-top: 5%;*/
+    padding-left: 5%;
+    padding-bottom: 0%;
+    padding-top: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     border-bottom-left-radius: 25px;
     width: 80%;
     font-family: 'Roboto', sans-serif; }
   .menu1 h4, .menu2 h4, .menu3 h4, .menu4 h4 {
     background: white;
-    grid-row: 5;
+    grid-row: 4;
     grid-column: 1 / span 3;
-    /*margin-top: 0%;
-            margin-bottom: 0%;
-            padding-left: 5%;
-            padding-bottom: 5%;*/
+    margin-top: 10%;
+    margin-bottom: 0%;
+    padding-left: 5%;
+    padding-bottom: 0%;
     border-bottom-left-radius: 25px;
     width: 80%;
     font-family: 'Roboto', sans-serif;
@@ -123,17 +152,22 @@ main {
     font-family: 'Roboto', sans-serif; }
   .menu1 .coeur, .menu2 .coeur, .menu3 .coeur, .menu4 .coeur {
     background: #fafafa;
-    grid-row: 5 / span 6;
-    grid-column: 4 /  5;
+    grid-row: 4;
+    grid-column: 3;
     width: 40%;
-    justify-self: center;
-    border: none; }
+    border: none;
+    padding-top: 45%; }
 
-.menu3 .new {
-  display: none; }
+.menu3 {
+  /*  .new {
+        display: none;
+    }*/ }
 
-.menu4 .new {
-  display: none; }
+.menu4 {
+  /* .new {
+        display: none;
+    }
+   */ }
 
 footer {
   background-color: #212121;
@@ -147,5 +181,6 @@ footer {
   font-family: 'Roboto', sans-serif; }
   footer h2 {
     font-family: 'Shrikhand', cursive;
+    font-weight: 400;
     margin-top: 7%;
     margin-bottom: 4%; }
