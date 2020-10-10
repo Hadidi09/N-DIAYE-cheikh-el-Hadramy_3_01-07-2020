@@ -100,7 +100,7 @@ main {
   font-family: 'Roboto', sans-serif;
   font-weight: bolder; }
 
-.menu1, .menu2, .menu3, .menu4 {
+.menu, .menu1, .menu2, .menu3, .menu4 {
   background-color: white;
   display: grid;
   grid-template: repeat(4, 1fr)/repeat(2, 1fr);
@@ -109,15 +109,15 @@ main {
   margin-left: 5%;
   margin-right: 5%;
   width: 90%; }
-  .menu1 figure, .menu2 figure, .menu3 figure, .menu4 figure {
+  .menu figure, .menu1 figure, .menu2 figure, .menu3 figure, .menu4 figure {
     grid-column: 1 / span 4;
     grid-row: 1 / span 3;
     margin: 0%;
     padding: 0%; }
-    .menu1 figure img, .menu2 figure img, .menu3 figure img, .menu4 figure img {
+    .menu figure img, .menu1 figure img, .menu2 figure img, .menu3 figure img, .menu4 figure img {
       border-top-left-radius: 25px;
       border-top-right-radius: 25px; }
-  .menu1 h3, .menu2 h3, .menu3 h3, .menu4 h3 {
+  .menu h3, .menu1 h3, .menu2 h3, .menu3 h3, .menu4 h3 {
     background: white;
     grid-row: 4;
     grid-column: 1 / span 3;
@@ -127,9 +127,9 @@ main {
     margin-top: 0%;
     margin-bottom: 0%;
     border-bottom-left-radius: 25px;
-    width: 80%;
+    width: 50%;
     font-family: 'Roboto', sans-serif; }
-  .menu1 h4, .menu2 h4, .menu3 h4, .menu4 h4 {
+  .menu h4, .menu1 h4, .menu2 h4, .menu3 h4, .menu4 h4 {
     background: white;
     grid-row: 4;
     grid-column: 1 / span 3;
@@ -138,36 +138,36 @@ main {
     padding-left: 5%;
     padding-bottom: 0%;
     border-bottom-left-radius: 25px;
-    width: 80%;
+    width: 50%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-transform: capitalize; }
-  .menu1 .new, .menu2 .new, .menu3 .new, .menu4 .new {
+  .menu .new, .menu1 .new, .menu2 .new, .menu3 .new, .menu4 .new {
     background: #99E2D0;
     grid-row: 1;
-    grid-column: 4;
+    grid-column: 2;
     text-align: center;
     place-self: center;
     border: none;
-    font-family: 'Roboto', sans-serif; }
-  .menu1 .coeur, .menu2 .coeur, .menu3 .coeur, .menu4 .coeur {
+    width: 50%;
+    height: 38%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-left: 36%;
+    padding-top: 3%;
+    border-radius: 6%; }
+  .menu .coeur, .menu1 .coeur, .menu2 .coeur, .menu3 .coeur, .menu4 .coeur {
     background: #fafafa;
     grid-row: 4;
-    grid-column: 3;
+    grid-column: 2;
     width: 40%;
-    border: none;
-    padding-top: 45%; }
+    border: none; }
 
-.menu3 {
-  /*  .new {
-        display: none;
-    }*/ }
+.menu3 .new {
+  display: none; }
 
-.menu4 {
-  /* .new {
-        display: none;
-    }
-   */ }
+.menu4 .new {
+  display: none; }
 
 footer {
   background-color: #212121;
