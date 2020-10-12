@@ -105,73 +105,58 @@ main {
   font-family: 'Roboto', sans-serif;
   font-weight: bolder; }
 
-.menu, .menu1, .menu2, .menu3, .menu4 {
+#menu, #menu1, #menu2, #menu3, #menu4 {
   background-color: white;
-  display: grid;
-  grid-template: repeat(4, 1fr)/repeat(2, 1fr);
-  border-radius: 25px;
+  border-radius: 15px;
   margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%; }
-  .menu figure, .menu1 figure, .menu2 figure, .menu3 figure, .menu4 figure {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 3;
+  width: 90%;
+  box-shadow: 5px 5px 5px 5px #00acc1; }
+  #menu .images figure, #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
+    width: 100%;
     margin: 0%;
-    padding: 0%; }
-    .menu figure img, .menu1 figure img, .menu2 figure img, .menu3 figure img, .menu4 figure img {
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px; }
-  .menu h3, .menu1 h3, .menu2 h3, .menu3 h3, .menu4 h3 {
-    background: white;
-    grid-row: 4;
-    grid-column: 1 / span 3;
-    padding-left: 5%;
-    padding-bottom: 0%;
-    padding-top: 3%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    border-bottom-left-radius: 25px;
-    width: 50%;
-    font-family: 'Roboto', sans-serif; }
-  .menu h4, .menu1 h4, .menu2 h4, .menu3 h4, .menu4 h4 {
-    background: white;
-    grid-row: 4;
-    grid-column: 1 / span 3;
-    margin-top: 10%;
-    margin-bottom: 0%;
-    padding-left: 5%;
-    padding-bottom: 0%;
-    border-bottom-left-radius: 25px;
-    width: 50%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-transform: capitalize; }
-  .menu .new, .menu1 .new, .menu2 .new, .menu3 .new, .menu4 .new {
-    background: #99E2D0;
-    grid-row: 1;
-    grid-column: 2;
-    text-align: center;
-    place-self: center;
-    border: none;
-    width: 50%;
-    height: 38%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin-left: 36%;
-    padding-top: 3%;
-    border-radius: 6%; }
-  .menu .coeur, .menu1 .coeur, .menu2 .coeur, .menu3 .coeur, .menu4 .coeur {
-    background: #fafafa;
-    grid-row: 4;
-    grid-column: 2;
-    width: 40%;
-    border: none; }
+    border-radius: 15px; }
+    #menu .images figure img, #menu1 .images figure img, #menu2 .images figure img, #menu3 .images figure img, #menu4 .images figure img {
+      border-radius: 15px 15px 0px 0px; }
+  #menu #section, #menu1 #section, #menu2 #section, #menu3 #section, #menu4 #section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+    #menu #section .plat, #menu1 #section .plat, #menu2 #section .plat, #menu3 #section .plat, #menu4 #section .plat {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      background-color: white; }
+      #menu #section .plat h3, #menu1 #section .plat h3, #menu2 #section .plat h3, #menu3 #section .plat h3, #menu4 #section .plat h3 {
+        margin-top: 4%;
+        margin-bottom: 2%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1.15rem; }
+      #menu #section .plat h4, #menu1 #section .plat h4, #menu2 #section .plat h4, #menu3 #section .plat h4, #menu4 #section .plat h4 {
+        margin-top: 2%;
+        margin-bottom: 14%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.10rem;
+        text-transform: capitalize; }
+    #menu #section .jaimenew button, #menu1 #section .jaimenew button, #menu2 #section .jaimenew button, #menu3 #section .jaimenew button, #menu4 #section .jaimenew button {
+      position: relative;
+      bottom: 266%;
+      left: 21%;
+      width: 100%;
+      height: 46%;
+      background-color: #15DEA5; }
+    #menu #section .jaimenew .fa-heart, #menu1 #section .jaimenew .fa-heart, #menu2 #section .jaimenew .fa-heart, #menu3 #section .jaimenew .fa-heart, #menu4 #section .jaimenew .fa-heart {
+      position: relative;
+      top: 20%;
+      left: 62%; }
 
-.menu3 .new {
+#menu3 button {
   display: none; }
 
-.menu4 .new {
+#menu4 button {
   display: none; }
 
 footer {
@@ -189,7 +174,3 @@ footer {
     font-weight: 400;
     margin-top: 7%;
     margin-bottom: 4%; }
-  footer div .fa-utensils {
-    padding-right: 2.78%; }
-  footer div i .fa-hands-helpings {
-    padding-right: 2.92%; }
