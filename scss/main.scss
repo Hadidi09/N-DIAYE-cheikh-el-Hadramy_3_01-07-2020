@@ -4,6 +4,11 @@ $color-secondary: #FF79DA;
 $color-tertiary: rgb(0,172,193);
 $cd-btn: #9356DC;
 $cd-txt: #15DEA5;
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
 body {
     margin: 0%;
     padding: 0%;
@@ -156,6 +161,7 @@ body {
     }
   // section3 
   .section3{
+      padding-bottom: 35px;
       h2{
           margin-top: 15%;
           padding-left: 5%;
@@ -175,7 +181,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
-    box-shadow: 5px 5px 5px 5px rgb(0,172,193);
+    box-shadow: 2px 2px 2px 2px rgb(134, 167, 172);
 
     .images{
         figure{
@@ -290,8 +296,16 @@ footer{
             h2 {
                 font-family: 'Shrikhand', cursive;
                 font-weight: 400;
-                margin-top: 7%;
+                margin-top: 2%;
                 margin-bottom: 4%;
+            }
+            .fa-utensils{
+                padding-right: 10px;
+                
+            }
+            .fa-hands-helping{
+                padding-right: 3px;
+                
             }
      
         

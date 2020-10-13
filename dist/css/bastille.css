@@ -1,0 +1,60 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%; }
+
+.header1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 100%; }
+  .header1 h1 {
+    width: 100vw;
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    margin: 0%; }
+  .header1 .fa-arrow-left {
+    align-self: center; }
+
+.section1 img {
+  width: 100%; }
+
+#entrée {
+  background: #eeeeee;
+  padding-bottom: 10%; }
+  #entrée h2 {
+    margin-left: 5%;
+    padding-top: 8.5%;
+    padding-bottom: 7.8%; }
+  #entrée h3 {
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize; }
+  #entrée hr {
+    width: 15%;
+    margin-left: 5%;
+    border: 1px solid  #15DEA5; }
+  #entrée #carpaccio, #entrée #entrée2, #entrée #entrée3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 90%;
+    margin: 5%;
+    background: white; }
+    #entrée #carpaccio h4, #entrée #entrée2 h4, #entrée #entrée3 h4 {
+      margin-top: 4%;
+      margin-bottom: 3%;
+      padding-left: 3%; }
+    #entrée #carpaccio .prix, #entrée #entrée2 .prix, #entrée #entrée3 .prix {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%; }
+      #entrée #carpaccio .prix h5, #entrée #entrée2 .prix h5, #entrée #entrée3 .prix h5 {
+        margin-right: 50%;
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e; }

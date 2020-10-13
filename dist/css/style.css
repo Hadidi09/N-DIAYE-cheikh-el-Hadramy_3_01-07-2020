@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%; }
+
 body {
   margin: 0%;
   padding: 0%;
@@ -99,11 +104,13 @@ header {
 main {
   background-color: #eeeeee; }
 
-.section3 h2 {
-  margin-top: 15%;
-  padding-left: 5%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bolder; }
+.section3 {
+  padding-bottom: 35px; }
+  .section3 h2 {
+    margin-top: 15%;
+    padding-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder; }
 
 #menu, #menu1, #menu2, #menu3, #menu4 {
   background-color: white;
@@ -112,7 +119,7 @@ main {
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
-  box-shadow: 5px 5px 5px 5px #00acc1; }
+  box-shadow: 2px 2px 2px 2px #86a7ac; }
   #menu .images figure, #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
     width: 100%;
     margin: 0%;
@@ -172,5 +179,9 @@ footer {
   footer h2 {
     font-family: 'Shrikhand', cursive;
     font-weight: 400;
-    margin-top: 7%;
+    margin-top: 2%;
     margin-bottom: 4%; }
+  footer .fa-utensils {
+    padding-right: 10px; }
+  footer .fa-hands-helping {
+    padding-right: 3px; }

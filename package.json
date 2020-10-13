@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile": "node-sass --source-map true scss/main.scss dist/css/style.css",
-    "watch": "node-sass scss/main.scss dist/css/style.css -w"
+    "compile2": "node-sass --source-map true scss/bastille.scss dist/css/bastille.css",
+    "watch": "node-sass scss/main.scss dist/css/style.css -w",
+    "watch2": "node-sass scss/bastille.scss dist/css/bastille.css -w"
   },
   "author": "",
   "license": "ISC",
