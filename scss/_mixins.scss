@@ -1,0 +1,44 @@
+@mixin titre {
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+@mixin trait  {
+    width: 15%;
+    margin-left: 5%;
+    border: 1px solid  #15DEA5;
+}
+@mixin carpaccio{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 90%;
+    margin: 5%;
+    background:  rgba(255,255,255 ,1);
+}
+@mixin titre4{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding-left: 3%;
+}
+@mixin prix{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+}
+@mixin titre5 {
+    margin-right: 50%;
+    margin-bottom: 3.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(158,158,158);
+    
+}
+
+@mixin para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+}

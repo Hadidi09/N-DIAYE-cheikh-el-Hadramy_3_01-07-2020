@@ -1,9 +1,14 @@
+
 *{
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+   
 }
-
+body{
+    background: rgb(238,238,238);
+}
+//header
 .header1{
     display: flex;
     justify-content: center;
@@ -11,7 +16,7 @@
     width: 100%;
     
         h1 {
-            width: 100vw;
+            width: 70vw;
             font-family: 'Shrikhand', cursive;
             text-align: center;
             margin:0%;
@@ -22,7 +27,16 @@
 
 
 }
-
+//main
+main{
+    background: rgb(238,238,238);
+    h2{
+        margin-left: 5%;
+        padding-top: 8.5%;
+        padding-bottom: 7.8%;
+    }
+}
+// section1
 .section1{
     
     img{
@@ -31,14 +45,11 @@
 
 }
 
+
 #entrée{
     background: rgb(238,238,238);
     padding-bottom: 10%;
-    h2{
-        margin-left: 5%;
-        padding-top: 8.5%;
-        padding-bottom: 7.8%;
-    }
+    
     h3{
         margin-left: 5%;
         font-family: 'Roboto', sans-serif;
@@ -76,17 +87,165 @@
                 font-weight: 400;
                 color: rgb(158,158,158);
             }
+            p{
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400; 
+            }
         }
     }
     #entrée2{
         @extend #carpaccio;
-       
+       .prix{
+        h5{
+            margin-right: 23%;
+        }
+    }
         
         
     }
     #entrée3{
         @extend #carpaccio;
-       
+        .prix{
+            h5{
+                margin-right: 71%;
+            }
+        }
+    
+    }
+}
+@import './mixins';
+//section 2
+#plat{
+    background:  rgb(238,238,238);
+    h3{
+        @include titre;
+    }
+    hr{
+        @include trait;
+    }
+    .plat1{
+        @include carpaccio;
+        h4{
+            @include titre4;
+        }
+    }
+    .prix{
+        @include prix;
+        h5{
+            @include titre5;
+        }
+        p{
+            @include para;
+        }
+    }
+    .plat2{
+        @include carpaccio;
+        h4{
+            @include titre4;
+        }
+    }
+    .prix{
+        @include prix;
+        h5{
+            @include titre5;
+        }
+        p{
+            @include para;
+        }
+    }
+    .plat3{
+        @include carpaccio;
+        h4{
+            @include titre4;
+        }
+    }
+    .prix{
+        @include prix;
+        h5{
+            @include titre5;
+        }
+        p{
+            @include para;
+        }
+    }
+
+ 
+}
+@import './mixins';
+// section 3
+
+#dessert{
+    h3{
+        @include titre;
+    }
+    hr{
+        @include trait;
+    }
+    .dessert1{
+        @include carpaccio;
+        h4{
+            @include titre4;
+        }
+    }
+    .prix{
+        @include prix;
+        h5{
+            @include titre5;
+        }
+        p{
+            @include para;
+        }
+    }
+    .dessert2{
+        @include carpaccio;
+        h4{
+            @include titre4;
+        }
+    }
+    .prix{
+        @include prix;
+        h5{
+            @include titre5;
+        }
+        p{
+            @include para;
+        }
+    }
+    .dessert3{
+        @include carpaccio;
+        h4{
+            @include titre4;
+        }
+    }
+    .prix{
+        @include prix;
+        h5{
+            @include titre5;
+        }
+        p{
+            @include para;
+        }
     }
 }
 
+//button
+.order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 8vh;
+    margin: 0% 25%;
+    background-color: rgb(186,85,211);
+    border-radius: 30px;
+    p{
+        color: rgb(250,250,250);
+    }
+}
+
+@import './footer';
+// footer
+footer{
+    @extend %footer;
+
+}

@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "bastille.css",
+	"file": "thefull.css",
 	"sources": [
-		"../../scss/bastille.scss"
+		"../../scss/thefull.scss"
 	],
 	"names": [],
 	"mappings": ""

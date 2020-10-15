@@ -6,8 +6,14 @@
   "scripts": {
     "compile": "node-sass --source-map true scss/main.scss dist/css/style.css",
     "compile2": "node-sass --source-map true scss/bastille.scss dist/css/bastille.css",
+    "legourmand": "node-sass --source-map true scss/legourmand.scss dist/css/legourmand.css",
+    "enchanted": "node-sass --source-map true scss/enchanted.scss dist/css/enchanted.css",
+    "thefull": "node-sass --source-map true scss/thefull.scss dist/css/thefull.css",
     "watch": "node-sass scss/main.scss dist/css/style.css -w",
-    "watch2": "node-sass scss/bastille.scss dist/css/bastille.css -w"
+    "watch2": "node-sass scss/bastille.scss dist/css/bastille.css -w",
+    "watch3": "node-sass scss/legourmand.scss dist/css/legourmand.css -w",
+    "watch4": "node-sass scss/enchanted.scss dist/css/enchanted.css -w",
+    "watch5": "node-sass scss/thefull.scss dist/css/thefull.css -w"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "legourmand.css",
+	"sources": [
+		"../../scss/legourmand.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,IAAI,CAAA;EACA,UAAU,EAAE,OAAc;EAC1B,KAAK,EAAE,IAAI;EACX,KAAK,EAAE,IAAI,GACd"
+}
