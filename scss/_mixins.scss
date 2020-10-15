@@ -29,8 +29,8 @@
     flex-direction: row;
     padding-left: 3%;
 }
-@mixin titre5 {
-    margin-right: 50%;
+@mixin titre5($margin-right: 50%) {
+    margin-right: $margin-right;
     margin-bottom: 3.5%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -41,4 +41,18 @@
 @mixin para {
     font-family: 'Roboto', sans-serif;
     font-weight: 400; 
+}
+//button
+@mixin order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 8vh;
+    margin: 0% 25%;
+    background-color: rgb(186,85,211);
+    border-radius: 30px;
+    p{
+        color: rgb(250,250,250);
+    }
 }

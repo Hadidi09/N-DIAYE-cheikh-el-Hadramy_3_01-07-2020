@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "enchanted.css",
+	"file": "bastille.css",
 	"sources": [
-		"../../scss/enchanted.scss"
+		"../../scss/bastille.scss"
 	],
 	"names": [],
 	"mappings": ""

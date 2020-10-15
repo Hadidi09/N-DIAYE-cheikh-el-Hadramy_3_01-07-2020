@@ -7,18 +7,21 @@
 body {
   background: #eeeeee; }
 
-.header1 {
+header {
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
   width: 100%; }
-  .header1 h1 {
+  header h1 {
     width: 70vw;
     font-family: 'Shrikhand', cursive;
     text-align: center;
     margin: 0%; }
-  .header1 .fa-arrow-left {
+  header .fa-arrow-left {
     align-self: center; }
+
+header {
+  width: 100%; }
 
 main {
   background: #eeeeee; }
@@ -42,7 +45,7 @@ main {
     width: 15%;
     margin-left: 5%;
     border: 1px solid  #15DEA5; }
-  #entrée #carpaccio, #entrée #entrée2, #entrée #entrée3 {
+  #entrée #carpaccio {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -50,30 +53,79 @@ main {
     width: 90%;
     margin: 5%;
     background: white; }
-    #entrée #carpaccio h4, #entrée #entrée2 h4, #entrée #entrée3 h4 {
+    #entrée #carpaccio h4 {
       margin-top: 4%;
       margin-bottom: 3%;
       padding-left: 3%; }
-    #entrée #carpaccio .prix, #entrée #entrée2 .prix, #entrée #entrée3 .prix {
+    #entrée #carpaccio .prix {
       display: flex;
       flex-direction: row;
       padding-left: 3%; }
-      #entrée #carpaccio .prix h5, #entrée #entrée2 .prix h5, #entrée #entrée3 .prix h5 {
-        margin-right: 50%;
+      #entrée #carpaccio .prix h5 {
+        margin-right: 32%;
         margin-bottom: 3.5%;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         color: #9e9e9e; }
-      #entrée #carpaccio .prix p, #entrée #entrée2 .prix p, #entrée #entrée3 .prix p {
+      #entrée #carpaccio .prix p {
         font-family: 'Roboto', sans-serif;
         font-weight: 400; }
-  #entrée #entrée2 .prix h5 {
-    margin-right: 23%; }
-  #entrée #entrée3 .prix h5 {
-    margin-right: 71%; }
+
+#entrée2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 90%;
+  margin: 5%;
+  background: white; }
+  #entrée2 h4 {
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding-left: 3%; }
+  #entrée2 .prix {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%; }
+    #entrée2 .prix h5 {
+      margin-right: 37%;
+      margin-bottom: 3.5%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #9e9e9e; }
+    #entrée2 .prix p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400; }
+
+#entrée3 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 90%;
+  margin: 5%;
+  background: white; }
+  #entrée3 h4 {
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding-left: 3%; }
+  #entrée3 .prix {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%; }
+    #entrée3 .prix h5 {
+      margin-right: 83%;
+      margin-bottom: 3.5%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #9e9e9e; }
+    #entrée3 .prix p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400; }
 
 #plat {
-  background: #eeeeee; }
+  background: #eeeeee;
+  padding-bottom: 10%; }
   #plat h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -95,19 +147,19 @@ main {
       margin-top: 4%;
       margin-bottom: 3%;
       padding-left: 3%; }
-  #plat .prix {
-    display: flex;
-    flex-direction: row;
-    padding-left: 3%; }
-    #plat .prix h5 {
-      margin-right: 50%;
-      margin-bottom: 3.5%;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      color: #9e9e9e; }
-    #plat .prix p {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400; }
+    #plat .plat1 .prix {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%; }
+      #plat .plat1 .prix h5 {
+        margin-right: 3%;
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e; }
+      #plat .plat1 .prix p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400; }
   #plat .plat2 {
     display: flex;
     justify-content: flex-start;
@@ -120,19 +172,19 @@ main {
       margin-top: 4%;
       margin-bottom: 3%;
       padding-left: 3%; }
-  #plat .prix {
-    display: flex;
-    flex-direction: row;
-    padding-left: 3%; }
-    #plat .prix h5 {
-      margin-right: 50%;
-      margin-bottom: 3.5%;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      color: #9e9e9e; }
-    #plat .prix p {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400; }
+    #plat .plat2 .prix {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%; }
+      #plat .plat2 .prix h5 {
+        margin-right: 15%;
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e; }
+      #plat .plat2 .prix p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400; }
   #plat .plat3 {
     display: flex;
     justify-content: flex-start;
@@ -145,123 +197,107 @@ main {
       margin-top: 4%;
       margin-bottom: 3%;
       padding-left: 3%; }
-  #plat .prix {
+    #plat .plat3 .prix {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%; }
+      #plat .plat3 .prix h5 {
+        margin-right: 50%;
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e; }
+      #plat .plat3 .prix p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400; }
+
+#dessert {
+  background: #eeeeee;
+  padding-bottom: 10%; }
+  #dessert h3 {
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize; }
+  #dessert hr {
+    width: 15%;
+    margin-left: 5%;
+    border: 1px solid  #15DEA5; }
+  #dessert .dessert1 {
     display: flex;
-    flex-direction: row;
-    padding-left: 3%; }
-    #plat .prix h5 {
-      margin-right: 50%;
-      margin-bottom: 3.5%;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      color: #9e9e9e; }
-    #plat .prix p {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400; }
-
-#dessert h3 {
-  margin-left: 5%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  text-transform: capitalize; }
-
-#dessert hr {
-  width: 15%;
-  margin-left: 5%;
-  border: 1px solid  #15DEA5; }
-
-#dessert .dessert1 {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  border-radius: 15px;
-  width: 90%;
-  margin: 5%;
-  background: white; }
-  #dessert .dessert1 h4 {
-    margin-top: 4%;
-    margin-bottom: 3%;
-    padding-left: 3%; }
-
-#dessert .prix {
-  display: flex;
-  flex-direction: row;
-  padding-left: 3%; }
-  #dessert .prix h5 {
-    margin-right: 50%;
-    margin-bottom: 3.5%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #9e9e9e; }
-  #dessert .prix p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400; }
-
-#dessert .dessert2 {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  border-radius: 15px;
-  width: 90%;
-  margin: 5%;
-  background: white; }
-  #dessert .dessert2 h4 {
-    margin-top: 4%;
-    margin-bottom: 3%;
-    padding-left: 3%; }
-
-#dessert .prix {
-  display: flex;
-  flex-direction: row;
-  padding-left: 3%; }
-  #dessert .prix h5 {
-    margin-right: 50%;
-    margin-bottom: 3.5%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #9e9e9e; }
-  #dessert .prix p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400; }
-
-#dessert .dessert3 {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  border-radius: 15px;
-  width: 90%;
-  margin: 5%;
-  background: white; }
-  #dessert .dessert3 h4 {
-    margin-top: 4%;
-    margin-bottom: 3%;
-    padding-left: 3%; }
-
-#dessert .prix {
-  display: flex;
-  flex-direction: row;
-  padding-left: 3%; }
-  #dessert .prix h5 {
-    margin-right: 50%;
-    margin-bottom: 3.5%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #9e9e9e; }
-  #dessert .prix p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400; }
-
-.order {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 8vh;
-  margin: 0% 25%;
-  background-color: mediumorchid;
-  border-radius: 30px; }
-  .order p {
-    color: #fafafa; }
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 90%;
+    margin: 5%;
+    background: white; }
+    #dessert .dessert1 h4 {
+      margin-top: 4%;
+      margin-bottom: 3%;
+      padding-left: 3%; }
+    #dessert .dessert1 .prix {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%; }
+      #dessert .dessert1 .prix h5 {
+        margin-right: 70%;
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e; }
+      #dessert .dessert1 .prix p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400; }
+  #dessert .dessert2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 90%;
+    margin: 5%;
+    background: white; }
+    #dessert .dessert2 h4 {
+      margin-top: 4%;
+      margin-bottom: 3%;
+      padding-left: 3%; }
+    #dessert .dessert2 .prix {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%; }
+      #dessert .dessert2 .prix h5 {
+        margin-right: 46%;
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e; }
+      #dessert .dessert2 .prix p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400; }
+  #dessert .dessert3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 90%;
+    margin: 5%;
+    background: white; }
+    #dessert .dessert3 h4 {
+      margin-top: 4%;
+      margin-bottom: 3%;
+      padding-left: 3%; }
+    #dessert .dessert3 .prix {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%; }
+      #dessert .dessert3 .prix h5 {
+        margin-right: 35%;
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e; }
+      #dessert .dessert3 .prix p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400; }
 
 footer {
   background-color: #212121;

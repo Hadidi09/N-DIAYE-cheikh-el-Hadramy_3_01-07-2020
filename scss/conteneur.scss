@@ -65,3 +65,23 @@
     }
 }
 
+%entrée2{
+    @extend #carpaccio;
+   .prix{
+    h5{
+        margin-right: 23%;
+    }
+}
+    
+    
+}
+%entrée3{
+    @extend #carpaccio;
+    .prix{
+        h5{
+            margin-right: 71%;
+        }
+    }
+
+}
+
