@@ -1,3 +1,4 @@
+@import './variables';
 
 *{
     box-sizing: border-box;
@@ -50,7 +51,7 @@ main{
                 @include titre5($margin-right: 32%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 50px);
             }
         }
 
@@ -65,10 +66,10 @@ main{
     .prix{
         @include prix;
         h5{
-            @include titre5($margin-right: 37%);
+            @include titre5($margin-right: 0%);
         }
         p{
-            @include para;
+            @include para($paddingleft: 63px);
         }
     }
 
@@ -81,10 +82,10 @@ main{
     .prix{
         @include prix;
         h5{
-            @include titre5($margin-right: 83%);
+            @include titre5($margin-right: 70%);
         }
         p{
-            @include para;
+            @include para($paddingleft: 0px);
         }
     }
 
@@ -107,10 +108,10 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 3%);
+                @include titre5($margin-right: 30%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 55px);
             }
         }   
     }
@@ -125,7 +126,7 @@ main{
                 @include titre5($margin-right: 15%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 95px);
             }
         }   
     }
@@ -137,10 +138,10 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 50%);
+                @include titre5($margin-right: 43%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 0px);
             }
         }   
     }
@@ -163,10 +164,10 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 70%);
+                @include titre5($margin-right: 41%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 30px);
             }
         }   
     }
@@ -178,10 +179,10 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 46%);
+                @include titre5($margin-right: 58%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 40px);
             }
         }   
     }
@@ -193,14 +194,17 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 35%);
+                @include titre5($margin-right: 32%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 0px);
             }
         }   
     }
-}    
+} 
+.order{
+    @include order;
+}   
 
 // footer
 @import './footer';

@@ -31,7 +31,7 @@ main{
 
 #entrée{
     background: rgb(238,238,238);
-    padding-bottom: 10%;
+    padding-bottom: 8%;
     h3{
         @include titre;
     }
@@ -90,7 +90,7 @@ main{
 }
 #plat{ 
     background: rgb(238,238,238);
-    padding-bottom: 10%;
+    padding-bottom: 8%;
     h3{
         @include titre;
     }
@@ -146,7 +146,7 @@ main{
 }    
 #dessert{ 
     background: rgb(238,238,238);
-    padding-bottom: 10%;
+    padding-bottom: 4%;
     h3{
         @include titre;
     }
@@ -200,6 +200,10 @@ main{
         }   
     }
 }    
+// button
+.order{
+    @include order;
+}
 
 // footer
 @import './footer';

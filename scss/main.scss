@@ -1,164 +1,37 @@
+@import './variables';
+@import './header';
+@import './conteneur';
 
-$color-primary: rgb(250,250,250);
-$color-secondary: #FF79DA;
-$color-tertiary: rgb(0,172,193);
-$cd-btn: #9356DC;
-$cd-txt: #15DEA5;
 *{
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: $marginall;
+    padding: $paddingall;
 }
 body {
-    margin: 0%;
-    padding: 0%;
-     background: rgb(220,220,220); 
-     box-sizing: border-box;
-     font-family: 'Roboto', sans-serif;;
-     width: 100vw;
-     height: 100vh;
+    @extend %bodyaccueil;
    }
-   
+   //images
    img {
-     width: 100%; }
-   
+     width: 100%; 
+    }
+    //
+  
    /*header*/
    header{
-     width: 100vw;
-     background:rgb(255,255,255);
-     h1 {
-        width: 100vw;
-        font-family: 'Shrikhand', cursive;
-        text-align: center;
-        margin:0%;
-
-      } 
+    @extend %headeraccueil;
    }
    .section1{
-       text-align: center;
-
-       .localisation{
-           background: rgb(220,220,220);
-           display: flex;
-           align-items: center;
-           margin-bottom: 0%;
-           padding-left: 25%;
-           height: 9vh;
-           font-family: 'Roboto', sans-serif;
-           font-size: 1.15rem;
-           font-weight: bold;
-           
-           i{
-               margin-right: 6%;
-           }
-        }
-        .book{
-            background: rgb(238,238,238);
-            h2{
-                margin-top: 0%;
-                padding-top: 10%;
-                font-family: 'Roboto', sans-serif;
-                font-weight: bold;
-
-     }
-             p{
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.15rem;
-                font-weight: 400;
-              
-             }
-       
-            button{
-                background: rgb(186,85,211);
-                margin-top: 5%;
-                margin-bottom: 17%;
-                width: 70%;
-                height: 8vh;
-                border-radius: 40px;
-                color: $color-primary;
-                font-size: 1.15rem;
-                transition: all 300ms;
-               
-                    
-            } 
-
-             button:hover{
-                background: rgb(0,172,193);
-                transform: rotate(90deg);
-                transform: scale(1.50);
-                
-             }
-        }
+      @extend %section1;
    }
 
    // section 2
    .section2{
-       background-color: rgb(255,255,255);
-       
-        h2{
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            margin-top: 0%;
-            padding-top: 14%;
-        }
-        .work {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            background-color: rgba(255,255,255 ,1);
-            margin-left: 5%;
-            .un{
-                background: rgba(245,245,245 ,1);
-                height: 76px;
-                border-radius: 20px;
-                width: 90%;
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                margin-bottom: 5%;
-              
-                  .fa-mobile-alt{
-                      padding-left: 10%;
-                      padding-right: 5%;
-                  }
-                
-            }
-            .deux{
-                @extend .un;
-                 .fa-list-ul{
-                    padding-left: 10%;
-                    padding-right: 5%;
-                 }
-
-                
-            }
-            .trois{
-                @extend .un;
-                margin-bottom: 20%;
-                .fa-store{
-                    padding-left: 10%;
-                    padding-right: 5%;
-                    
-                }
-                
-                
-            }
-        }
-       
-          
-          
-    
+    @extend %section2;
    }
   // main
    main{
-      background-color:  rgb(238,238,238);
-      
-
-      
-      
-    }
+      background-color: $bg-colormain; 
+      }
   // section3 
   .section3{
       padding-bottom: 35px;
@@ -167,146 +40,134 @@ body {
           padding-left: 5%;
           font-family: 'Roboto', sans-serif;
           font-weight: bolder;
-        
-         
+         }
+    }       
+ @import './mixins';
+ @import './conteneur';
 
-      }
-  }
+
 // menu 
-
-#menu{
-    background-color: rgb(255,255,255);
-    border-radius: 15px;
-    margin-bottom: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-    box-shadow: 2px 2px 2px 2px rgb(134, 167, 172);
-
+#menu1{
+    @include headmenu;
     .images{
-        figure{
-            width: 100%;
-            margin: 0%;
-            border-radius: 15px ;
-            img{
-                border-radius: 15px 15px 0px 0px;
-            }
-        }
-        
+        @extend %images;
     }
     #section{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
+        @include headsection;
+
         .plat{
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            background-color: rgb(255,255,255);
+            @include headplat;
             h3{
-                margin-top: 4%;
-                margin-bottom: 2%;
-                font-family: 'Roboto', sans-serif;
-                font-weight: bold;
-                font-size: 1.15rem;
+                @extend %h3;
             }
             h4{
-                margin-top: 2%;
-                margin-bottom: 14%;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                font-size: 1.10rem;
-                text-transform: capitalize;    
+                @extend %h4;
             }
-    }
-
-   
-    .jaimenew{
-        button{
-            position: relative;
-            bottom: 266%;
-            left: 21%;
-            width: 100%;
-            height: 46%;
-            background-color: #15DEA5;
-        }
-        .fa-heart{
-            position: relative;
-            top: 20%;
-            left: 62%;
-            
         }
 
+        .jaimenew{
+            button{
+                @include buttonmenu($bottom: 229%, $width: 82px, $left:9%, $height: 27px);
+            }
+            .fa-heart{
+                @include buttonjaime($paddingleft: 30px);
+            }
+        }
     }
-        
-       
-
-    }
-       
-
-   
-  
-    
-   
-  
-    
-
-}
-#menu1{
-    @extend #menu;
-    
 }
 
 #menu2{
-    @extend #menu;
-}
-#menu3{
-    @extend #menu;
-    
-    button {
-        display: none;
+    @include headmenu;
+    .images{
+        @extend %images;
     }
-    
-    
-}
-#menu4{
-    @extend #menu;
-    
-    button {
-        display: none;
+    #section{
+        @include headsection;
+
+        .plat{
+            @include headplat;
+            h3{
+                @extend %h3;
+            }
+            h4{
+                @extend %h4;
+            }
+        }
+
+        .jaimenew{
+            button{
+                @include buttonmenu($bottom: 209%, $width: 82px, $left:0%, $height: 27px);
+            }
+            .fa-heart{
+                @include buttonjaime($paddingleft: 3px);
+            }
+        }
     }
-    
-   
-    
-    
 }
 
+#menu3{
+    @include headmenu;
+    .images{
+        @extend %images;
+    }
+    #section{
+        @include headsection;
+
+        .plat{
+            @include headplat;
+            h3{
+                @extend %h3;
+            }
+            h4{
+                @extend %h4;
+            }
+        }
+
+        .jaimenew{
+            button{
+                @include buttonmenu($bottom: 266%, $width: 100%, $left:26%, $height: 45%);
+                display: none;
+            }
+            .fa-heart{
+                @include buttonjaime($paddingleft: 95px);
+            }
+        }
+    }
+}
+
+#menu4{
+    @include headmenu;
+    .images{
+        @extend %images;
+    }
+    #section{
+        @include headsection;
+
+        .plat{
+            @include headplat;
+            h3{
+                @extend %h3;
+            }
+            h4{
+                @extend %h4;
+            }
+        }
+
+        .jaimenew{
+            button{
+                @include buttonmenu($bottom: 266%, $width: 100%, $left:26%, $height: 45%);
+                display: none;
+            }
+            .fa-heart{
+                @include buttonjaime($paddingleft: 75px);
+            }
+        }
+    }
+}
+
+
+@import './footer';
 //footer
 footer{
-    background-color: rgb(33,33,33);
-    color: rgb(255,255,255);
-    
-    margin-bottom: 0%;
-    padding-left: 10%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-            h2 {
-                font-family: 'Shrikhand', cursive;
-                font-weight: 400;
-                margin-top: 2%;
-                margin-bottom: 4%;
-            }
-            .fa-utensils{
-                padding-right: 10px;
-                
-            }
-            .fa-hands-helping{
-                padding-right: 3px;
-                
-            }
-     
-        
+    @extend %footer;        
 }

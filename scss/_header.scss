@@ -1,8 +1,23 @@
+@import './variables';
+
+%headeraccueil{
+    width: 100vw;
+    background: $bg-colorwhite;
+    h1 {
+       width: 100vw;
+       font-family: 'Shrikhand', cursive;
+       text-align: center;
+       margin:$marginall;
+
+    } 
+}
+
 %header{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
     width: 100%;
+    background:  rgba(255,255,255 ,1);
     
         h1 {
             width: 70vw;
@@ -16,3 +31,4 @@
 
 
 }
+

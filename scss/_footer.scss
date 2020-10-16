@@ -1,8 +1,10 @@
+@import './variables';
+
 %footer{
-    background-color: rgb(33,33,33);
-    color: rgb(255,255,255);
+    background-color: $bg-colorfooter;
+    color: $bg-colorwhite;
     
-    margin-bottom: 0%;
+    margin-bottom: $marginall;
     padding-left: 10%;
     display: flex;
     justify-content: flex-start;
@@ -23,6 +25,5 @@
                 padding-right: 3px;
                 
             }
-     
         
 }
