@@ -1,3 +1,5 @@
+@import './variables';
+
 *{
     box-sizing: border-box;
     margin: 0%;
@@ -5,16 +7,16 @@
    
 }
 body{
-    background: rgb(238,238,238);
+    background: $bg-colormain;
 }
 
 //header
 
 @import './header';
-header{
-    @extend %header;
-    width: 100%;
-}
+
+.header1{
+    @extend %headermenu;
+ }
 
 @import './conteneur.scss';
 
@@ -30,7 +32,7 @@ main{
 @import './mixins';
 
 #entrée{
-    background: rgb(238,238,238);
+    background: $bg-colormain;
     padding-bottom: 10%;
     h3{
         @include titre;
@@ -46,10 +48,10 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 32%);
+                @include titre5($margin-right: 37%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 50px);
             }
         }
 
@@ -64,10 +66,10 @@ main{
     .prix{
         @include prix;
         h5{
-            @include titre5($margin-right: 37%);
+            @include titre5($margin-right: 26%);
         }
         p{
-            @include para;
+            @include para($paddingleft: 63px);
         }
     }
 
@@ -80,16 +82,16 @@ main{
     .prix{
         @include prix;
         h5{
-            @include titre5($margin-right: 83%);
+            @include titre5($margin-right: 39%);
         }
         p{
-            @include para;
+            @include para($paddingleft: 0px);
         }
     }
 
 }
 #plat{ 
-    background: rgb(238,238,238);
+    background: $bg-colormain;
     padding-bottom: 10%;
     h3{
         @include titre;
@@ -106,10 +108,10 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 3%);
+                @include titre5($margin-right: 26%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 55px);
             }
         }   
     }
@@ -121,10 +123,10 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 15%);
+                @include titre5($margin-right: 9%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 77px);
             }
         }   
     }
@@ -136,16 +138,16 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 50%);
+                @include titre5($margin-right: 33%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 0px);
             }
         }   
     }
 }    
 #dessert{ 
-    background: rgb(238,238,238);
+    background: $bg-colormain;
     padding-bottom: 10%;
     h3{
         @include titre;
@@ -162,10 +164,10 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 70%);
+                @include titre5($margin-right: 22%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 30px);
             }
         }   
     }
@@ -177,10 +179,10 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 46%);
+                @include titre5($margin-right: 41%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 40px);
             }
         }   
     }
@@ -192,14 +194,17 @@ main{
         .prix{
             @include prix;
             h5{
-                @include titre5($margin-right: 35%);
+                @include titre5($margin-right: 64%);
             }
             p{
-                @include para;
+                @include para($paddingleft: 0px);
             }
         }   
     }
-}    
+} 
+.order{
+    @include order;
+}   
 
 // footer
 @import './footer';

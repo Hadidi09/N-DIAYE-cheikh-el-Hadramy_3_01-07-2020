@@ -7,16 +7,16 @@
    
 }
 body{
-    background: rgb(238,238,238);
+    background: $bg-colormain;
 }
 
 //header
 
 @import './header';
-header{
-    @extend %header;
-    width: 100%;
-}
+
+.header1{
+    @extend %headermenu;
+ }
 
 @import './conteneur.scss';
 
@@ -32,7 +32,7 @@ main{
 @import './mixins';
 
 #entrée{
-    background: rgb(238,238,238);
+    background: $bg-colormain;
     padding-bottom: 10%;
     h3{
         @include titre;
@@ -91,7 +91,7 @@ main{
 
 }
 #plat{ 
-    background: rgb(238,238,238);
+    background: $bg-colormain;
     padding-bottom: 10%;
     h3{
         @include titre;
@@ -147,7 +147,7 @@ main{
     }
 }    
 #dessert{ 
-    background: rgb(238,238,238);
+    background: $bg-colormain;
     padding-bottom: 10%;
     h3{
         @include titre;
