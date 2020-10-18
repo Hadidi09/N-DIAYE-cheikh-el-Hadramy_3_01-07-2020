@@ -14,14 +14,14 @@ header {
   #menu1 .images figure img, #menu2 .images figure img, #menu3 .images figure img, #menu4 .images figure img {
     border-radius: 15px 15px 0px 0px; }
 
-#menu1 #section .plat h3, #menu2 #section .plat h3, #menu3 #section .plat h3, #menu4 #section .plat h3 {
+#menu1 .food1 .plat h3, #menu2 .food1 .plat h3, #menu3 .food1 .plat h3, #menu4 .food1 .plat h3 {
   margin-top: 4%;
   margin-bottom: 2%;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.15rem; }
 
-#menu1 #section .plat h4, #menu2 #section .plat h4, #menu3 #section .plat h4, #menu4 #section .plat h4 {
+#menu1 .food1 .plat h4, #menu2 .food1 .plat h4, #menu3 .food1 .plat h4, #menu4 .food1 .plat h4 {
   margin-top: 2%;
   margin-bottom: 14%;
   font-family: 'Roboto', sans-serif;
@@ -38,9 +38,9 @@ body {
   width: 100vw;
   height: 100vh; }
 
-.section1 {
+#localbook {
   text-align: center; }
-  .section1 .localisation {
+  #localbook .localisation {
     background: gainsboro;
     display: flex;
     align-items: center;
@@ -50,20 +50,20 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.15rem;
     font-weight: bold; }
-    .section1 .localisation i {
+    #localbook .localisation i {
       margin-right: 6%; }
-  .section1 .book {
+  #localbook .book {
     background: #eeeeee; }
-    .section1 .book h2 {
+    #localbook .book h2 {
       margin-top: 0%;
       padding-top: 10%;
       font-family: 'Roboto', sans-serif;
       font-weight: bold; }
-    .section1 .book p {
+    #localbook .book p {
       font-family: 'Roboto', sans-serif;
       font-size: 1.15rem;
       font-weight: 400; }
-    .section1 .book button {
+    #localbook .book button {
       background: mediumorchid;
       margin-top: 5%;
       margin-bottom: 17%;
@@ -72,21 +72,22 @@ body {
       border-radius: 40px;
       color: white;
       font-size: 1.15rem;
-      transition: all 300ms; }
-    .section1 .book button:hover {
+      transition: transform 500ms linear; }
+    #localbook .book button:hover {
       background: #00acc1;
-      transform: rotate(90deg);
-      transform: scale(1.5); }
+      cursor: wait;
+      transform: perspective(75px) skew(2deg, 2deg);
+      font-size: 35px; }
 
-.section2 {
+#choix {
   background-color: white; }
-  .section2 h2 {
+  #choix h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin-top: 0%;
     padding-top: 11%;
     padding-left: 10%; }
-  .section2 .work {
+  #choix .work {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +95,7 @@ body {
     font-weight: bold;
     background-color: white;
     margin-left: 5%; }
-    .section2 .work .un, .section2 .work .deux, .section2 .work .trois {
+    #choix .work .un, #choix .work .deux, #choix .work .trois {
       background: #eeeeee;
       height: 76px;
       border-radius: 20px;
@@ -103,15 +104,15 @@ body {
       align-items: center;
       flex-direction: row;
       margin-bottom: 5%; }
-      .section2 .work .un .fa-mobile-alt, .section2 .work .deux .fa-mobile-alt, .section2 .work .trois .fa-mobile-alt {
+      #choix .work .un .fa-mobile-alt, #choix .work .deux .fa-mobile-alt, #choix .work .trois .fa-mobile-alt {
         padding-left: 10%;
         padding-right: 5%; }
-    .section2 .work .deux .fa-list-ul {
+    #choix .work .deux .fa-list-ul {
       padding-left: 10%;
       padding-right: 5%; }
-    .section2 .work .trois {
+    #choix .work .trois {
       margin-bottom: 20%; }
-      .section2 .work .trois .fa-store {
+      #choix .work .trois .fa-store {
         padding-left: 10%;
         padding-right: 5%; }
 
@@ -127,9 +128,9 @@ img {
 main {
   background-color: #eeeeee; }
 
-.section3 {
+#lesmenus {
   padding-bottom: 35px; }
-  .section3 h2 {
+  #lesmenus h2 {
     margin-top: 15%;
     padding-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -142,14 +143,14 @@ main {
   #menu1 .images figure img, #menu2 .images figure img, #menu3 .images figure img, #menu4 .images figure img {
     border-radius: 15px 15px 0px 0px; }
 
-#menu1 #section .plat h3, #menu2 #section .plat h3, #menu3 #section .plat h3, #menu4 #section .plat h3 {
+#menu1 .food1 .plat h3, #menu2 .food1 .plat h3, #menu3 .food1 .plat h3, #menu4 .food1 .plat h3 {
   margin-top: 4%;
   margin-bottom: 2%;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.15rem; }
 
-#menu1 #section .plat h4, #menu2 #section .plat h4, #menu3 #section .plat h4, #menu4 #section .plat h4 {
+#menu1 .food1 .plat h4, #menu2 .food1 .plat h4, #menu3 .food1 .plat h4, #menu4 .food1 .plat h4 {
   margin-top: 2%;
   margin-bottom: 14%;
   font-family: 'Roboto', sans-serif;
@@ -166,9 +167,9 @@ body {
   width: 100vw;
   height: 100vh; }
 
-.section1 {
+#localbook {
   text-align: center; }
-  .section1 .localisation {
+  #localbook .localisation {
     background: gainsboro;
     display: flex;
     align-items: center;
@@ -178,20 +179,20 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.15rem;
     font-weight: bold; }
-    .section1 .localisation i {
+    #localbook .localisation i {
       margin-right: 6%; }
-  .section1 .book {
+  #localbook .book {
     background: #eeeeee; }
-    .section1 .book h2 {
+    #localbook .book h2 {
       margin-top: 0%;
       padding-top: 10%;
       font-family: 'Roboto', sans-serif;
       font-weight: bold; }
-    .section1 .book p {
+    #localbook .book p {
       font-family: 'Roboto', sans-serif;
       font-size: 1.15rem;
       font-weight: 400; }
-    .section1 .book button {
+    #localbook .book button {
       background: mediumorchid;
       margin-top: 5%;
       margin-bottom: 17%;
@@ -200,21 +201,22 @@ body {
       border-radius: 40px;
       color: white;
       font-size: 1.15rem;
-      transition: all 300ms; }
-    .section1 .book button:hover {
+      transition: transform 500ms linear; }
+    #localbook .book button:hover {
       background: #00acc1;
-      transform: rotate(90deg);
-      transform: scale(1.5); }
+      cursor: wait;
+      transform: perspective(75px) skew(2deg, 2deg);
+      font-size: 35px; }
 
-.section2 {
+#choix {
   background-color: white; }
-  .section2 h2 {
+  #choix h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin-top: 0%;
     padding-top: 11%;
     padding-left: 10%; }
-  .section2 .work {
+  #choix .work {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,7 +224,7 @@ body {
     font-weight: bold;
     background-color: white;
     margin-left: 5%; }
-    .section2 .work .un, .section2 .work .deux, .section2 .work .trois {
+    #choix .work .un, #choix .work .deux, #choix .work .trois {
       background: #eeeeee;
       height: 76px;
       border-radius: 20px;
@@ -231,15 +233,15 @@ body {
       align-items: center;
       flex-direction: row;
       margin-bottom: 5%; }
-      .section2 .work .un .fa-mobile-alt, .section2 .work .deux .fa-mobile-alt, .section2 .work .trois .fa-mobile-alt {
+      #choix .work .un .fa-mobile-alt, #choix .work .deux .fa-mobile-alt, #choix .work .trois .fa-mobile-alt {
         padding-left: 10%;
         padding-right: 5%; }
-    .section2 .work .deux .fa-list-ul {
+    #choix .work .deux .fa-list-ul {
       padding-left: 10%;
       padding-right: 5%; }
-    .section2 .work .trois {
+    #choix .work .trois {
       margin-bottom: 20%; }
-      .section2 .work .trois .fa-store {
+      #choix .work .trois .fa-store {
         padding-left: 10%;
         padding-right: 5%; }
 
@@ -251,18 +253,18 @@ body {
   margin-right: 5%;
   width: 90%;
   box-shadow: 2px 2px 2px 2px #86a7ac; }
-  #menu1 #section {
+  #menu1 .food1 {
     display: flex;
     justify-content: flex-start;
     flex-direction: row; }
-    #menu1 #section .plat {
+    #menu1 .food1 .plat {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
       background-color: white;
       border-bottom-left-radius: 15px;
       padding-left: 7%; }
-    #menu1 #section .jaimenew button {
+    #menu1 .food1 .jaimenew button {
       position: relative;
       bottom: 229%;
       left: 9%;
@@ -272,7 +274,7 @@ body {
       border-radius: 5px;
       font-family: 'Roboto', sans-serif;
       font-weight: 400; }
-    #menu1 #section .jaimenew .fa-heart {
+    #menu1 .food1 .jaimenew .fa-heart {
       position: relative;
       top: 20%;
       left: 62%;
@@ -286,18 +288,18 @@ body {
   margin-right: 5%;
   width: 90%;
   box-shadow: 2px 2px 2px 2px #86a7ac; }
-  #menu2 #section {
+  #menu2 .food1 {
     display: flex;
     justify-content: flex-start;
     flex-direction: row; }
-    #menu2 #section .plat {
+    #menu2 .food1 .plat {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
       background-color: white;
       border-bottom-left-radius: 15px;
       padding-left: 7%; }
-    #menu2 #section .jaimenew button {
+    #menu2 .food1 .jaimenew button {
       position: relative;
       bottom: 209%;
       left: 0%;
@@ -307,7 +309,7 @@ body {
       border-radius: 5px;
       font-family: 'Roboto', sans-serif;
       font-weight: 400; }
-    #menu2 #section .jaimenew .fa-heart {
+    #menu2 .food1 .jaimenew .fa-heart {
       position: relative;
       top: 20%;
       left: 62%;
@@ -321,18 +323,18 @@ body {
   margin-right: 5%;
   width: 90%;
   box-shadow: 2px 2px 2px 2px #86a7ac; }
-  #menu3 #section {
+  #menu3 .food1 {
     display: flex;
     justify-content: flex-start;
     flex-direction: row; }
-    #menu3 #section .plat {
+    #menu3 .food1 .plat {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
       background-color: white;
       border-bottom-left-radius: 15px;
       padding-left: 7%; }
-    #menu3 #section .jaimenew button {
+    #menu3 .food1 .jaimenew button {
       position: relative;
       bottom: 266%;
       left: 26%;
@@ -343,7 +345,7 @@ body {
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
       display: none; }
-    #menu3 #section .jaimenew .fa-heart {
+    #menu3 .food1 .jaimenew .fa-heart {
       position: relative;
       top: 20%;
       left: 62%;
@@ -357,18 +359,18 @@ body {
   margin-right: 5%;
   width: 90%;
   box-shadow: 2px 2px 2px 2px #86a7ac; }
-  #menu4 #section {
+  #menu4 .food1 {
     display: flex;
     justify-content: flex-start;
     flex-direction: row; }
-    #menu4 #section .plat {
+    #menu4 .food1 .plat {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
       background-color: white;
       border-bottom-left-radius: 15px;
       padding-left: 7%; }
-    #menu4 #section .jaimenew button {
+    #menu4 .food1 .jaimenew button {
       position: relative;
       bottom: 266%;
       left: 26%;
@@ -379,7 +381,7 @@ body {
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
       display: none; }
-    #menu4 #section .jaimenew .fa-heart {
+    #menu4 .food1 .jaimenew .fa-heart {
       position: relative;
       top: 20%;
       left: 62%;

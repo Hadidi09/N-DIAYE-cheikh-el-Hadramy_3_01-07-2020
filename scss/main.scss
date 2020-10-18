@@ -2,6 +2,7 @@
 @import './header';
 @import './conteneur';
 
+
 *{
     box-sizing: border-box;
     margin: $marginall;
@@ -15,25 +16,27 @@ body {
      width: 100%; 
     }
     //
-  
+    
    /*header*/
    header{
     @extend %headeraccueil;
    }
-   .section1{
+    // main
+    main{
+        background-color: $bg-colormain; 
+    }
+// les sections
+   #localbook{
       @extend %section1;
    }
 
    // section 2
-   .section2{
+   #choix{
     @extend %section2;
    }
-  // main
-   main{
-      background-color: $bg-colormain; 
-      }
+ 
   // section3 
-  .section3{
+  #lesmenus{
       padding-bottom: 35px;
       h2{
           margin-top: 15%;
@@ -52,7 +55,7 @@ body {
     .images{
         @extend %images;
     }
-    #section{
+    .food1{
         @include headsection;
 
         .plat{
@@ -81,7 +84,7 @@ body {
     .images{
         @extend %images;
     }
-    #section{
+    .food1{
         @include headsection;
 
         .plat{
@@ -110,7 +113,7 @@ body {
     .images{
         @extend %images;
     }
-    #section{
+    .food1{
         @include headsection;
 
         .plat{
@@ -140,7 +143,7 @@ body {
     .images{
         @extend %images;
     }
-    #section{
+    .food1{
         @include headsection;
 
         .plat{
@@ -171,3 +174,4 @@ body {
 footer{
     @extend %footer;        
 }
+
