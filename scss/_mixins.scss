@@ -69,7 +69,7 @@
     
 }
 
-// menu
+// menu accueil
 
 @mixin headmenu {
     background-color: $bg-colorwhite;
@@ -78,7 +78,7 @@
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
-    box-shadow: 2px 2px 2px 2px rgb(134, 167, 172);  
+      
 }
 
 @mixin headsection {
@@ -113,7 +113,37 @@
 @mixin  buttonjaime($paddingleft: 89px) {
     position: relative;
     top: 20%;
-    left: 62%;  
-    padding-left: $paddingleft; 
+    left: 140px;  
+    
+   /* &:hover{
+        animation-name: coeur;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 300ms;
+    }*/
     
 }
+
+/*@keyframes coeur{
+    0%{
+        background: yellow;
+        top:0px;
+        left: 0px;
+    }
+    25%{
+        background: blue ;
+        top: 0px;
+        left: 80px;
+    }
+    75%{
+        background: green;
+        top: 80px;
+        left: 80px;
+    }
+    100%{
+        background: fuchsia ;
+        top: 100px;
+        left: 100px;
+    }
+
+}*/

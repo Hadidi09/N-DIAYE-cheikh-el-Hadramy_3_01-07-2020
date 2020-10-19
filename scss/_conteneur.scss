@@ -184,12 +184,24 @@
 
 // les pages de menus
 %main{
-    background: rgb(238,238,238);
+    background: $bg-colormain;
+    
+   
     h2{
-        margin-left: 5%;
+        margin-left: 0%;
         padding-top: 8.5%;
         padding-bottom: 7.8%;
-}
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.7em;
+        font-weight: bold;
+        font-style: oblique;
+        border-radius: 45px 45px 0px 0px;
+        background-color: $bg-colormain;
+        position: relative;
+        bottom: 30px;
+        width: 100%;
+
+    }
 }
 
 %image{

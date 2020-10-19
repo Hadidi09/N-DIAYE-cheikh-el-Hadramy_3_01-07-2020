@@ -73,7 +73,7 @@ body {
                 @include buttonmenu($bottom: 229%, $width: 82px, $left:9%, $height: 27px);
             }
             .fa-heart{
-                @include buttonjaime($paddingleft: 30px);
+                @include buttonjaime;
             }
         }
     }

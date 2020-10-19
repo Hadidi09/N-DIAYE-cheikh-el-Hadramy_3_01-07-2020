@@ -8,6 +8,8 @@
 }
 body{
     background: $bg-colormain;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 //header
@@ -24,7 +26,7 @@ main{
     @extend %main;
 }
 
-.section1{
+.photoplat{
     img{
         width: 100%;
     }
@@ -40,7 +42,7 @@ main{
     hr{
         @include trait;
     }
-    #carpaccio{
+    .entrée1{
         @include carpaccio;
         h4{
             @include titre4;
@@ -58,7 +60,7 @@ main{
     }
 }
 
-#entrée2{
+.entrée2{
     @include carpaccio;
     h4{
         @include titre4;
@@ -74,7 +76,7 @@ main{
     }
 
 }
-#entrée3{
+.entrée3{
     @include carpaccio;
     h4{
         @include titre4;

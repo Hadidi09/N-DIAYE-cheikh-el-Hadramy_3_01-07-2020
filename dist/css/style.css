@@ -136,6 +136,29 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: bolder; }
 
+/*@keyframes coeur{
+    0%{
+        background: yellow;
+        top:0px;
+        left: 0px;
+    }
+    25%{
+        background: blue ;
+        top: 0px;
+        left: 80px;
+    }
+    75%{
+        background: green;
+        top: 80px;
+        left: 80px;
+    }
+    100%{
+        background: fuchsia ;
+        top: 100px;
+        left: 100px;
+    }
+
+}*/
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
   margin: 0%;
@@ -251,8 +274,7 @@ body {
   margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%;
-  box-shadow: 2px 2px 2px 2px #86a7ac; }
+  width: 90%; }
   #menu1 .food1 {
     display: flex;
     justify-content: flex-start;
@@ -277,8 +299,13 @@ body {
     #menu1 .food1 .jaimenew .fa-heart {
       position: relative;
       top: 20%;
-      left: 62%;
-      padding-left: 30px; }
+      left: 140px;
+      /* &:hover{
+        animation-name: coeur;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 300ms;
+    }*/ }
 
 #menu2 {
   background-color: white;
@@ -286,8 +313,7 @@ body {
   margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%;
-  box-shadow: 2px 2px 2px 2px #86a7ac; }
+  width: 90%; }
   #menu2 .food1 {
     display: flex;
     justify-content: flex-start;
@@ -312,8 +338,13 @@ body {
     #menu2 .food1 .jaimenew .fa-heart {
       position: relative;
       top: 20%;
-      left: 62%;
-      padding-left: 3px; }
+      left: 140px;
+      /* &:hover{
+        animation-name: coeur;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 300ms;
+    }*/ }
 
 #menu3 {
   background-color: white;
@@ -321,8 +352,7 @@ body {
   margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%;
-  box-shadow: 2px 2px 2px 2px #86a7ac; }
+  width: 90%; }
   #menu3 .food1 {
     display: flex;
     justify-content: flex-start;
@@ -348,8 +378,13 @@ body {
     #menu3 .food1 .jaimenew .fa-heart {
       position: relative;
       top: 20%;
-      left: 62%;
-      padding-left: 95px; }
+      left: 140px;
+      /* &:hover{
+        animation-name: coeur;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 300ms;
+    }*/ }
 
 #menu4 {
   background-color: white;
@@ -357,8 +392,7 @@ body {
   margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%;
-  box-shadow: 2px 2px 2px 2px #86a7ac; }
+  width: 90%; }
   #menu4 .food1 {
     display: flex;
     justify-content: flex-start;
@@ -384,8 +418,13 @@ body {
     #menu4 .food1 .jaimenew .fa-heart {
       position: relative;
       top: 20%;
-      left: 62%;
-      padding-left: 75px; }
+      left: 140px;
+      /* &:hover{
+        animation-name: coeur;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 300ms;
+    }*/ }
 
 footer {
   background-color: #212121;
@@ -406,3 +445,5 @@ footer {
     padding-right: 10px; }
   footer .fa-hands-helping {
     padding-right: 3px; }
+  footer a {
+    color: white; }
