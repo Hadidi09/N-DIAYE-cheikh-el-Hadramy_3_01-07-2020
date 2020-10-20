@@ -69,12 +69,29 @@ body {
         }
 
         .jaimenew{
+            position: relative;
+            margin-left: 91px;
+        
+            .icones{
+                @include icones;
+                
+                :hover{
+                    animation-name: coeur;
+                    animation-duration: 1s;
+                    animation-delay: 200ms;
+                    animation-fill-mode: both;
+
+                }
+                
+            }
             button{
-                @include buttonmenu($bottom: 229%, $width: 82px, $left:9%, $height: 27px);
+                @include buttonmenu($bottom: 242%, $width: 82px, $left:-15%, $height: 27px);
+           
             }
             .fa-heart{
-                @include buttonjaime;
+                @include buttonjaime;    
             }
+            
         }
     }
 }
@@ -98,11 +115,24 @@ body {
         }
 
         .jaimenew{
+            position: relative;
+            margin-left: 50px;
+            .icones{
+                @include icones;
+                :hover{
+                    animation-name: coeur;
+                    animation-duration: 1s;
+                    animation-delay: 200ms;
+                    animation-fill-mode: both;
+
+                }
+                
+            }
             button{
-                @include buttonmenu($bottom: 209%, $width: 82px, $left:0%, $height: 27px);
+                @include buttonmenu($bottom: 219%, $width: 82px, $left:-8%, $height: 27px);
             }
             .fa-heart{
-                @include buttonjaime($paddingleft: 3px);
+                @include buttonjaime;
             }
         }
     }
@@ -127,12 +157,27 @@ body {
         }
 
         .jaimenew{
+            position: relative;
+            margin-left: 145px;
+
+            .icones{
+                @include icones;
+                margin-top: -6px;
+                :hover{
+                    animation-name: coeur;
+                    animation-duration: 1s;
+                    animation-delay: 200ms;
+                    animation-fill-mode: both;
+
+                }
+                
+            }
             button{
                 @include buttonmenu($bottom: 266%, $width: 100%, $left:26%, $height: 45%);
                 display: none;
             }
             .fa-heart{
-                @include buttonjaime($paddingleft: 95px);
+                @include buttonjaime;
             }
         }
     }
@@ -157,12 +202,26 @@ body {
         }
 
         .jaimenew{
+            position: relative;
+            margin-left: 108px;
+            .icones{
+                @include icones;
+                margin-top: -6px;
+                :hover{
+                    animation-name: coeur;
+                    animation-duration: 1s;
+                    animation-delay: 200ms;
+                    animation-fill-mode: both;
+
+                }
+                
+            }
             button{
                 @include buttonmenu($bottom: 266%, $width: 100%, $left:26%, $height: 45%);
                 display: none;
             }
             .fa-heart{
-                @include buttonjaime($paddingleft: 75px);
+                @include buttonjaime;
             }
         }
     }

@@ -96,8 +96,16 @@
     border-bottom-left-radius: 15px;
     padding-left: 7%;
 }
+//le coeurs
+@mixin icones{
+    position: relative;
+    top: -13px;
+    color: transparent;
+    cursor: pointer;  
+    
+}    
 
-@mixin buttonmenu($bottom: 266%, $width: 82px, $left:26%, $height: 27px) {
+@mixin buttonmenu($bottom: 242%, $width: 82px, $left:-15%, $height: 27px) {
     position: relative;
     bottom: $bottom;
     left: $left;
@@ -110,10 +118,13 @@
     
 }
 
-@mixin  buttonjaime($paddingleft: 89px) {
+@mixin  buttonjaime{
     position: relative;
     top: 20%;
-    left: 140px;  
+    left: 26px;  
+  
+}
+
     
    /* &:hover{
         animation-name: coeur;
@@ -122,28 +133,34 @@
         animation-delay: 300ms;
     }*/
     
-}
 
-/*@keyframes coeur{
+
+@keyframes coeur{
     0%{
-        background: yellow;
-        top:0px;
-        left: 0px;
+        color: $color-secondary;
+        opacity: 0;
+        transform: scale(0);
     }
-    25%{
-        background: blue ;
-        top: 0px;
-        left: 80px;
+    15%{
+        color: $color-secondary;
+        opacity: 0.45;
+        transform: scale(0.25);
+    }
+    50%{
+        color: $color-secondary;
+        opacity: 0.65;
+        transform: scale(0.5);
     }
     75%{
-        background: green;
-        top: 80px;
-        left: 80px;
-    }
-    100%{
-        background: fuchsia ;
-        top: 100px;
-        left: 100px;
+        color: $color-secondary;
+        opacity: 1;
+        transform: scale(0.75);
     }
 
-}*/
+    100%{
+        color: $color-secondary;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+}
