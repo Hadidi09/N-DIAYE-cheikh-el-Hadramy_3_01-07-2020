@@ -166,7 +166,7 @@
 }
 
 @mixin breakpoint($medias) {
-    @media screen and (max-width: $medias){
+    @media screen and (min-width: $medias){
         @content;
     }
         

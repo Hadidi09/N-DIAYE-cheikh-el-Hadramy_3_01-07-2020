@@ -86,7 +86,7 @@ body {
                 margin-left: 270px;
             }
             @include breakpoint(768px){
-                margin-left: 377px;
+                margin-left: 390px;
             }
 
             
@@ -128,7 +128,7 @@ body {
                 @include breakpoint(768px){
                     width: 102px;
                    bottom: 394%;
-                   left: -29%;
+                   left: -6%;
                 }  
             } 
                    
@@ -178,7 +178,7 @@ body {
                 margin-left: 230px;
             }
             @include breakpoint(768px){
-                margin-left: 323px;
+                margin-left: 346px;
             }
             .icones{
                 @include icones;
@@ -212,12 +212,12 @@ body {
                     width: 90px;
                    bottom: 350%;
                    left: -8%;
-                }       
+                }      
                 @include breakpoint(768px){
                     width: 102px;
-                   bottom: 403%;
-                   left: -21%;
-                }       
+                   bottom: 434%;
+                   left: -10%;
+                }      
                 
             }
             .fa-heart{
@@ -259,6 +259,9 @@ body {
             }
             @include breakpoint(599px){
                 margin-left: 325px;
+            }
+            @include breakpoint(768px){
+                margin-left: 431px;
             }
 
             .icones{
@@ -316,6 +319,9 @@ body {
             }
             @include breakpoint(599px){
                 margin-left: 287px;
+            }
+            @include breakpoint(768px){
+                margin-left: 395px;
             }
 
             .icones{
