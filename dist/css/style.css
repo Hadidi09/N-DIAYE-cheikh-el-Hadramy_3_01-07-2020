@@ -390,14 +390,23 @@ body {
       @media screen and (max-width: 320px) {
         #menu1 .food1 .jaimenew {
           margin-left: 55px; } }
+      @media screen and (max-width: 425px) {
+        #menu1 .food1 .jaimenew {
+          margin-left: 137px; } }
+      @media screen and (max-width: 599px) {
+        #menu1 .food1 .jaimenew {
+          margin-left: 270px; } }
+      @media screen and (max-width: 768px) {
+        #menu1 .food1 .jaimenew {
+          margin-left: 377px; } }
       #menu1 .food1 .jaimenew .icones {
         position: relative;
         top: -13px;
         color: transparent;
         cursor: pointer; }
-        #menu1 .food1 .jaimenew .icones :hover {
+        #menu1 .food1 .jaimenew .icones :hover, #menu1 .food1 .jaimenew .icones :active {
           animation-name: coeur;
-          animation-duration: 1s;
+          animation-duration: 500ms;
           animation-delay: 200ms;
           animation-fill-mode: both; }
       #menu1 .food1 .jaimenew button {
@@ -420,6 +429,21 @@ body {
             width: 70px;
             bottom: 220%;
             left: 7%; } }
+        @media screen and (max-width: 425px) {
+          #menu1 .food1 .jaimenew button {
+            width: 70px;
+            bottom: 260%;
+            left: 10%; } }
+        @media screen and (max-width: 599px) {
+          #menu1 .food1 .jaimenew button {
+            width: 90px;
+            bottom: 328%;
+            left: -18%; } }
+        @media screen and (max-width: 768px) {
+          #menu1 .food1 .jaimenew button {
+            width: 102px;
+            bottom: 394%;
+            left: -29%; } }
       #menu1 .food1 .jaimenew .fa-heart {
         position: relative;
         top: 20%;
@@ -452,14 +476,23 @@ body {
       @media screen and (max-width: 320px) {
         #menu2 .food1 .jaimenew {
           margin-left: 17px; } }
+      @media screen and (max-width: 425px) {
+        #menu2 .food1 .jaimenew {
+          margin-left: 98px; } }
+      @media screen and (max-width: 599px) {
+        #menu2 .food1 .jaimenew {
+          margin-left: 230px; } }
+      @media screen and (max-width: 768px) {
+        #menu2 .food1 .jaimenew {
+          margin-left: 323px; } }
       #menu2 .food1 .jaimenew .icones {
         position: relative;
         top: -13px;
         color: transparent;
         cursor: pointer; }
-        #menu2 .food1 .jaimenew .icones :hover {
+        #menu2 .food1 .jaimenew .icones :hover, #menu2 .food1 .jaimenew .icones :active {
           animation-name: coeur;
-          animation-duration: 1s;
+          animation-duration: 500ms;
           animation-delay: 200ms;
           animation-fill-mode: both; }
       #menu2 .food1 .jaimenew button {
@@ -482,6 +515,21 @@ body {
             width: 70px;
             bottom: 224%;
             left: 5%; } }
+        @media screen and (max-width: 425px) {
+          #menu2 .food1 .jaimenew button {
+            width: 70px;
+            bottom: 274%;
+            left: 10%; } }
+        @media screen and (max-width: 599px) {
+          #menu2 .food1 .jaimenew button {
+            width: 90px;
+            bottom: 350%;
+            left: -8%; } }
+        @media screen and (max-width: 768px) {
+          #menu2 .food1 .jaimenew button {
+            width: 102px;
+            bottom: 403%;
+            left: -21%; } }
       #menu2 .food1 .jaimenew .fa-heart {
         position: relative;
         top: 20%;
@@ -514,15 +562,21 @@ body {
       @media screen and (max-width: 320px) {
         #menu3 .food1 .jaimenew {
           margin-left: 112px; } }
+      @media screen and (max-width: 425px) {
+        #menu3 .food1 .jaimenew {
+          margin-left: 190px; } }
+      @media screen and (max-width: 599px) {
+        #menu3 .food1 .jaimenew {
+          margin-left: 325px; } }
       #menu3 .food1 .jaimenew .icones {
         position: relative;
         top: -13px;
         color: transparent;
         cursor: pointer;
         margin-top: -6px; }
-        #menu3 .food1 .jaimenew .icones :hover {
+        #menu3 .food1 .jaimenew .icones :hover, #menu3 .food1 .jaimenew .icones :active {
           animation-name: coeur;
-          animation-duration: 1s;
+          animation-duration: 500ms;
           animation-delay: 200ms;
           animation-fill-mode: both; }
       #menu3 .food1 .jaimenew button {
@@ -568,15 +622,21 @@ body {
       @media screen and (max-width: 320px) {
         #menu4 .food1 .jaimenew {
           margin-left: 74px; } }
+      @media screen and (max-width: 425px) {
+        #menu4 .food1 .jaimenew {
+          margin-left: 155px; } }
+      @media screen and (max-width: 599px) {
+        #menu4 .food1 .jaimenew {
+          margin-left: 287px; } }
       #menu4 .food1 .jaimenew .icones {
         position: relative;
         top: -13px;
         color: transparent;
         cursor: pointer;
         margin-top: -6px; }
-        #menu4 .food1 .jaimenew .icones :hover {
+        #menu4 .food1 .jaimenew .icones :hover, #menu4 .food1 .jaimenew .icones :active {
           animation-name: coeur;
-          animation-duration: 1s;
+          animation-duration: 500ms;
           animation-delay: 200ms;
           animation-fill-mode: both; }
       #menu4 .food1 .jaimenew button {

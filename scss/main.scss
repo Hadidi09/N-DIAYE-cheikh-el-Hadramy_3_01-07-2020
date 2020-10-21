@@ -79,13 +79,24 @@ body {
             @include breakpoint(320px){
                 margin-left: 55px;
             }
+            @include breakpoint(425px){
+                margin-left: 137px;
+            }
+            @include breakpoint(599px){
+                margin-left: 270px;
+            }
+            @include breakpoint(768px){
+                margin-left: 377px;
+            }
+
+            
         
             .icones{
                 @include icones;
                 
-                :hover{
+                :hover,:active{
                     animation-name: coeur;
-                    animation-duration: 1s;
+                    animation-duration: 500ms;
                     animation-delay: 200ms;
                     animation-fill-mode: both;
 
@@ -103,12 +114,28 @@ body {
                     width: 70px;
                    bottom: 220%;
                    left: 7%;
-                }   
+                }  
+                @include breakpoint(425px){
+                    width: 70px;
+                   bottom: 260%;
+                   left: 10%;
+                }  
+                @include breakpoint(599px){
+                    width: 90px;
+                   bottom: 328%;
+                   left: -18%;
+                }  
+                @include breakpoint(768px){
+                    width: 102px;
+                   bottom: 394%;
+                   left: -29%;
+                }  
+            } 
                    
                
                 
            
-            }
+            
             .fa-heart{
                 @include buttonjaime;    
             }
@@ -144,11 +171,20 @@ body {
             @include breakpoint(320px){
                 margin-left: 17px;
             }
+            @include breakpoint(425px){
+                margin-left: 98px;
+            }
+            @include breakpoint(599px){
+                margin-left: 230px;
+            }
+            @include breakpoint(768px){
+                margin-left: 323px;
+            }
             .icones{
                 @include icones;
-                :hover{
+                :hover,:active{
                     animation-name: coeur;
-                    animation-duration: 1s;
+                    animation-duration: 500ms;
                     animation-delay: 200ms;
                     animation-fill-mode: both;
 
@@ -166,6 +202,21 @@ body {
                     width: 70px;
                    bottom: 224%;
                    left: 5%;
+                }       
+                @include breakpoint(425px){
+                    width: 70px;
+                   bottom: 274%;
+                   left: 10%;
+                }       
+                @include breakpoint(599px){
+                    width: 90px;
+                   bottom: 350%;
+                   left: -8%;
+                }       
+                @include breakpoint(768px){
+                    width: 102px;
+                   bottom: 403%;
+                   left: -21%;
                 }       
                 
             }
@@ -203,13 +254,19 @@ body {
             @include breakpoint(320px){
                 margin-left: 112px;
             }
+            @include breakpoint(425px){
+                margin-left: 190px;
+            }
+            @include breakpoint(599px){
+                margin-left: 325px;
+            }
 
             .icones{
                 @include icones;
                 margin-top: -6px;
-                :hover{
+                :hover,:active{
                     animation-name: coeur;
-                    animation-duration: 1s;
+                    animation-duration: 500ms;
                     animation-delay: 200ms;
                     animation-fill-mode: both;
 
@@ -254,12 +311,19 @@ body {
             @include breakpoint(320px){
                 margin-left: 74px;
             }
+            @include breakpoint(425px){
+                margin-left: 155px;
+            }
+            @include breakpoint(599px){
+                margin-left: 287px;
+            }
+
             .icones{
                 @include icones;
                 margin-top: -6px;
-                :hover{
+                :hover,:active{
                     animation-name: coeur;
-                    animation-duration: 1s;
+                    animation-duration: 500ms;
                     animation-delay: 200ms;
                     animation-fill-mode: both;
 
