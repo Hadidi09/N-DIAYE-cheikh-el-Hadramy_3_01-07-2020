@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 
 
 // image page principale
@@ -83,26 +84,26 @@
 
   }
           p{
-             font-family: 'Roboto', sans-serif;
-             font-size: 1.15rem;
-             font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 400;
            
           }
     
          button{
-             background: $bg-colorbutton;
-             margin-top: 5%;
-             margin-bottom: 17%;
-             width: 70%;
-             height: 8vh;
-             border-radius: 40px;
-             color: $bg-colorwhite;
-             font-size: 1.15rem;
-             
-             transition:  transform 500ms linear;
-           
-            
-                 
+            background: $bg-colorbutton;
+            margin-top: 5%;
+            margin-bottom: 17%;
+            width: 70%;
+            height: 8vh;
+            border-radius: 40px;
+            color: $bg-colorwhite;
+            font-size: 1.15rem;
+            transition:  transform 500ms linear;
+            @include breakpoint(280px){
+                width: 80%;
+            }
+                   
          } 
 
           button:hover{

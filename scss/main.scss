@@ -1,6 +1,7 @@
 @import './variables';
 @import './header';
 @import './conteneur';
+@import './mixins';
 
 
 *{
@@ -28,6 +29,7 @@ body {
 // les sections
    #localbook{
       @extend %section1;
+
    }
 
    // section 2
@@ -71,6 +73,12 @@ body {
         .jaimenew{
             position: relative;
             margin-left: 91px;
+            @include breakpoint(280px){
+                margin-left: 23px;
+            }
+            @include breakpoint(320px){
+                margin-left: 55px;
+            }
         
             .icones{
                 @include icones;
@@ -86,6 +94,19 @@ body {
             }
             button{
                 @include buttonmenu($bottom: 242%, $width: 82px, $left:-15%, $height: 27px);
+                @include breakpoint(280px){
+                     width: 50px;
+                    bottom: 208%;
+                    left: 45%;
+                 }   
+                 @include breakpoint(320px){
+                    width: 70px;
+                   bottom: 220%;
+                   left: 7%;
+                }   
+                   
+               
+                
            
             }
             .fa-heart{
@@ -117,6 +138,12 @@ body {
         .jaimenew{
             position: relative;
             margin-left: 50px;
+            @include breakpoint(280px){
+                margin-left: -17px;
+            }
+            @include breakpoint(320px){
+                margin-left: 17px;
+            }
             .icones{
                 @include icones;
                 :hover{
@@ -130,6 +157,17 @@ body {
             }
             button{
                 @include buttonmenu($bottom: 219%, $width: 82px, $left:-8%, $height: 27px);
+                @include breakpoint(280px){
+                    width: 50px;
+                    bottom: 206%;
+                    left: 45%;
+                }
+                @include breakpoint(320px){
+                    width: 70px;
+                   bottom: 224%;
+                   left: 5%;
+                }       
+                
             }
             .fa-heart{
                 @include buttonjaime;
@@ -159,6 +197,12 @@ body {
         .jaimenew{
             position: relative;
             margin-left: 145px;
+            @include breakpoint(280px){
+                margin-left: 77px;
+            }
+            @include breakpoint(320px){
+                margin-left: 112px;
+            }
 
             .icones{
                 @include icones;
@@ -204,6 +248,12 @@ body {
         .jaimenew{
             position: relative;
             margin-left: 108px;
+            @include breakpoint(280px){
+                margin-left: 40px;
+            }
+            @include breakpoint(320px){
+                margin-left: 74px;
+            }
             .icones{
                 @include icones;
                 margin-top: -6px;
