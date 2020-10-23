@@ -27,6 +27,43 @@ body {
     align-self: center;
     color: #212121; }
 
+/* &:hover{
+        animation-name: coeur;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 300ms;
+    }*/
+@keyframes coeur {
+  0% {
+    color: #FF79DA;
+    opacity: 0;
+    transform: scale(0); }
+  15% {
+    color: #FF79DA;
+    opacity: 0.45;
+    transform: scale(0.25); }
+  50% {
+    color: #FF79DA;
+    opacity: 0.65;
+    transform: scale(0.5); }
+  75% {
+    color: #FF79DA;
+    opacity: 1;
+    transform: scale(0.75); }
+  100% {
+    color: #FF79DA;
+    opacity: 0.80;
+    transform: scale(1.1); } }
+
+@keyframes opabutton {
+  0% {
+    background: mediumorchid;
+    opacity: 1; }
+  100% {
+    background: mediumorchid;
+    opacity: 2;
+    box-shadow: 0 0 5px #9e9e9e; } }
+
 main {
   background: #f6f6f6; }
   main h2 {
@@ -71,8 +108,17 @@ main {
     transform: scale(0.75); }
   100% {
     color: #FF79DA;
-    opacity: 1;
+    opacity: 0.80;
     transform: scale(1.1); } }
+
+@keyframes opabutton {
+  0% {
+    background: mediumorchid;
+    opacity: 1; }
+  100% {
+    background: mediumorchid;
+    opacity: 2;
+    box-shadow: 0 0 5px #9e9e9e; } }
 
 #entrée {
   background: #f6f6f6;
@@ -357,7 +403,13 @@ main {
   height: 8vh;
   margin: 2% 25% 10% 25%;
   background-color: mediumorchid;
-  border-radius: 30px; }
+  border-radius: 30px;
+  box-shadow: 0 0 5px mediumorchid;
+  transition: 300ms;
+  transition-property: box-shadow; }
+  .order:hover {
+    box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid;
+    cursor: pointer; }
   .order p {
     color: #fafafa; }
 

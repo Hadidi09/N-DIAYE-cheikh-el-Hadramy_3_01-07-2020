@@ -60,7 +60,7 @@
     text-align: center;
 
     .localisation{
-        background: $bg-colorbody;
+        background: $bg-localisation;
         display: flex;
         align-items: center;
         margin-bottom: 0%;
@@ -79,6 +79,7 @@
          h2{
              margin-top: 0%;
              padding-top: 10%;
+             padding-bottom: 10%;
              font-family: 'Roboto', sans-serif;
              font-weight: bold;
 
@@ -86,7 +87,11 @@
           p{
             font-family: 'Roboto', sans-serif;
             font-size: 1.15rem;
-            font-weight: 400;
+            font-weight: 300;
+            width: 90%;
+            padding-bottom: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
            
           }
     
@@ -97,27 +102,33 @@
             width: 70%;
             height: 8vh;
             border-radius: 40px;
+            border: none;
             color: $bg-colorwhite;
             font-size: 1.15rem;
-            transition:  transform 500ms linear;
+            box-shadow: 0 0 5px $bg-colorbutton;
+            transition: 300ms;
+            transition-property: box-shadow;
             @include breakpoint(280px){
                 width: 80%;
             }
                    
          } 
 
-          button:hover{
-            background: rgb(0,172,193);
-            cursor: wait;
-            transform: perspective(75px) skew(2deg, 2deg);
-            font-size: 35px;
-    
+          button:hover{ 
+            box-shadow: 0 0 5px $bg-colorbutton,
+                        0 0 15px $bg-colorbutton,
+                        
+
+              
+        }
+           
+            
              
              
             
              
              
-          }
+          
      }
 }
 
@@ -156,6 +167,20 @@
                       padding-left: 10%;
                       padding-right: 5%;
                   }
+                  .chiffre{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: mediumorchid;
+                    border-radius: 50%;
+                    width: 7.5%;
+                    height: 35%;
+                    position: relative;
+                    right: 4%;
+                    color: $bg-colorwhite;
+                    font-weight: 400;
+                    font-size: 13px
+                  }
                 
             }
             .deux{
@@ -164,6 +189,9 @@
                     padding-left: 10%;
                     padding-right: 5%;
                  }
+                 .chiffre{
+                   @extend .chiffre;
+                }
 
                 
             }
@@ -174,6 +202,9 @@
                     padding-left: 10%;
                     padding-right: 5%;
                     
+                }
+                .chiffre{
+                    @extend .chiffre;
                 }
                 
                 

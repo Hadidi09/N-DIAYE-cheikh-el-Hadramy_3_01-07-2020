@@ -32,8 +32,17 @@ header {
     transform: scale(0.75); }
   100% {
     color: #FF79DA;
-    opacity: 1;
+    opacity: 0.80;
     transform: scale(1.1); } }
+
+@keyframes opabutton {
+  0% {
+    background: mediumorchid;
+    opacity: 1; }
+  100% {
+    background: mediumorchid;
+    opacity: 2;
+    box-shadow: 0 0 5px #9e9e9e; } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
@@ -69,7 +78,7 @@ body {
 #localbook {
   text-align: center; }
   #localbook .localisation {
-    background: gainsboro;
+    background: #eaeaea;
     display: flex;
     align-items: center;
     margin-bottom: 0%;
@@ -85,12 +94,17 @@ body {
     #localbook .book h2 {
       margin-top: 0%;
       padding-top: 10%;
+      padding-bottom: 10%;
       font-family: 'Roboto', sans-serif;
       font-weight: bold; }
     #localbook .book p {
       font-family: 'Roboto', sans-serif;
       font-size: 1.15rem;
-      font-weight: 400; }
+      font-weight: 300;
+      width: 90%;
+      padding-bottom: 5%;
+      padding-left: 5%;
+      padding-right: 5%; }
     #localbook .book button {
       background: mediumorchid;
       margin-top: 5%;
@@ -98,17 +112,17 @@ body {
       width: 70%;
       height: 8vh;
       border-radius: 40px;
+      border: none;
       color: white;
       font-size: 1.15rem;
-      transition: transform 500ms linear; }
+      box-shadow: 0 0 5px mediumorchid;
+      transition: 300ms;
+      transition-property: box-shadow; }
       @media screen and (min-width: 280px) {
         #localbook .book button {
           width: 80%; } }
     #localbook .book button:hover {
-      background: #00acc1;
-      cursor: wait;
-      transform: perspective(75px) skew(2deg, 2deg);
-      font-size: 35px; }
+      box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid; }
 
 #choix {
   background-color: white; }
@@ -139,6 +153,19 @@ body {
       #choix .work .un .fa-mobile-alt, #choix .work .deux .fa-mobile-alt, #choix .work .trois .fa-mobile-alt {
         padding-left: 10%;
         padding-right: 5%; }
+      #choix .work .un .chiffre, #choix .work .deux .chiffre, #choix .work .trois .chiffre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: mediumorchid;
+        border-radius: 50%;
+        width: 7.5%;
+        height: 35%;
+        position: relative;
+        right: 4%;
+        color: white;
+        font-weight: 400;
+        font-size: 13px; }
     #choix .work .deux .fa-list-ul {
       padding-left: 10%;
       padding-right: 5%; }
@@ -173,8 +200,17 @@ body {
     transform: scale(0.75); }
   100% {
     color: #FF79DA;
-    opacity: 1;
+    opacity: 0.80;
     transform: scale(1.1); } }
+
+@keyframes opabutton {
+  0% {
+    background: mediumorchid;
+    opacity: 1; }
+  100% {
+    background: mediumorchid;
+    opacity: 2;
+    box-shadow: 0 0 5px #9e9e9e; } }
 
 * {
   box-sizing: border-box;
@@ -193,6 +229,7 @@ main {
   #lesmenus h2 {
     margin-top: 15%;
     padding-left: 5%;
+    padding-bottom: 6%;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder; }
 
@@ -221,8 +258,17 @@ main {
     transform: scale(0.75); }
   100% {
     color: #FF79DA;
-    opacity: 1;
+    opacity: 0.80;
     transform: scale(1.1); } }
+
+@keyframes opabutton {
+  0% {
+    background: mediumorchid;
+    opacity: 1; }
+  100% {
+    background: mediumorchid;
+    opacity: 2;
+    box-shadow: 0 0 5px #9e9e9e; } }
 
 /* &:hover{
         animation-name: coeur;
@@ -249,8 +295,17 @@ main {
     transform: scale(0.75); }
   100% {
     color: #FF79DA;
-    opacity: 1;
+    opacity: 0.80;
     transform: scale(1.1); } }
+
+@keyframes opabutton {
+  0% {
+    background: mediumorchid;
+    opacity: 1; }
+  100% {
+    background: mediumorchid;
+    opacity: 2;
+    box-shadow: 0 0 5px #9e9e9e; } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
@@ -286,7 +341,7 @@ body {
 #localbook {
   text-align: center; }
   #localbook .localisation {
-    background: gainsboro;
+    background: #eaeaea;
     display: flex;
     align-items: center;
     margin-bottom: 0%;
@@ -302,12 +357,17 @@ body {
     #localbook .book h2 {
       margin-top: 0%;
       padding-top: 10%;
+      padding-bottom: 10%;
       font-family: 'Roboto', sans-serif;
       font-weight: bold; }
     #localbook .book p {
       font-family: 'Roboto', sans-serif;
       font-size: 1.15rem;
-      font-weight: 400; }
+      font-weight: 300;
+      width: 90%;
+      padding-bottom: 5%;
+      padding-left: 5%;
+      padding-right: 5%; }
     #localbook .book button {
       background: mediumorchid;
       margin-top: 5%;
@@ -315,17 +375,17 @@ body {
       width: 70%;
       height: 8vh;
       border-radius: 40px;
+      border: none;
       color: white;
       font-size: 1.15rem;
-      transition: transform 500ms linear; }
+      box-shadow: 0 0 5px mediumorchid;
+      transition: 300ms;
+      transition-property: box-shadow; }
       @media screen and (min-width: 280px) {
         #localbook .book button {
           width: 80%; } }
     #localbook .book button:hover {
-      background: #00acc1;
-      cursor: wait;
-      transform: perspective(75px) skew(2deg, 2deg);
-      font-size: 35px; }
+      box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid; }
 
 #choix {
   background-color: white; }
@@ -356,6 +416,19 @@ body {
       #choix .work .un .fa-mobile-alt, #choix .work .deux .fa-mobile-alt, #choix .work .trois .fa-mobile-alt {
         padding-left: 10%;
         padding-right: 5%; }
+      #choix .work .un .chiffre, #choix .work .deux .chiffre, #choix .work .trois .chiffre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: mediumorchid;
+        border-radius: 50%;
+        width: 7.5%;
+        height: 35%;
+        position: relative;
+        right: 4%;
+        color: white;
+        font-weight: 400;
+        font-size: 13px; }
     #choix .work .deux .fa-list-ul {
       padding-left: 10%;
       padding-right: 5%; }
