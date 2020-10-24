@@ -210,26 +210,14 @@
    
         
     }
-    15%{
-        transform: scale(1);
-        transform: rotate(360deg);
-      
-       
+    25%{
+        transform: rotate(-360deg);
     }
-    45%{
-        transform: scale(1.1);
-        transform: rotate(360deg);
-       
+    
         
-    }
-    75%{
-        transform: scale(1.1);
-
-      transform: rotate(360deg);
-        
-    }
+    
     100%{
-        transform: translateX(-1000%)
+        transform: translateX(-1000%);
         
     }
 }
@@ -245,16 +233,16 @@
     }
     50%{
         
-        opacity: 1;
+        opacity: 2;
 
     }
     85%{
      
-        opacity: 1.1;
+        opacity: 2;
     }
     100%{
         
-        opacity: 0;
+        opacity: 1;
     }
 }
 @mixin breakpoint($medias) {

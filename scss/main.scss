@@ -12,12 +12,11 @@
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: $bg-colorwhite;
-    transform: scale(1);
     opacity: 1;
     animation-name: load;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-delay: 50ms;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: backwards;
     
    
@@ -26,6 +25,7 @@
     position: absolute;
     top: 50%; left: 50%; right: 0; bottom: 0;
     transform: translate(-50%, -50%);
+    
 
    
    
@@ -36,6 +36,7 @@
     top: 80%; left: 306px; right: 0; bottom: 0;
     width: 145px;
     line-height: 134px;
+    border: 10px solid  black;
     border-bottom: 10px solid $color-primary;
     border-top: 10px solid $color-secondary;
     border-left: 10px solid $color-tertiary;
@@ -44,8 +45,8 @@
     padding-right: 5%;
     transform: translate(-50%, -50%);
    animation-name: spinner;
-   animation-duration: 3s;
-   animation-delay: 200ms;
+   animation-duration: 15s;
+   animation-delay: 20ms;
    animation-timing-function: cubic-bezier(0.03, 0.13, 0.15,-0.1);
    animation-fill-mode: forwards;
    

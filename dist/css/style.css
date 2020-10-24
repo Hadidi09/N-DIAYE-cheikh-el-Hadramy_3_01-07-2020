@@ -60,15 +60,8 @@ header {
   0% {
     transform: scale(1);
     transform: rotate(0deg); }
-  15% {
-    transform: scale(1);
-    transform: rotate(360deg); }
-  45% {
-    transform: scale(1.1);
-    transform: rotate(360deg); }
-  75% {
-    transform: scale(1.1);
-    transform: rotate(360deg); }
+  25% {
+    transform: rotate(-360deg); }
   100% {
     transform: translateX(-1000%); } }
 
@@ -78,11 +71,11 @@ header {
   25% {
     opacity: 0.8; }
   50% {
-    opacity: 1; }
+    opacity: 2; }
   85% {
-    opacity: 1.1; }
+    opacity: 2; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
@@ -269,15 +262,8 @@ body {
   0% {
     transform: scale(1);
     transform: rotate(0deg); }
-  15% {
-    transform: scale(1);
-    transform: rotate(360deg); }
-  45% {
-    transform: scale(1.1);
-    transform: rotate(360deg); }
-  75% {
-    transform: scale(1.1);
-    transform: rotate(360deg); }
+  25% {
+    transform: rotate(-360deg); }
   100% {
     transform: translateX(-1000%); } }
 
@@ -287,11 +273,11 @@ body {
   25% {
     opacity: 0.8; }
   50% {
-    opacity: 1; }
+    opacity: 2; }
   85% {
-    opacity: 1.1; }
+    opacity: 2; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 .loader {
   margin: 0;
@@ -305,12 +291,11 @@ body {
   right: 0;
   bottom: 0;
   background: white;
-  transform: scale(1);
   opacity: 1;
   animation-name: load;
-  animation-duration: 5s;
+  animation-duration: 15s;
   animation-delay: 50ms;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: backwards; }
 
 .spinner {
@@ -330,6 +315,7 @@ body {
   bottom: 0;
   width: 145px;
   line-height: 134px;
+  border: 10px solid  black;
   border-bottom: 10px solid #9356DC;
   border-top: 10px solid #FF79DA;
   border-left: 10px solid #99E2D0;
@@ -338,8 +324,8 @@ body {
   padding-right: 5%;
   transform: translate(-50%, -50%);
   animation-name: spinner;
-  animation-duration: 3s;
-  animation-delay: 200ms;
+  animation-duration: 15s;
+  animation-delay: 20ms;
   animation-timing-function: cubic-bezier(0.03, 0.13, 0.15, -0.1);
   animation-fill-mode: forwards; }
 
@@ -417,15 +403,8 @@ main {
   0% {
     transform: scale(1);
     transform: rotate(0deg); }
-  15% {
-    transform: scale(1);
-    transform: rotate(360deg); }
-  45% {
-    transform: scale(1.1);
-    transform: rotate(360deg); }
-  75% {
-    transform: scale(1.1);
-    transform: rotate(360deg); }
+  25% {
+    transform: rotate(-360deg); }
   100% {
     transform: translateX(-1000%); } }
 
@@ -435,11 +414,11 @@ main {
   25% {
     opacity: 0.8; }
   50% {
-    opacity: 1; }
+    opacity: 2; }
   85% {
-    opacity: 1.1; }
+    opacity: 2; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 /* &:hover{
         animation-name: coeur;
@@ -494,15 +473,8 @@ main {
   0% {
     transform: scale(1);
     transform: rotate(0deg); }
-  15% {
-    transform: scale(1);
-    transform: rotate(360deg); }
-  45% {
-    transform: scale(1.1);
-    transform: rotate(360deg); }
-  75% {
-    transform: scale(1.1);
-    transform: rotate(360deg); }
+  25% {
+    transform: rotate(-360deg); }
   100% {
     transform: translateX(-1000%); } }
 
@@ -512,11 +484,11 @@ main {
   25% {
     opacity: 0.8; }
   50% {
-    opacity: 1; }
+    opacity: 2; }
   85% {
-    opacity: 1.1; }
+    opacity: 2; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
