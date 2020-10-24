@@ -211,7 +211,16 @@
         
     }
     25%{
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
+    }
+    55%{
+        transform: rotate(360deg);
+    }
+    75%{
+        transform: rotate(360deg);
+    }
+    95%{
+        transform: rotate(360deg);
     }
     
         
@@ -228,17 +237,27 @@
        
     }
     25%{
-        opacity: 2;
-       
+        opacity: 0.25;
+      
+    }
+    25%{
+        opacity: 0.25;
+      
+    }
+    35%{
+        opacity: 0.25;
     }
     50%{
         
-        opacity: 1.8;
+        opacity: 0.25;
 
     }
     85%{
      
-        opacity: 1.5;
+        opacity: 0.35;
+    }
+    95%{
+        opacity: 0.35;
     }
     100%{
         

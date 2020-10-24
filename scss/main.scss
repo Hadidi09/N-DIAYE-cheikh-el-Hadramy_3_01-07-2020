@@ -14,9 +14,9 @@
     background-color: blue;;
     opacity: 1;
     animation-name: load;
-    animation-duration: 15s;
-    animation-delay: 50ms;
-    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 20ms;
+    animation-timing-function: linear;
     animation-fill-mode: backwards;
     
    
@@ -25,14 +25,14 @@
     position: absolute;
     top: 50%; left: 50%; right: 0; bottom: 0;
     transform: translate(-50%, -50%);
-    border: 16px solid #f3f3f3; /* Light grey */
+    border: 16px solid #f3f3f3;
     border-top: 16px solid #3498db;
     border-bottom:16px solid $color-primary;
-    border-left:16px solid $color-tertiary; /* Blue */
+    border-left:16px solid $color-tertiary; 
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation: spinner 10s linear forwards ;
+    animation: spinner 10s ease-in-out  forwards ;
     
 
    

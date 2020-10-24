@@ -61,7 +61,13 @@ header {
     transform: scale(1);
     transform: rotate(0deg); }
   25% {
-    transform: rotate(-360deg); }
+    transform: rotate(360deg); }
+  55% {
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(360deg); }
+  95% {
+    transform: rotate(360deg); }
   100% {
     transform: translateX(-1000%); } }
 
@@ -69,11 +75,17 @@ header {
   0% {
     opacity: 0; }
   25% {
-    opacity: 2; }
+    opacity: 0.25; }
+  25% {
+    opacity: 0.25; }
+  35% {
+    opacity: 0.25; }
   50% {
-    opacity: 1.8; }
+    opacity: 0.25; }
   85% {
-    opacity: 1.5; }
+    opacity: 0.35; }
+  95% {
+    opacity: 0.35; }
   100% {
     opacity: 1; } }
 
@@ -277,7 +289,13 @@ body {
     transform: scale(1);
     transform: rotate(0deg); }
   25% {
-    transform: rotate(-360deg); }
+    transform: rotate(360deg); }
+  55% {
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(360deg); }
+  95% {
+    transform: rotate(360deg); }
   100% {
     transform: translateX(-1000%); } }
 
@@ -285,11 +303,17 @@ body {
   0% {
     opacity: 0; }
   25% {
-    opacity: 2; }
+    opacity: 0.25; }
+  25% {
+    opacity: 0.25; }
+  35% {
+    opacity: 0.25; }
   50% {
-    opacity: 1.8; }
+    opacity: 0.25; }
   85% {
-    opacity: 1.5; }
+    opacity: 0.35; }
+  95% {
+    opacity: 0.35; }
   100% {
     opacity: 1; } }
 
@@ -321,9 +345,9 @@ body {
   background-color: blue;
   opacity: 1;
   animation-name: load;
-  animation-duration: 15s;
-  animation-delay: 50ms;
-  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-delay: 20ms;
+  animation-timing-function: linear;
   animation-fill-mode: backwards; }
 
 .spinner {
@@ -334,15 +358,13 @@ body {
   bottom: 0;
   transform: translate(-50%, -50%);
   border: 16px solid #f3f3f3;
-  /* Light grey */
   border-top: 16px solid #3498db;
   border-bottom: 16px solid #9356DC;
   border-left: 16px solid #99E2D0;
-  /* Blue */
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spinner 10s linear forwards; }
+  animation: spinner 10s ease-in-out  forwards; }
 
 /*.spinner::before{
     content: "";
@@ -434,7 +456,13 @@ main {
     transform: scale(1);
     transform: rotate(0deg); }
   25% {
-    transform: rotate(-360deg); }
+    transform: rotate(360deg); }
+  55% {
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(360deg); }
+  95% {
+    transform: rotate(360deg); }
   100% {
     transform: translateX(-1000%); } }
 
@@ -442,11 +470,17 @@ main {
   0% {
     opacity: 0; }
   25% {
-    opacity: 2; }
+    opacity: 0.25; }
+  25% {
+    opacity: 0.25; }
+  35% {
+    opacity: 0.25; }
   50% {
-    opacity: 1.8; }
+    opacity: 0.25; }
   85% {
-    opacity: 1.5; }
+    opacity: 0.35; }
+  95% {
+    opacity: 0.35; }
   100% {
     opacity: 1; } }
 
@@ -518,7 +552,13 @@ main {
     transform: scale(1);
     transform: rotate(0deg); }
   25% {
-    transform: rotate(-360deg); }
+    transform: rotate(360deg); }
+  55% {
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(360deg); }
+  95% {
+    transform: rotate(360deg); }
   100% {
     transform: translateX(-1000%); } }
 
@@ -526,11 +566,17 @@ main {
   0% {
     opacity: 0; }
   25% {
-    opacity: 2; }
+    opacity: 0.25; }
+  25% {
+    opacity: 0.25; }
+  35% {
+    opacity: 0.25; }
   50% {
-    opacity: 1.8; }
+    opacity: 0.25; }
   85% {
-    opacity: 1.5; }
+    opacity: 0.35; }
+  95% {
+    opacity: 0.35; }
   100% {
     opacity: 1; } }
 
