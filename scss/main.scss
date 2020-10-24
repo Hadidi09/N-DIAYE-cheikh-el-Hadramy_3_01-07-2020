@@ -3,12 +3,63 @@
 @import './conteneur';
 @import './mixins';
 
+.loader{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: $bg-colorwhite;
+    transform: scale(1);
+    opacity: 1;
+    animation-name: load;
+    animation-duration: 5s;
+    animation-delay: 50ms;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    
+   
+}
+.spinner{
+    position: absolute;
+    top: 50%; left: 50%; right: 0; bottom: 0;
+    transform: translate(-50%, -50%);
 
+   
+   
+}
+.spinner::before, .spinner::after{
+    content: "";
+    position: absolute;
+    top: 80%; left: 306px; right: 0; bottom: 0;
+    width: 145px;
+    line-height: 134px;
+    border-bottom: 10px solid $color-primary;
+    border-top: 10px solid $color-secondary;
+    border-left: 10px solid $color-tertiary;
+    border-radius: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transform: translate(-50%, -50%);
+   animation-name: spinner;
+   animation-duration: 3s;
+   animation-delay: 200ms;
+   animation-timing-function: cubic-bezier(0.03, 0.13, 0.15,-0.1);
+   animation-fill-mode: forwards;
+   
+}
+ 
 *{
     box-sizing: border-box;
     margin: $marginall;
     padding: $paddingall;
 }
+
+
+   
+
 body {
     @extend %bodyaccueil;
    }
