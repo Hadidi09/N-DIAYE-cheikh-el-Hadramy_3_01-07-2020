@@ -11,7 +11,7 @@
     margin: auto;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: $bg-colorwhite;
+    background-color: blue;;
     opacity: 1;
     animation-name: load;
     animation-duration: 15s;
@@ -25,32 +25,34 @@
     position: absolute;
     top: 50%; left: 50%; right: 0; bottom: 0;
     transform: translate(-50%, -50%);
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db;
+    border-bottom:16px solid $color-primary;
+    border-left:16px solid $color-tertiary; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spinner 10s linear forwards ;
     
 
    
    
 }
-.spinner::before, .spinner::after{
+/*.spinner::before{
     content: "";
     position: absolute;
-    top: 80%; left: 306px; right: 0; bottom: 0;
-    width: 145px;
-    line-height: 134px;
-    border: 10px solid  black;
-    border-bottom: 10px solid $color-primary;
-    border-top: 10px solid $color-secondary;
-    border-left: 10px solid $color-tertiary;
-    border-radius: 50%;
-    padding-left: 5%;
-    padding-right: 5%;
+    top: 50%; left: 50%; right: 0; bottom: 0;
     transform: translate(-50%, -50%);
-   animation-name: spinner;
-   animation-duration: 15s;
-   animation-delay: 20ms;
-   animation-timing-function: cubic-bezier(0.03, 0.13, 0.15,-0.1);
-   animation-fill-mode: forwards;
+    border: 16px solid #f3f3f3;  Light grey 
+    border-top: 16px solid #3498db;
+    border-bottom: $color-primary;
+    border-left: $color-tertiary;  Blue 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin2 10s linear forwards;
    
-}
+}*/
  
 *{
     box-sizing: border-box;

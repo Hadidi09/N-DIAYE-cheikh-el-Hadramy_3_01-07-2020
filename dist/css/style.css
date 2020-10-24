@@ -67,15 +67,29 @@ header {
 
 @keyframes load {
   0% {
-    opacity: 0.5; }
+    opacity: 0; }
   25% {
-    opacity: 0.8; }
+    opacity: 2; }
   50% {
-    opacity: 2; }
+    opacity: 1.8; }
   85% {
-    opacity: 2; }
+    opacity: 1.5; }
   100% {
     opacity: 1; } }
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(360deg); }
+  95% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg), translate(-1000%); } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
@@ -269,15 +283,29 @@ body {
 
 @keyframes load {
   0% {
-    opacity: 0.5; }
+    opacity: 0; }
   25% {
-    opacity: 0.8; }
+    opacity: 2; }
   50% {
-    opacity: 2; }
+    opacity: 1.8; }
   85% {
-    opacity: 2; }
+    opacity: 1.5; }
   100% {
     opacity: 1; } }
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(360deg); }
+  95% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg), translate(-1000%); } }
 
 .loader {
   margin: 0;
@@ -290,7 +318,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: white;
+  background-color: blue;
   opacity: 1;
   animation-name: load;
   animation-duration: 15s;
@@ -304,31 +332,33 @@ body {
   left: 50%;
   right: 0;
   bottom: 0;
-  transform: translate(-50%, -50%); }
-
-.spinner::before, .spinner::after {
-  content: "";
-  position: absolute;
-  top: 80%;
-  left: 306px;
-  right: 0;
-  bottom: 0;
-  width: 145px;
-  line-height: 134px;
-  border: 10px solid  black;
-  border-bottom: 10px solid #9356DC;
-  border-top: 10px solid #FF79DA;
-  border-left: 10px solid #99E2D0;
-  border-radius: 50%;
-  padding-left: 5%;
-  padding-right: 5%;
   transform: translate(-50%, -50%);
-  animation-name: spinner;
-  animation-duration: 15s;
-  animation-delay: 20ms;
-  animation-timing-function: cubic-bezier(0.03, 0.13, 0.15, -0.1);
-  animation-fill-mode: forwards; }
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  border-bottom: 16px solid #9356DC;
+  border-left: 16px solid #99E2D0;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spinner 10s linear forwards; }
 
+/*.spinner::before{
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%; right: 0; bottom: 0;
+    transform: translate(-50%, -50%);
+    border: 16px solid #f3f3f3;  Light grey 
+    border-top: 16px solid #3498db;
+    border-bottom: $color-primary;
+    border-left: $color-tertiary;  Blue 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin2 10s linear forwards;
+   
+}*/
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -410,15 +440,29 @@ main {
 
 @keyframes load {
   0% {
-    opacity: 0.5; }
+    opacity: 0; }
   25% {
-    opacity: 0.8; }
+    opacity: 2; }
   50% {
-    opacity: 2; }
+    opacity: 1.8; }
   85% {
-    opacity: 2; }
+    opacity: 1.5; }
   100% {
     opacity: 1; } }
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(360deg); }
+  95% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg), translate(-1000%); } }
 
 /* &:hover{
         animation-name: coeur;
@@ -480,15 +524,29 @@ main {
 
 @keyframes load {
   0% {
-    opacity: 0.5; }
+    opacity: 0; }
   25% {
-    opacity: 0.8; }
+    opacity: 2; }
   50% {
-    opacity: 2; }
+    opacity: 1.8; }
   85% {
-    opacity: 2; }
+    opacity: 1.5; }
   100% {
     opacity: 1; } }
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(360deg); }
+  95% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg), translate(-1000%); } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
