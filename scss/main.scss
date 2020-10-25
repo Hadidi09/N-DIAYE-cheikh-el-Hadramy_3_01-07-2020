@@ -17,14 +17,11 @@
     animation-duration: 6s;
     animation-delay: 20ms;
     animation-timing-function: linear;
-    animation-fill-mode: backwards;
-    
-   
+    animation-fill-mode: backwards;  
 }
 .spinner{
     position: absolute;
     top: 65%; left: 50%; right: 0; bottom: 0;
-    /*transform: translate(-50%, -50%);*/
     border: 16px solid #f3f3f3;
     border-top: 16px solid #3498db;
     border-bottom:16px solid $color-primary;
@@ -36,35 +33,13 @@
     padding-left: 5px;
     font-size: 16px;
     opacity: 1;
-    
     animation-name: spinner ;
     animation-duration: 7s;
     animation-delay: 1s;
     animation-timing-function: cubic-bezier(1, 0.44, 0.34,-0.23);
-    animation-fill-mode: forwards;
-    
+    animation-fill-mode: forwards;   
+}
 
-   
-   
-}
-/*.spinner::before{
-    content: "";
-    position: absolute;
-    top: 1%; left: 1%; right: 0; bottom: 0;
-    transform: translate(-50%, -50%);
-    border: 16px solid #f3f3f3;   
-    border-top: 16px solid #3498db;
-    border-bottom: $color-primary;
-    border-left: $color-tertiary;   
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    background: #3498db;
-  
-    
-   
-}
- */
 *{
     box-sizing: border-box;
     margin: $marginall;
@@ -76,15 +51,16 @@
 
 body {
     @extend %bodyaccueil;
-   
    }
+
    //images
    img {
      width: 100%; 
     }
-    //
-    
-   /*header*/
+
+
+    //header
+   
    header{
     @extend %headeraccueil;
     transform: translateY(-30px);
@@ -94,25 +70,52 @@ body {
     animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    @include breakpoint(992px){
+        font-size: 2em;
+    }
    }
+
     // main
     main{
         background-color: $bg-colormain; 
+        @include breakpoint(992px){
+            display: grid;
+            grid-template-columns: repeat(4, 3fr);
+            grid-template-rows: repeat(6, 270px);
+            overflow: hidden;
+            
+        }
         
     }
+
 // les sections
    #localbook{
       @extend %section1;
-
+      @include breakpoint(992px){
+        grid-column: 3 / span 6;
+        height: 1vh;
+        grid-row: 2;
+      }
    }
+
 
    // section 2
    #choix{
     @extend %section2;
+    @include breakpoint(992px){
+        grid-row: 1;
+        grid-column: 1/span 2;
+        margin-top: 64px;
+        width: 100%;
+        height: 67vh;
+        border-radius: 13px;
+    }
    }
+
  
   // section3 
   #lesmenus{
+     
       padding-bottom: 35px;
       transform: translateY(-30px);
       opacity: 0;
@@ -121,45 +124,63 @@ body {
       animation-duration: 5s;
       animation-timing-function: ease-in;
       animation-fill-mode: forwards;
+      @include breakpoint(992px){
+        grid-row: 3/span 5;
+        grid-column: 1 /span 6;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-bottom: 0px;
+        width: 100%;
+        padding-top: 272px;
+      }
+     
+
+
       h2{
           margin-top: 15%;
           padding-left: 5%;
           padding-bottom: 6%;
           font-family: 'Roboto', sans-serif;
           font-weight: bolder;
+          @include breakpoint(992px){
+            position: relative;
+            left: 147px;
+            top: -900px;
+            font-size: 2em;
+          }
          }
     } 
     #lesmenus:first-child{
-        transform: translateY(-30px);
+      transform: translateX(-30px);
       opacity: 0;
-      animation-name: body;
+      animation-name: section;
       animation-delay: 3s;
       animation-duration: 2s;
       animation-timing-function: ease-in;
       animation-fill-mode: forwards;
     }      
     #lesmenus:nth-child(-n+2){
-        transform: translateY(-30px);
+      transform: translateX(-30px);
       opacity: 0;
-      animation-name: body;
+      animation-name: section;
       animation-delay: 3500ms;
       animation-duration: 2s;
       animation-timing-function: ease-in;
       animation-fill-mode: forwards;
     }      
     #lesmenus:nth-child(-n+3){
-        transform: translateY(-30px);
+      transform: translateX(-30px);
       opacity: 0;
-      animation-name: body;
+      animation-name: section;
       animation-delay: 4s;
       animation-duration: 2s;
       animation-timing-function: ease-in;
       animation-fill-mode: forwards;
     }      
     #lesmenus:nth-child(-n+4){
-        transform: translateY(-30px);
+      transform: translateX(-30px);
       opacity: 0;
-      animation-name: body;
+      animation-name: section;
       animation-delay: 4.5s;
       animation-duration: 2s;
       animation-timing-function: ease-in;
@@ -172,6 +193,10 @@ body {
 // menu 
 #menu1{
     @include headmenu;
+    @include breakpoint(992px){
+        grid-row: 1;
+        grid-column: 1;
+    }
     .images{
         @extend %images;
     }
@@ -208,6 +233,9 @@ body {
             }
             @include breakpoint(768px){
                 margin-left: 390px;
+            }
+            @include breakpoint(992px){
+                margin-left: 186px;
             }
 
             
@@ -256,6 +284,11 @@ body {
                    bottom: 394%;
                    left: -6%;
                 }  
+                @include breakpoint(992px){
+                    width: 102px;
+                   bottom: 288%;
+                   left: 19%;
+                }  
             } 
                    
                
@@ -272,6 +305,11 @@ body {
 
 #menu2{
     @include headmenu;
+    @include breakpoint(992px){
+        grid-row: 1;
+        grid-column: 2;
+
+    }
     .images{
         @extend %images;
     }
@@ -308,6 +346,9 @@ body {
             }
             @include breakpoint(768px){
                 margin-left: 346px;
+            }
+            @include breakpoint(992px){
+                margin-left: 144px;
             }
             .icones{
                 @include icones;
@@ -352,7 +393,13 @@ body {
                     width: 102px;
                    bottom: 434%;
                    left: -10%;
-                }      
+                }   
+                @include breakpoint(768px){
+                    width: 102px;
+                   bottom: 307%;
+                   left: -10%;
+                }  
+               
                 
             }
             .fa-heart{
@@ -364,6 +411,10 @@ body {
 
 #menu3{
     @include headmenu;
+    @include breakpoint(992px){
+        grid-row: 2;
+    }
+    
     .images{
         @extend %images;
     }
@@ -401,6 +452,11 @@ body {
             @include breakpoint(768px){
                 margin-left: 431px;
             }
+            @include breakpoint(992px){
+                margin-left: 242px;
+        
+
+            }
 
             .icones{
                 @include icones;
@@ -427,6 +483,11 @@ body {
 
 #menu4{
     @include headmenu;
+    @include breakpoint(992px){
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
     .images{
         @extend %images;
     }
@@ -464,6 +525,10 @@ body {
             @include breakpoint(768px){
                 margin-left: 395px;
             }
+            @include breakpoint(992px){
+                margin-left: 206px;
+
+            }
 
             .icones{
                 @include icones;
@@ -494,11 +559,11 @@ body {
 footer{
     @extend %footer;
     transform: translateY(-30px);
-      opacity: 0;
-      animation-name: body;
-      animation-delay: 4.5s;
-      animation-duration: 2s;
-      animation-timing-function: ease-in;
-      animation-fill-mode: forwards;        
+    opacity: 0;
+    animation-name: body;
+    animation-delay: 4.5s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;        
 }
 

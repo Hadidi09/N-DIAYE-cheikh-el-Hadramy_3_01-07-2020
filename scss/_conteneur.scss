@@ -77,6 +77,12 @@
         font-family: 'Roboto', sans-serif;
         font-size: 1.15rem;
         font-weight: bold;
+        @include breakpoint(992px){
+            margin-top: -175px;
+            margin-left: 15px;
+            margin-right: 10px;
+            border-radius: 50px;
+        }
         
         i{
             margin-right: 6%;
@@ -151,6 +157,11 @@
     animation-duration: 4s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    @include breakpoint(992px){
+        margin-left: 30px;
+        padding-left: 25px;
+        width: 95%;
+    }
        
         h2{
             font-family: 'Roboto', sans-serif;
@@ -168,6 +179,10 @@
             font-weight: bold;
             background-color: $bg-colorwhite;
             margin-left: 5%;
+            @include breakpoint(992px){
+                margin-left: 0px;
+                border-radius: 55px;
+            }
             .un{
                 background: $bg-colormain;
                 height: 76px;
