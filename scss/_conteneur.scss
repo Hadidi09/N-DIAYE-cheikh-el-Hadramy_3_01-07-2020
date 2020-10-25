@@ -59,6 +59,13 @@
 
 %section1{
     text-align: center;
+    transform: translateY(-30px);
+    opacity: 0;
+    animation-name: body;
+    animation-delay: 150ms;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 
     .localisation{
         background: $bg-localisation;
@@ -137,6 +144,13 @@
 
 %section2{
     background-color: $bg-colorwhite;
+    transform: translateY(-30px);
+    opacity: 0;
+    animation-name: body;
+    animation-delay: 250ms;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
        
         h2{
             font-family: 'Roboto', sans-serif;
