@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 
 *{
     box-sizing: border-box;
@@ -36,30 +37,76 @@ main{
 #entrée{
     background: $bg-colormain;
     padding-bottom: 10%;
+    
     h3{
         @include titre;
     }
     hr{
         @include trait;
     }
-    .entrée1{
+    .la_description{
+        position: relative;
+        overflow: hidden;  
+    }
+    .monplat{
         @include carpaccio;
+    }
         h4{
             @include titre4;
         }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 32%);
-            }
-            p{
-                @include para($paddingleft: 50px);
-                
-            }
+        .leprix{
+           @include prix;
+           &:hover > p {
+            @include hoverp;
+        
         }
+            }    
+            
+            p{
+               
+                @include param;
+            }
+                span{
+                    @include span;
+                }  
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;
+                    
 
-    }
-}
+                }       
+                        
+            }   
+               
+}               
+                
+             
+                   
+                   
+                    
+                    
+                   
+               
+                
+                
+                
+               
+                
+                            
+               
+                
+               
+
+            
+                
+           
+
+              
+            
+
+    
+
 
 .entrée2{
     @include carpaccio;
@@ -68,11 +115,11 @@ main{
     }
     .prix{
         @include prix;
-        h5{
-            @include titre5($margin-right: 0%);
-        }
         p{
-            @include para($paddingleft: 63px);
+            @include param;
+        }
+        span{
+            @include span;
         }
     }
 
@@ -85,10 +132,10 @@ main{
     .prix{
         @include prix;
         h5{
-            @include titre5($margin-right: 70%);
+            @include titre5;
         }
         p{
-            @include para($paddingleft: 0px);
+            @include param;
         }
     }
 

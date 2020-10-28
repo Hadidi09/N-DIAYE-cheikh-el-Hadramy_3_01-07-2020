@@ -13,65 +13,97 @@
     border: 1px solid $color-tertiary;
 }
 @mixin carpaccio{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 15px;
-    width: 90%;
-    margin: 5%;
-    background:  rgba(255,255,255 ,1);
-}
+    
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        border-radius: 15px;
+        width: 90%;
+        margin: 5%;
+        background:  rgba(255,255,255 ,1);
+
+        &:hover + .checkbox{
+            transform: translateX(0px);
+            opacity: 1; 
+            i{
+                animation-name: lol ;
+                animation-duration: 1s;
+                animation-delay: 200ms;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+            }
+            
+        }
+       
+       
+     }   
+          
+
 @mixin titre4{
     margin-top: 4%;
     margin-bottom: 3%;
     padding-left: 3%;
 }
 @mixin prix{
-    display: flex;
-    flex-direction: row;
+    display: inherit;
     padding-left: 3%;
-}
-@mixin titre5($margin-right: 50%) {
-    margin-right: $margin-right;
-    margin-bottom: 3.5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    cursor: pointer;
+    transition-delay: 300ms;
+    transition-duration: 0.45s;
+    transition-timing-function: ease-in;}
+    @mixin hoverp {
+        width: 65%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+  
+    @mixin param {
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: rgb(158,158,158);
+        width: 70%;
+        background-color: chartreuse;
+        
+    }
+
+
+@mixin span{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: rgb(158,158,158);
+    padding-right: 0px;
+    padding-left: 10px;  
+        
+}
+@mixin checkbox {
+    position: relative;
+    left: 353px;
+    background: aqua;
+    width: 50px;
+    height: 79px;
+    display: block;
+    top: -100px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    transform: translateX(50px);
+    opacity: 1;
+    transition-duration: 0.5s;
+    transition-delay: 150ms;
     
 }
 
-@mixin para($paddingleft: 20px) {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400; 
-    padding-left: $paddingleft;
-    position: relative;
-    cursor: pointer;
-    background: violet;
-    width: 130px;
-    height: 80px;
-    margin-top: -40px;
-    border-radius: 0px 16px 16px 0px;
-    z-index: 1;
-    &::before{
-        content: "hey";
-        position: absolute;
-        top: 50%; left: 50%; 
-        background-color: $color-tertiary;
-        border-radius: 0px 16px 16px 0px;
-        transform: translate(-50%, -50%); 
-        width: 0;
-        height: 100%;
-        opacity: 0;
-        transition: all 0.5s ease;
-        z-index: -1;}
-        &:hover::before{
-                
-           width: 100%;
-           opacity: 1;
-        }
+@mixin faicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg);
     
-  
-        
+    
 }
 
 //button
@@ -136,9 +168,24 @@
 //le coeurs
 @mixin icones{
     position: relative;
-    top: -13px;
-    color: transparent;
-    cursor: pointer;  
+    top: 0px;
+    cursor: pointer;
+    .fas{
+        display: none;
+        color: $color-secondary ;
+    }
+    &:hover{
+        .far{
+            display: none;
+        }
+        .fas{
+            display: block;
+            opacity: 0.1;
+        }  
+
+    }
+
+    
     
 }    
 
@@ -176,7 +223,7 @@
     0%{
         color: $color-secondary;
         opacity: 0;
-        transform: scale(0);
+        transform: scale(0.25);
     }
     15%{
         color: $color-secondary;
@@ -313,4 +360,45 @@
       100%{
         transform: scale(1);
       }
+  }
+
+  @keyframes check{
+      0%{
+          
+          transform: scale(0);
+          opacity: 0;
+          
+      }
+      2%{
+       
+        transform: scale(0.25);
+        opacity: 0.8;
+        
+        
+      }
+      50%{
+        
+        transform: scale(0.5);
+        opacity: 1;
+      }
+      100%{
+        transform: scale(1);
+        opacity: 1;
+        
+    }
+  }
+  @keyframes lol{
+   
+    from{
+        
+        transform: rotate(0deg);
+        opacity: 1;
+   
+        
+    }
+
+    100%{
+        transform:rotate(360deg) ;
+        opacity: 1;
+    }
   }

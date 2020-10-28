@@ -243,11 +243,14 @@ body {
             .icones{
                 @include icones;
                 
+                
                 :hover,:active{
+                    
                     animation-name: coeur;
-                    animation-duration: 500ms;
-                    animation-delay: 200ms;
+                    animation-duration: 600ms;
+                    animation-delay: 10ms;
                     animation-fill-mode: both;
+
 
                 }
                 
@@ -354,8 +357,8 @@ body {
                 @include icones;
                 :hover,:active{
                     animation-name: coeur;
-                    animation-duration: 500ms;
-                    animation-delay: 200ms;
+                    animation-duration: 600ms;
+                    animation-delay: 10ms;
                     animation-fill-mode: both;
 
                 }
@@ -463,8 +466,8 @@ body {
                 margin-top: -6px;
                 :hover,:active{
                     animation-name: coeur;
-                    animation-duration: 500ms;
-                    animation-delay: 200ms;
+                    animation-duration: 600ms;
+                    animation-delay: 10ms;
                     animation-fill-mode: both;
 
                 }
@@ -535,8 +538,8 @@ body {
                 margin-top: -6px;
                 :hover,:active{
                     animation-name: coeur;
-                    animation-duration: 500ms;
-                    animation-delay: 200ms;
+                    animation-duration: 600ms;
+                    animation-delay: 10ms;
                     animation-fill-mode: both;
 
                 }

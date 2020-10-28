@@ -11,7 +11,7 @@ header {
   0% {
     color: #FF79DA;
     opacity: 0;
-    transform: scale(0); }
+    transform: scale(0.25); }
   15% {
     color: #FF79DA;
     opacity: 0.45;
@@ -85,6 +85,12 @@ header {
   100% {
     transform: translateX(0px);
     opacity: 1; } }
+
+@keyframes icones {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
@@ -251,7 +257,7 @@ body {
   0% {
     color: #FF79DA;
     opacity: 0;
-    transform: scale(0); }
+    transform: scale(0.25); }
   15% {
     color: #FF79DA;
     opacity: 0.45;
@@ -325,6 +331,12 @@ body {
   100% {
     transform: translateX(0px);
     opacity: 1; } }
+
+@keyframes icones {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 
 .loader {
   margin: 0;
@@ -483,7 +495,7 @@ main {
   0% {
     color: #FF79DA;
     opacity: 0;
-    transform: scale(0); }
+    transform: scale(0.25); }
   15% {
     color: #FF79DA;
     opacity: 0.45;
@@ -557,12 +569,18 @@ main {
   100% {
     transform: translateX(0px);
     opacity: 1; } }
+
+@keyframes icones {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 
 @keyframes coeur {
   0% {
     color: #FF79DA;
     opacity: 0;
-    transform: scale(0); }
+    transform: scale(0.25); }
   15% {
     color: #FF79DA;
     opacity: 0.45;
@@ -636,6 +654,12 @@ main {
   100% {
     transform: translateX(0px);
     opacity: 1; } }
+
+@keyframes icones {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
@@ -846,13 +870,20 @@ body {
           margin-left: 186px; } }
       #menu1 .food1 .jaimenew .icones {
         position: relative;
-        top: -13px;
-        color: transparent;
+        top: 0px;
         cursor: pointer; }
+        #menu1 .food1 .jaimenew .icones .fas {
+          display: none;
+          color: #FF79DA; }
+        #menu1 .food1 .jaimenew .icones:hover .far {
+          display: none; }
+        #menu1 .food1 .jaimenew .icones:hover .fas {
+          display: block;
+          opacity: 0.1; }
         #menu1 .food1 .jaimenew .icones :hover, #menu1 .food1 .jaimenew .icones :active {
           animation-name: coeur;
-          animation-duration: 500ms;
-          animation-delay: 200ms;
+          animation-duration: 600ms;
+          animation-delay: 10ms;
           animation-fill-mode: both; }
       #menu1 .food1 .jaimenew button {
         position: relative;
@@ -952,13 +983,20 @@ body {
           margin-left: 144px; } }
       #menu2 .food1 .jaimenew .icones {
         position: relative;
-        top: -13px;
-        color: transparent;
+        top: 0px;
         cursor: pointer; }
+        #menu2 .food1 .jaimenew .icones .fas {
+          display: none;
+          color: #FF79DA; }
+        #menu2 .food1 .jaimenew .icones:hover .far {
+          display: none; }
+        #menu2 .food1 .jaimenew .icones:hover .fas {
+          display: block;
+          opacity: 0.1; }
         #menu2 .food1 .jaimenew .icones :hover, #menu2 .food1 .jaimenew .icones :active {
           animation-name: coeur;
-          animation-duration: 500ms;
-          animation-delay: 200ms;
+          animation-duration: 600ms;
+          animation-delay: 10ms;
           animation-fill-mode: both; }
       #menu2 .food1 .jaimenew button {
         position: relative;
@@ -1057,14 +1095,21 @@ body {
           margin-left: 242px; } }
       #menu3 .food1 .jaimenew .icones {
         position: relative;
-        top: -13px;
-        color: transparent;
+        top: 0px;
         cursor: pointer;
         margin-top: -6px; }
+        #menu3 .food1 .jaimenew .icones .fas {
+          display: none;
+          color: #FF79DA; }
+        #menu3 .food1 .jaimenew .icones:hover .far {
+          display: none; }
+        #menu3 .food1 .jaimenew .icones:hover .fas {
+          display: block;
+          opacity: 0.1; }
         #menu3 .food1 .jaimenew .icones :hover, #menu3 .food1 .jaimenew .icones :active {
           animation-name: coeur;
-          animation-duration: 500ms;
-          animation-delay: 200ms;
+          animation-duration: 600ms;
+          animation-delay: 10ms;
           animation-fill-mode: both; }
       #menu3 .food1 .jaimenew button {
         position: relative;
@@ -1130,14 +1175,21 @@ body {
           margin-left: 206px; } }
       #menu4 .food1 .jaimenew .icones {
         position: relative;
-        top: -13px;
-        color: transparent;
+        top: 0px;
         cursor: pointer;
         margin-top: -6px; }
+        #menu4 .food1 .jaimenew .icones .fas {
+          display: none;
+          color: #FF79DA; }
+        #menu4 .food1 .jaimenew .icones:hover .far {
+          display: none; }
+        #menu4 .food1 .jaimenew .icones:hover .fas {
+          display: block;
+          opacity: 0.1; }
         #menu4 .food1 .jaimenew .icones :hover, #menu4 .food1 .jaimenew .icones :active {
           animation-name: coeur;
-          animation-duration: 500ms;
-          animation-delay: 200ms;
+          animation-duration: 600ms;
+          animation-delay: 10ms;
           animation-fill-mode: both; }
       #menu4 .food1 .jaimenew button {
         position: relative;
