@@ -86,16 +86,10 @@
 
 @keyframes check {
   0% {
-    transform: scale(0);
+    transform: translateX(100px);
     opacity: 0; }
-  2% {
-    transform: scale(0.25);
-    opacity: 0.8; }
-  50% {
-    transform: scale(0.5);
-    opacity: 1; }
   100% {
-    transform: scale(1);
+    transform: translateX(0px);
     opacity: 1; } }
 
 @keyframes lol {
@@ -105,6 +99,20 @@
   100% {
     transform: rotate(360deg);
     opacity: 1; } }
+
+@keyframes prixel {
+  from {
+    padding-left: 3%;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer; }
+  to {
+    padding-left: 3%;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer; } }
 
 * {
   box-sizing: border-box;
@@ -128,6 +136,7 @@ body {
     width: 70vw;
     font-family: 'Shrikhand', cursive;
     font-size: 2.5em;
+    font-weight: normal;
     text-align: center;
     margin: 0%; }
   .header1 .fa-arrow-left {
@@ -221,16 +230,10 @@ body {
 
 @keyframes check {
   0% {
-    transform: scale(0);
+    transform: translateX(100px);
     opacity: 0; }
-  2% {
-    transform: scale(0.25);
-    opacity: 0.8; }
-  50% {
-    transform: scale(0.5);
-    opacity: 1; }
   100% {
-    transform: scale(1);
+    transform: translateX(0px);
     opacity: 1; } }
 
 @keyframes lol {
@@ -241,21 +244,41 @@ body {
     transform: rotate(360deg);
     opacity: 1; } }
 
+@keyframes prixel {
+  from {
+    padding-left: 3%;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer; }
+  to {
+    padding-left: 3%;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer; } }
+
 main {
   background: #f6f6f6; }
   main h2 {
+    display: flex;
+    justify-content: flex-start;
     margin-left: 0%;
     padding-top: 8.5%;
     padding-bottom: 7.8%;
+    padding-right: 0%;
+    padding-left: 6%;
     font-family: 'Shrikhand', cursive;
     font-size: 1.7em;
-    font-weight: bold;
+    font-weight: normal;
     font-style: oblique;
     border-radius: 45px 45px 0px 0px;
     background-color: #f6f6f6;
     position: relative;
     bottom: 30px;
     width: 100%; }
+    main h2 i {
+      padding-left: 200px; }
 
 .photoplat img {
   width: 100%; }
@@ -347,16 +370,10 @@ main {
 
 @keyframes check {
   0% {
-    transform: scale(0);
+    transform: translateX(100px);
     opacity: 0; }
-  2% {
-    transform: scale(0.25);
-    opacity: 0.8; }
-  50% {
-    transform: scale(0.5);
-    opacity: 1; }
   100% {
-    transform: scale(1);
+    transform: translateX(0px);
     opacity: 1; } }
 
 @keyframes lol {
@@ -366,6 +383,20 @@ main {
   100% {
     transform: rotate(360deg);
     opacity: 1; } }
+
+@keyframes prixel {
+  from {
+    padding-left: 3%;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer; }
+  to {
+    padding-left: 3%;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer; } }
 
 #entrée {
   background: #f6f6f6;
@@ -379,151 +410,90 @@ main {
     width: 12%;
     margin-left: 5%;
     border: 1px solid #99E2D0; }
-  #entrée .la_description {
+  #entrée .entrée1, #entrée .entrée2, #entrée .entrée3 {
     position: relative;
-    overflow: hidden; }
-  #entrée .monplat {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 15px;
-    width: 90%;
-    margin: 5%;
-    background: white; }
-    #entrée .monplat:hover + .checkbox {
-      transform: translateX(0px);
-      opacity: 1; }
-      #entrée .monplat:hover + .checkbox i {
-        animation-name: lol;
+    overflow: hidden;
+    height: 75px;
+    margin-top: 5%;
+    margin-bottom: 0%; }
+    #entrée .entrée1 .monplat, #entrée .entrée2 .monplat, #entrée .entrée3 .monplat {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      border-radius: 15px;
+      width: 90%;
+      margin: 0% 5%;
+      background: white;
+      transition-delay: 200ms; }
+      #entrée .entrée1 .monplat:hover + .checkbox, #entrée .entrée2 .monplat:hover + .checkbox, #entrée .entrée3 .monplat:hover + .checkbox {
+        animation-name: check;
         animation-duration: 1s;
-        animation-delay: 200ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards; }
-  #entrée h4 {
-    margin-top: 4%;
-    margin-bottom: 3%;
-    padding-left: 3%; }
-  #entrée .leprix {
-    display: inherit;
-    padding-left: 3%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-    cursor: pointer;
-    transition-delay: 300ms;
-    transition-duration: 0.45s;
-    transition-timing-function: ease-in;
-    /* &:hover > span{
-                padding-left: 5px;
-            }*/ }
-    #entrée .leprix:hover > p {
-      width: 65%;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis; }
-    #entrée .leprix p {
-      margin-bottom: 3.5%;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      color: #9e9e9e;
-      width: 70%;
-      background-color: chartreuse; }
-    #entrée .leprix span {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      padding-right: 0px;
-      padding-left: 10px; }
-  #entrée .checkbox {
-    position: relative;
-    left: 353px;
-    background: aqua;
-    width: 50px;
-    height: 79px;
-    display: block;
-    top: -100px;
-    border-bottom-right-radius: 17px;
-    border-top-right-radius: 17px;
-    transform: translateX(50px);
-    opacity: 1;
-    transition-duration: 0.5s;
-    transition-delay: 150ms; }
-    #entrée .checkbox i {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: rotate(0deg); }
-
-.entrée2 {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  border-radius: 15px;
-  width: 90%;
-  margin: 5%;
-  background: white; }
-  .entrée2:hover + .checkbox {
-    transform: translateX(0px);
-    opacity: 1; }
-    .entrée2:hover + .checkbox i {
-      animation-name: lol;
-      animation-duration: 1s;
-      animation-delay: 200ms;
-      animation-timing-function: linear;
-      animation-fill-mode: forwards; }
-  .entrée2 h4 {
-    margin-top: 4%;
-    margin-bottom: 3%;
-    padding-left: 3%; }
-  .entrée2 .prix {
-    display: flex;
-    padding-left: 3%;
-    overflow: hidden;
-    text-overflow: ellipsis; }
-    .entrée2 .prix h5 {
-      margin-right: 0%;
-      margin-bottom: 3.5%;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      color: #9e9e9e; }
-    .entrée2 .prix p {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400; }
-
-.entrée3 {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  border-radius: 15px;
-  width: 90%;
-  margin: 5%;
-  background: white; }
-  .entrée3:hover + .checkbox {
-    transform: translateX(0px);
-    opacity: 1; }
-    .entrée3:hover + .checkbox i {
-      animation-name: lol;
-      animation-duration: 1s;
-      animation-delay: 200ms;
-      animation-timing-function: linear;
-      animation-fill-mode: forwards; }
-  .entrée3 h4 {
-    margin-top: 4%;
-    margin-bottom: 3%;
-    padding-left: 3%; }
-  .entrée3 .prix {
-    display: flex;
-    padding-left: 3%;
-    overflow: hidden;
-    text-overflow: ellipsis; }
-    .entrée3 .prix h5 {
-      margin-right: 70%;
-      margin-bottom: 3.5%;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      color: #9e9e9e; }
-    .entrée3 .prix p {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400; }
+        animation-delay: 50ms;
+        animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+        animation-fill-mode: both;
+        animation-direction: alternate; }
+        #entrée .entrée1 .monplat:hover + .checkbox i, #entrée .entrée2 .monplat:hover + .checkbox i, #entrée .entrée3 .monplat:hover + .checkbox i {
+          animation-name: lol;
+          animation-duration: 0.5s;
+          animation-delay: 0.5s;
+          animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+          animation-fill-mode: forwards; }
+      #entrée .entrée1 .monplat h4, #entrée .entrée2 .monplat h4, #entrée .entrée3 .monplat h4 {
+        margin-top: 4%;
+        margin-bottom: 3%;
+        padding-left: 3%; }
+      #entrée .entrée1 .monplat .leprix, #entrée .entrée2 .monplat .leprix, #entrée .entrée3 .monplat .leprix {
+        display: flex;
+        flex-direction: row;
+        padding-left: 3%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 450ms;
+        transition-duration: 1s;
+        transition-timing-function: ease-in; }
+        #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 70%;
+          cursor: pointer;
+          transition-property: all;
+          transition-delay: 450ms;
+          transition-duration: 1s;
+          transition-timing-function: ease-in; }
+      #entrée .entrée1 .monplat p, #entrée .entrée2 .monplat p, #entrée .entrée3 .monplat p {
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e;
+        width: 85%;
+        /* background-color: chartreuse;*/ }
+      #entrée .entrée1 .monplat span, #entrée .entrée2 .monplat span, #entrée .entrée3 .monplat span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        padding-right: 0px;
+        padding-left: 10px; }
+    #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
+      position: relative;
+      left: 354px;
+      background: aqua;
+      width: 50px;
+      height: 77px;
+      display: block;
+      top: -78px;
+      border-bottom-right-radius: 17px;
+      border-top-right-radius: 17px;
+      transform: translateX(100px);
+      opacity: 0; }
+      #entrée .entrée1 .checkbox i, #entrée .entrée2 .checkbox i, #entrée .entrée3 .checkbox i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg); }
 
 #plat {
   background: #f6f6f6;
@@ -537,111 +507,90 @@ main {
     width: 12%;
     margin-left: 5%;
     border: 1px solid #99E2D0; }
-  #plat .plat1 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 15px;
-    width: 90%;
-    margin: 5%;
-    background: white; }
-    #plat .plat1:hover + .checkbox {
-      transform: translateX(0px);
-      opacity: 1; }
-      #plat .plat1:hover + .checkbox i {
-        animation-name: lol;
-        animation-duration: 1s;
-        animation-delay: 200ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards; }
-    #plat .plat1 h4 {
-      margin-top: 4%;
-      margin-bottom: 3%;
-      padding-left: 3%; }
-    #plat .plat1 .prix {
+  #plat .plat1, #plat .plat2, #plat .plat3 {
+    position: relative;
+    overflow: hidden;
+    height: 75px;
+    margin-top: 5%;
+    margin-bottom: 0%; }
+    #plat .plat1 .monplat, #plat .plat2 .monplat, #plat .plat3 .monplat {
       display: flex;
-      padding-left: 3%;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-      #plat .plat1 .prix h5 {
-        margin-right: 30%;
-        margin-bottom: 3.5%;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        color: #9e9e9e; }
-      #plat .plat1 .prix p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400; }
-  #plat .plat2 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 15px;
-    width: 90%;
-    margin: 5%;
-    background: white; }
-    #plat .plat2:hover + .checkbox {
-      transform: translateX(0px);
-      opacity: 1; }
-      #plat .plat2:hover + .checkbox i {
-        animation-name: lol;
+      justify-content: flex-start;
+      flex-direction: column;
+      border-radius: 15px;
+      width: 90%;
+      margin: 0% 5%;
+      background: white;
+      transition-delay: 200ms; }
+      #plat .plat1 .monplat:hover + .checkbox, #plat .plat2 .monplat:hover + .checkbox, #plat .plat3 .monplat:hover + .checkbox {
+        animation-name: check;
         animation-duration: 1s;
-        animation-delay: 200ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards; }
-    #plat .plat2 h4 {
-      margin-top: 4%;
-      margin-bottom: 3%;
-      padding-left: 3%; }
-    #plat .plat2 .prix {
-      display: flex;
-      padding-left: 3%;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-      #plat .plat2 .prix h5 {
-        margin-right: 15%;
-        margin-bottom: 3.5%;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        color: #9e9e9e; }
-      #plat .plat2 .prix p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400; }
-  #plat .plat3 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 15px;
-    width: 90%;
-    margin: 5%;
-    background: white; }
-    #plat .plat3:hover + .checkbox {
-      transform: translateX(0px);
-      opacity: 1; }
-      #plat .plat3:hover + .checkbox i {
-        animation-name: lol;
-        animation-duration: 1s;
-        animation-delay: 200ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards; }
-    #plat .plat3 h4 {
-      margin-top: 4%;
-      margin-bottom: 3%;
-      padding-left: 3%; }
-    #plat .plat3 .prix {
-      display: flex;
-      padding-left: 3%;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-      #plat .plat3 .prix h5 {
-        margin-right: 43%;
-        margin-bottom: 3.5%;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        color: #9e9e9e; }
-      #plat .plat3 .prix p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400; }
+        animation-delay: 50ms;
+        animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+        animation-fill-mode: both;
+        animation-direction: alternate; }
+        #plat .plat1 .monplat:hover + .checkbox i, #plat .plat2 .monplat:hover + .checkbox i, #plat .plat3 .monplat:hover + .checkbox i {
+          animation-name: lol;
+          animation-duration: 0.5s;
+          animation-delay: 0.5s;
+          animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+          animation-fill-mode: forwards; }
+      #plat .plat1 .monplat h4, #plat .plat2 .monplat h4, #plat .plat3 .monplat h4 {
+        margin-top: 4%;
+        margin-bottom: 3%;
+        padding-left: 3%; }
+      #plat .plat1 .monplat .leprix, #plat .plat2 .monplat .leprix, #plat .plat3 .monplat .leprix {
+        display: flex;
+        flex-direction: row;
+        padding-left: 3%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 450ms;
+        transition-duration: 1s;
+        transition-timing-function: ease-in; }
+        #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 70%;
+          cursor: pointer;
+          transition-property: all;
+          transition-delay: 450ms;
+          transition-duration: 1s;
+          transition-timing-function: ease-in; }
+        #plat .plat1 .monplat .leprix p, #plat .plat2 .monplat .leprix p, #plat .plat3 .monplat .leprix p {
+          margin-bottom: 3.5%;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          color: #9e9e9e;
+          width: 85%;
+          /* background-color: chartreuse;*/ }
+        #plat .plat1 .monplat .leprix span, #plat .plat2 .monplat .leprix span, #plat .plat3 .monplat .leprix span {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          padding-right: 0px;
+          padding-left: 10px; }
+    #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
+      position: relative;
+      left: 354px;
+      background: aqua;
+      width: 50px;
+      height: 77px;
+      display: block;
+      top: -78px;
+      border-bottom-right-radius: 17px;
+      border-top-right-radius: 17px;
+      transform: translateX(100px);
+      opacity: 0; }
+      #plat .plat1 .checkbox i, #plat .plat2 .checkbox i, #plat .plat3 .checkbox i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg); }
 
 #dessert {
   background: #f6f6f6;
@@ -656,110 +605,257 @@ main {
     margin-left: 5%;
     border: 1px solid #99E2D0; }
   #dessert .dessert1 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 15px;
-    width: 90%;
-    margin: 5%;
-    background: white; }
-    #dessert .dessert1:hover + .checkbox {
-      transform: translateX(0px);
-      opacity: 1; }
-      #dessert .dessert1:hover + .checkbox i {
-        animation-name: lol;
-        animation-duration: 1s;
-        animation-delay: 200ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards; }
-    #dessert .dessert1 h4 {
-      margin-top: 4%;
-      margin-bottom: 3%;
-      padding-left: 3%; }
-    #dessert .dessert1 .prix {
+    position: relative;
+    overflow: hidden;
+    height: 75px;
+    margin-top: 5%;
+    margin-bottom: 0%; }
+    #dessert .dessert1 .monplat {
       display: flex;
-      padding-left: 3%;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-      #dessert .dessert1 .prix h5 {
-        margin-right: 41%;
-        margin-bottom: 3.5%;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        color: #9e9e9e; }
-      #dessert .dessert1 .prix p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400; }
+      justify-content: flex-start;
+      flex-direction: column;
+      border-radius: 15px;
+      width: 90%;
+      margin: 0% 5%;
+      background: white;
+      transition-delay: 200ms; }
+      #dessert .dessert1 .monplat:hover + .checkbox {
+        animation-name: check;
+        animation-duration: 1s;
+        animation-delay: 50ms;
+        animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+        animation-fill-mode: both;
+        animation-direction: alternate; }
+        #dessert .dessert1 .monplat:hover + .checkbox i {
+          animation-name: lol;
+          animation-duration: 0.5s;
+          animation-delay: 0.5s;
+          animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+          animation-fill-mode: forwards; }
+      #dessert .dessert1 .monplat h4 {
+        margin-top: 4%;
+        margin-bottom: 3%;
+        padding-left: 3%; }
+      #dessert .dessert1 .monplat .leprix {
+        display: flex;
+        flex-direction: row;
+        padding-left: 3%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 450ms;
+        transition-duration: 1s;
+        transition-timing-function: ease-in; }
+        #dessert .dessert1 .monplat .leprix:hover > p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 70%;
+          cursor: pointer;
+          transition-property: all;
+          transition-delay: 450ms;
+          transition-duration: 1s;
+          transition-timing-function: ease-in; }
+        #dessert .dessert1 .monplat .leprix p {
+          margin-bottom: 3.5%;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          color: #9e9e9e;
+          width: 85%;
+          /* background-color: chartreuse;*/ }
+        #dessert .dessert1 .monplat .leprix span {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          padding-right: 0px;
+          padding-left: 10px; }
+    #dessert .dessert1 .checkbox {
+      position: relative;
+      left: 354px;
+      background: aqua;
+      width: 50px;
+      height: 77px;
+      display: block;
+      top: -78px;
+      border-bottom-right-radius: 17px;
+      border-top-right-radius: 17px;
+      transform: translateX(100px);
+      opacity: 0; }
+      #dessert .dessert1 .checkbox i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg); }
   #dessert .dessert2 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 15px;
-    width: 90%;
-    margin: 5%;
-    background: white; }
-    #dessert .dessert2:hover + .checkbox {
-      transform: translateX(0px);
-      opacity: 1; }
-      #dessert .dessert2:hover + .checkbox i {
-        animation-name: lol;
-        animation-duration: 1s;
-        animation-delay: 200ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards; }
-    #dessert .dessert2 h4 {
-      margin-top: 4%;
-      margin-bottom: 3%;
-      padding-left: 3%; }
-    #dessert .dessert2 .prix {
+    position: relative;
+    overflow: hidden;
+    height: 75px;
+    margin-top: 5%;
+    margin-bottom: 0%; }
+    #dessert .dessert2 .monplat {
       display: flex;
-      padding-left: 3%;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-      #dessert .dessert2 .prix h5 {
-        margin-right: 58%;
-        margin-bottom: 3.5%;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        color: #9e9e9e; }
-      #dessert .dessert2 .prix p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400; }
+      justify-content: flex-start;
+      flex-direction: column;
+      border-radius: 15px;
+      width: 90%;
+      margin: 0% 5%;
+      background: white;
+      transition-delay: 200ms; }
+      #dessert .dessert2 .monplat:hover + .checkbox {
+        animation-name: check;
+        animation-duration: 1s;
+        animation-delay: 50ms;
+        animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+        animation-fill-mode: both;
+        animation-direction: alternate; }
+        #dessert .dessert2 .monplat:hover + .checkbox i {
+          animation-name: lol;
+          animation-duration: 0.5s;
+          animation-delay: 0.5s;
+          animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+          animation-fill-mode: forwards; }
+      #dessert .dessert2 .monplat h4 {
+        margin-top: 4%;
+        margin-bottom: 3%;
+        padding-left: 3%; }
+      #dessert .dessert2 .monplat .leprix {
+        display: flex;
+        flex-direction: row;
+        padding-left: 3%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 450ms;
+        transition-duration: 1s;
+        transition-timing-function: ease-in; }
+        #dessert .dessert2 .monplat .leprix:hover > p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 70%;
+          cursor: pointer;
+          transition-property: all;
+          transition-delay: 450ms;
+          transition-duration: 1s;
+          transition-timing-function: ease-in; }
+        #dessert .dessert2 .monplat .leprix p {
+          margin-bottom: 3.5%;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          color: #9e9e9e;
+          width: 85%;
+          /* background-color: chartreuse;*/ }
+        #dessert .dessert2 .monplat .leprix span {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          padding-right: 0px;
+          padding-left: 10px; }
+    #dessert .dessert2 .checkbox {
+      position: relative;
+      left: 354px;
+      background: aqua;
+      width: 50px;
+      height: 77px;
+      display: block;
+      top: -78px;
+      border-bottom-right-radius: 17px;
+      border-top-right-radius: 17px;
+      transform: translateX(100px);
+      opacity: 0; }
+      #dessert .dessert2 .checkbox i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg); }
   #dessert .dessert3 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 15px;
-    width: 90%;
-    margin: 5%;
-    background: white; }
-    #dessert .dessert3:hover + .checkbox {
-      transform: translateX(0px);
-      opacity: 1; }
-      #dessert .dessert3:hover + .checkbox i {
-        animation-name: lol;
-        animation-duration: 1s;
-        animation-delay: 200ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards; }
-    #dessert .dessert3 h4 {
-      margin-top: 4%;
-      margin-bottom: 3%;
-      padding-left: 3%; }
-    #dessert .dessert3 .prix {
+    position: relative;
+    overflow: hidden;
+    height: 75px;
+    margin-top: 5%;
+    margin-bottom: 0%; }
+    #dessert .dessert3 .monplat {
       display: flex;
-      padding-left: 3%;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-      #dessert .dessert3 .prix h5 {
-        margin-right: 32%;
-        margin-bottom: 3.5%;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        color: #9e9e9e; }
-      #dessert .dessert3 .prix p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400; }
+      justify-content: flex-start;
+      flex-direction: column;
+      border-radius: 15px;
+      width: 90%;
+      margin: 0% 5%;
+      background: white;
+      transition-delay: 200ms; }
+      #dessert .dessert3 .monplat:hover + .checkbox {
+        animation-name: check;
+        animation-duration: 1s;
+        animation-delay: 50ms;
+        animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+        animation-fill-mode: both;
+        animation-direction: alternate; }
+        #dessert .dessert3 .monplat:hover + .checkbox i {
+          animation-name: lol;
+          animation-duration: 0.5s;
+          animation-delay: 0.5s;
+          animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
+          animation-fill-mode: forwards; }
+      #dessert .dessert3 .monplat h4 {
+        margin-top: 4%;
+        margin-bottom: 3%;
+        padding-left: 3%; }
+      #dessert .dessert3 .monplat .leprix {
+        display: flex;
+        flex-direction: row;
+        padding-left: 3%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 450ms;
+        transition-duration: 1s;
+        transition-timing-function: ease-in; }
+        #dessert .dessert3 .monplat .leprix:hover > p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 70%;
+          cursor: pointer;
+          transition-property: all;
+          transition-delay: 450ms;
+          transition-duration: 1s;
+          transition-timing-function: ease-in; }
+        #dessert .dessert3 .monplat .leprix p {
+          margin-bottom: 3.5%;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          color: #9e9e9e;
+          width: 85%;
+          /* background-color: chartreuse;*/ }
+        #dessert .dessert3 .monplat .leprix span {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          padding-right: 0px;
+          padding-left: 10px; }
+    #dessert .dessert3 .checkbox {
+      position: relative;
+      left: 354px;
+      background: aqua;
+      width: 50px;
+      height: 77px;
+      display: block;
+      top: -78px;
+      border-bottom-right-radius: 17px;
+      border-top-right-radius: 17px;
+      transform: translateX(100px);
+      opacity: 0; }
+      #dessert .dessert3 .checkbox i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg); }
 
 .order {
   display: flex;
@@ -774,7 +870,7 @@ main {
   transition: 300ms;
   transition-property: box-shadow; }
   .order:hover {
-    box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid;
+    box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid, 0 0 50px mediumorchid, 0 0 65px mediumorchid;
     cursor: pointer; }
   .order p {
     color: #fafafa; }

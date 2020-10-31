@@ -49,6 +49,9 @@ main{
         }
         .prix{
             @include prix;
+            &:hover > p {
+                @include hoverp;
+                }
             h5{
                 @include titre5($margin-right: 32%);
             }
@@ -56,7 +59,15 @@ main{
                 @include para($paddingleft: 50px);
             }
         }
+        .checkbox{
+            @include checkbox;
+            i{
+                @include faicon;
+                
 
+            }       
+                    
+        }       
     }
 }
 

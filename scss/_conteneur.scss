@@ -251,18 +251,26 @@
     
    
     h2{
+        display: flex;
+        justify-content: flex-start;
         margin-left: 0%;
         padding-top: 8.5%;
         padding-bottom: 7.8%;
+        padding-right: 0%;
+        padding-left: 6%;
         font-family: 'Shrikhand', cursive;
         font-size: 1.7em;
-        font-weight: bold;
+        font-weight: normal;
         font-style: oblique;
         border-radius: 45px 45px 0px 0px;
         background-color: $bg-colormain;
         position: relative;
         bottom: 30px;
         width: 100%;
+
+        i{
+            padding-left: 200px;
+        }
 
     }
 }
@@ -366,12 +374,3 @@
 
 
 /////////@mixin 
-%param {
-    margin-bottom: 3.5%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: rgb(158,158,158);
-    width: 70%;
-    background-color: chartreuse;
-    
-}

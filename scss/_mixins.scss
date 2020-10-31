@@ -19,25 +19,43 @@
         flex-direction: column;
         border-radius: 15px;
         width: 90%;
-        margin: 5%;
+        margin: 0% 5%;
         background:  rgba(255,255,255 ,1);
+        transition-delay: 200ms;
 
+        
         &:hover + .checkbox{
-            transform: translateX(0px);
-            opacity: 1; 
+                animation-name: check ;
+                animation-duration: 1s;
+                animation-delay: 50ms;
+                animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
+                animation-fill-mode: both;
+                animation-direction: alternate;
+            
             i{
                 animation-name: lol ;
-                animation-duration: 1s;
-                animation-delay: 200ms;
-                animation-timing-function: linear;
+                animation-duration: 0.5s;
+                animation-delay: 0.5s;
+                animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
                 animation-fill-mode: forwards;
             }
             
         }
        
+        
+       
        
      }   
-          
+    /// titre plat entrée dessert
+    
+    @mixin titreplat {
+        position: relative;
+        overflow: hidden;
+        height: 75px;
+        margin-top: 5%;
+        margin-bottom: 0%;  
+        
+    }
 
 @mixin titre4{
     margin-top: 4%;
@@ -45,20 +63,42 @@
     padding-left: 3%;
 }
 @mixin prix{
-    display: inherit;
+    display: flex;
+    flex-direction: row;
     padding-left: 3%;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     width: 100%;
     cursor: pointer;
-    transition-delay: 300ms;
-    transition-duration: 0.45s;
-    transition-timing-function: ease-in;}
+    transition-property: all;
+    transition-delay: 450ms;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+   
+    
+   
+}
     @mixin hoverp {
-        width: 65%;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+      
+       
+    
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70%;
+    cursor: pointer;
+    transition-property: all;
+    transition-delay: 450ms;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+   
+    
+   
+       
+        
+
     }
 
   
@@ -67,8 +107,8 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         color: rgb(158,158,158);
-        width: 70%;
-        background-color: chartreuse;
+        width: 85%;
+       /* background-color: chartreuse;*/
         
     }
 
@@ -77,23 +117,23 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding-right: 0px;
-    padding-left: 10px;  
+    padding-left: 10px; 
+    
         
 }
 @mixin checkbox {
     position: relative;
-    left: 353px;
+    left: 354px;
     background: aqua;
     width: 50px;
-    height: 79px;
+    height: 77px;
     display: block;
-    top: -100px;
+    top: -78px;
     border-bottom-right-radius: 17px;
     border-top-right-radius: 17px;
-    transform: translateX(50px);
-    opacity: 1;
-    transition-duration: 0.5s;
-    transition-delay: 150ms;
+    transform: translateX(100px);
+    opacity: 0;
+   
     
 }
 
@@ -121,7 +161,9 @@
     transition-property: box-shadow;
     &:hover{
         box-shadow: 0 0 5px $bg-colorbutton,
-                    0 0 15px $bg-colorbutton;
+                    0 0 15px $bg-colorbutton,
+                    0 0 50px $bg-colorbutton,
+                    0 0 65px $bg-colorbutton;
         cursor: pointer;            
     }
     p{
@@ -365,24 +407,14 @@
   @keyframes check{
       0%{
           
-          transform: scale(0);
+          transform: translateX(100px);
           opacity: 0;
           
       }
-      2%{
-       
-        transform: scale(0.25);
-        opacity: 0.8;
-        
-        
-      }
-      50%{
-        
-        transform: scale(0.5);
-        opacity: 1;
-      }
+   
+      
       100%{
-        transform: scale(1);
+        transform: translateX(0px);
         opacity: 1;
         
     }
@@ -401,4 +433,25 @@
         transform:rotate(360deg) ;
         opacity: 1;
     }
+  }
+
+  @keyframes prixel{
+      from{
+   
+        padding-left: 3%;
+        overflow: hidden;
+        width: 100%;
+        cursor: pointer;
+
+      }
+      to{
+        
+        padding-left: 3%;  
+        width: 70%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        cursor: pointer;
+
+      }
   }
