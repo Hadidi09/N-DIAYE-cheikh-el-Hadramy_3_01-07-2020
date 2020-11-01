@@ -248,6 +248,14 @@
 // les pages de menus
 %main{
     background: $bg-colormain;
+    @include breakpoint(992px){
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 40% 40% 20%;
+        grid-auto-flow: column;
+
+    }
+
     
    
     h2{
@@ -267,6 +275,27 @@
         position: relative;
         bottom: 30px;
         width: 100%;
+        @include breakpoint(992px){
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 0%;
+            margin-top: 30px;
+            padding-top: 8.5%;
+            padding-right: 0%;
+            padding-left: 6%;
+            font-family: 'Shrikhand', cursive;
+            font-size: 1.7em;
+            font-weight: normal;
+            font-style: oblique;
+            border-radius: 45px 45px 0px 0px;
+            background-color: #f6f6f6;
+            position: relative;
+            width: 30%;
+            grid-column: 1;
+            grid-row: 1;
+           
+        }
 
         i{
             padding-left: 200px;
@@ -290,10 +319,20 @@
                 padding-left: 340px;
                
             }
+            @include breakpoint(667px){
+                padding-left: 405px;
+               
+            }
             @include breakpoint(768px){
                 padding-left: 480px;
                
             }
+            @include breakpoint(992px){
+                padding-left: 686px;
+               padding-top: 391px;
+            }
+               
+            
         }
 
     }
@@ -313,6 +352,9 @@
 %entrée{
     background: rgb(238,238,238);
     padding-bottom: 10%;
+    @include breakpoint(992px){
+       margin-top: 50px;
+    }
     
     h3{
         margin-left: 5%;

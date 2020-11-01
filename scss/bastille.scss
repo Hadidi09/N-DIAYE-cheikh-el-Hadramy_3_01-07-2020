@@ -28,8 +28,15 @@ main{
 }
 
 .photoplat{
+    @include breakpoint(992px){
+        grid-column: 2 / span 4;
+    }
     img{
         width: 100%;
+        @include breakpoint(992px){
+            margin-top: 20px;
+            width: 80%;
+        }
     }
 }
 @import './mixins';
@@ -37,6 +44,9 @@ main{
     #entrée{
         background: $bg-colormain;
         padding-bottom: 10%;
+        @include breakpoint(992px){
+            margin-top: 50px;
+         }
         
         h3{
             @include titre;
@@ -100,6 +110,11 @@ main{
 #plat{ 
     background: $bg-colormain;
     padding-bottom: 10%;
+    @include breakpoint(992px){
+        grid-column: 2;
+        margin-bottom: 0px;
+        margin-top: 50px;
+     }
     h3{
         @include titre;
     }
@@ -155,6 +170,10 @@ main{
 #dessert{ 
     background: $bg-colormain;
     padding-bottom: 10%;
+    @include breakpoint(992px){
+        grid-column: 3;
+        margin-top: 50px;
+     }
     h3{
         @include titre;
     }

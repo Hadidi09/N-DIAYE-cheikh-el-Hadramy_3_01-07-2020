@@ -265,6 +265,12 @@ body {
 
 main {
   background: #f6f6f6; }
+  @media screen and (min-width: 992px) {
+    main {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 40% 40% 20%;
+      grid-auto-flow: column; } }
   main h2 {
     display: flex;
     justify-content: flex-start;
@@ -282,6 +288,26 @@ main {
     position: relative;
     bottom: 30px;
     width: 100%; }
+    @media screen and (min-width: 992px) {
+      main h2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 0%;
+        margin-top: 30px;
+        padding-top: 8.5%;
+        padding-right: 0%;
+        padding-left: 6%;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.7em;
+        font-weight: normal;
+        font-style: oblique;
+        border-radius: 45px 45px 0px 0px;
+        background-color: #f6f6f6;
+        position: relative;
+        width: 30%;
+        grid-column: 1;
+        grid-row: 1; } }
     main h2 i {
       padding-left: 200px; }
       @media screen and (min-width: 280px) {
@@ -299,12 +325,27 @@ main {
       @media screen and (min-width: 599px) {
         main h2 i {
           padding-left: 340px; } }
+      @media screen and (min-width: 667px) {
+        main h2 i {
+          padding-left: 405px; } }
       @media screen and (min-width: 768px) {
         main h2 i {
           padding-left: 480px; } }
+      @media screen and (min-width: 992px) {
+        main h2 i {
+          padding-left: 686px;
+          padding-top: 391px; } }
+
+@media screen and (min-width: 992px) {
+  .photoplat {
+    grid-column: 2 / span 4; } }
 
 .photoplat img {
   width: 100%; }
+  @media screen and (min-width: 992px) {
+    .photoplat img {
+      margin-top: 20px;
+      width: 80%; } }
 
 @keyframes coeur {
   0% {
@@ -425,6 +466,9 @@ main {
 #entrée {
   background: #f6f6f6;
   padding-bottom: 10%; }
+  @media screen and (min-width: 992px) {
+    #entrée {
+      margin-top: 50px; } }
   #entrée h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -434,6 +478,16 @@ main {
     width: 12%;
     margin-left: 5%;
     border: 1px solid #99E2D0; }
+    @media screen and (min-width: 667px) {
+      #entrée hr {
+        width: 7%;
+        margin-left: 5%;
+        border: 1px solid #99E2D0; } }
+    @media screen and (min-width: 768px) {
+      #entrée hr {
+        width: 6%;
+        margin-left: 5%;
+        border: 1px solid #99E2D0; } }
   #entrée .entrée1, #entrée .entrée2, #entrée .entrée3 {
     position: relative;
     overflow: hidden;
@@ -445,6 +499,13 @@ main {
         position: relative;
         overflow: hidden;
         height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 667px) {
+      #entrée .entrée1, #entrée .entrée2, #entrée .entrée3 {
+        position: relative;
+        overflow: hidden;
+        height: 99px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 768px) {
@@ -656,6 +717,15 @@ main {
           border-top-right-radius: 15px;
           transform-origin: center center;
           width: 13%; } }
+      @media screen and (min-width: 667px) {
+        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
+          left: 547px;
+          top: -99px;
+          height: 100px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       @media screen and (min-width: 768px) {
         #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
           left: 630px;
@@ -681,6 +751,11 @@ main {
 #plat {
   background: #f6f6f6;
   padding-bottom: 10%; }
+  @media screen and (min-width: 992px) {
+    #plat {
+      grid-column: 2;
+      margin-bottom: 0px;
+      margin-top: 50px; } }
   #plat h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -690,6 +765,16 @@ main {
     width: 12%;
     margin-left: 5%;
     border: 1px solid #99E2D0; }
+    @media screen and (min-width: 667px) {
+      #plat hr {
+        width: 7%;
+        margin-left: 5%;
+        border: 1px solid #99E2D0; } }
+    @media screen and (min-width: 768px) {
+      #plat hr {
+        width: 6%;
+        margin-left: 5%;
+        border: 1px solid #99E2D0; } }
   #plat .plat1, #plat .plat2, #plat .plat3 {
     position: relative;
     overflow: hidden;
@@ -701,6 +786,13 @@ main {
         position: relative;
         overflow: hidden;
         height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 667px) {
+      #plat .plat1, #plat .plat2, #plat .plat3 {
+        position: relative;
+        overflow: hidden;
+        height: 99px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 768px) {
@@ -912,6 +1004,15 @@ main {
           border-top-right-radius: 15px;
           transform-origin: center center;
           width: 13%; } }
+      @media screen and (min-width: 667px) {
+        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
+          left: 547px;
+          top: -99px;
+          height: 100px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       @media screen and (min-width: 768px) {
         #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
           left: 630px;
@@ -937,6 +1038,10 @@ main {
 #dessert {
   background: #f6f6f6;
   padding-bottom: 10%; }
+  @media screen and (min-width: 992px) {
+    #dessert {
+      grid-column: 3;
+      margin-top: 50px; } }
   #dessert h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -946,6 +1051,16 @@ main {
     width: 12%;
     margin-left: 5%;
     border: 1px solid #99E2D0; }
+    @media screen and (min-width: 667px) {
+      #dessert hr {
+        width: 7%;
+        margin-left: 5%;
+        border: 1px solid #99E2D0; } }
+    @media screen and (min-width: 768px) {
+      #dessert hr {
+        width: 6%;
+        margin-left: 5%;
+        border: 1px solid #99E2D0; } }
   #dessert .dessert1 {
     position: relative;
     overflow: hidden;
@@ -957,6 +1072,13 @@ main {
         position: relative;
         overflow: hidden;
         height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 667px) {
+      #dessert .dessert1 {
+        position: relative;
+        overflow: hidden;
+        height: 99px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 768px) {
@@ -1168,6 +1290,15 @@ main {
           border-top-right-radius: 15px;
           transform-origin: center center;
           width: 13%; } }
+      @media screen and (min-width: 667px) {
+        #dessert .dessert1 .checkbox {
+          left: 547px;
+          top: -99px;
+          height: 100px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       @media screen and (min-width: 768px) {
         #dessert .dessert1 .checkbox {
           left: 630px;
@@ -1200,6 +1331,13 @@ main {
         position: relative;
         overflow: hidden;
         height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 667px) {
+      #dessert .dessert2 {
+        position: relative;
+        overflow: hidden;
+        height: 99px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 768px) {
@@ -1411,6 +1549,15 @@ main {
           border-top-right-radius: 15px;
           transform-origin: center center;
           width: 13%; } }
+      @media screen and (min-width: 667px) {
+        #dessert .dessert2 .checkbox {
+          left: 547px;
+          top: -99px;
+          height: 100px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       @media screen and (min-width: 768px) {
         #dessert .dessert2 .checkbox {
           left: 630px;
@@ -1443,6 +1590,13 @@ main {
         position: relative;
         overflow: hidden;
         height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 667px) {
+      #dessert .dessert3 {
+        position: relative;
+        overflow: hidden;
+        height: 99px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 768px) {
@@ -1654,6 +1808,15 @@ main {
           border-top-right-radius: 15px;
           transform-origin: center center;
           width: 13%; } }
+      @media screen and (min-width: 667px) {
+        #dessert .dessert3 .checkbox {
+          left: 547px;
+          top: -99px;
+          height: 100px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       @media screen and (min-width: 768px) {
         #dessert .dessert3 .checkbox {
           left: 630px;
@@ -1688,6 +1851,15 @@ main {
   box-shadow: 0 0 5px mediumorchid;
   transition: 300ms;
   transition-property: box-shadow; }
+  @media screen and (min-width: 992px) {
+    .order {
+      grid-row: 3;
+      grid-column: 2;
+      align-self: center;
+      margin-right: 0px;
+      margin-left: 0px;
+      width: 100%;
+      height: 12vh; } }
   .order:hover {
     box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid, 0 0 50px mediumorchid, 0 0 65px mediumorchid;
     cursor: pointer; }
@@ -1704,6 +1876,10 @@ footer {
   flex-direction: column;
   width: 100%;
   font-family: 'Roboto', sans-serif; }
+  @media screen and (min-width: 992px) {
+    footer {
+      align-items: center;
+      padding-left: 0%; } }
   footer h2 {
     font-family: 'Shrikhand', cursive;
     font-weight: 400;
