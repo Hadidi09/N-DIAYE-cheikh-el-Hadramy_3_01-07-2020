@@ -95,10 +95,10 @@
 
 @keyframes lol {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1);
     opacity: 1; }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(1.5);
     opacity: 1; } }
 
 @keyframes prixel {
@@ -243,10 +243,10 @@ body {
 
 @keyframes lol {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1);
     opacity: 1; }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(1.5);
     opacity: 1; } }
 
 @keyframes prixel {
@@ -290,9 +290,18 @@ main {
       @media screen and (min-width: 375px) {
         main h2 i {
           padding-left: 160px; } }
+      @media screen and (min-width: 411px) {
+        main h2 i {
+          padding-left: 200px; } }
       @media screen and (min-width: 425px) {
         main h2 i {
           padding-left: 206px; } }
+      @media screen and (min-width: 599px) {
+        main h2 i {
+          padding-left: 340px; } }
+      @media screen and (min-width: 768px) {
+        main h2 i {
+          padding-left: 480px; } }
 
 .photoplat img {
   width: 100%; }
@@ -393,10 +402,10 @@ main {
 
 @keyframes lol {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1);
     opacity: 1; }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(1.5);
     opacity: 1; } }
 
 @keyframes prixel {
@@ -431,6 +440,20 @@ main {
     height: 75px;
     margin-top: 5%;
     margin-bottom: 0%; }
+    @media screen and (min-width: 599px) {
+      #entrée .entrée1, #entrée .entrée2, #entrée .entrée3 {
+        position: relative;
+        overflow: hidden;
+        height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 768px) {
+      #entrée .entrée1, #entrée .entrée2, #entrée .entrée3 {
+        position: relative;
+        overflow: hidden;
+        height: 115px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
     #entrée .entrée1 .monplat, #entrée .entrée2 .monplat, #entrée .entrée3 .monplat {
       display: flex;
       justify-content: flex-start;
@@ -518,7 +541,18 @@ main {
               transition-delay: 355ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
+          @media screen and (min-width: 411px) {
+            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 75%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 500ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 425px) {
             #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
               overflow: hidden;
               text-overflow: ellipsis;
@@ -527,6 +561,17 @@ main {
               cursor: pointer;
               transition-property: all;
               transition-delay: 550ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 599px) {
+            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 80%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
       #entrée .entrée1 .monplat p, #entrée .entrée2 .monplat p, #entrée .entrée3 .monplat p {
@@ -586,6 +631,14 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 411px) {
+        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
+          left: 341px;
+          top: -76px;
+          height: 77px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center; } }
       @media screen and (min-width: 425px) {
         #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
           left: 354px;
@@ -594,11 +647,36 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 599px) {
+        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
+          left: 490px;
+          top: -94px;
+          height: 95px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
+      @media screen and (min-width: 768px) {
+        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
+          left: 630px;
+          top: -110px;
+          height: 110px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       #entrée .entrée1 .checkbox i, #entrée .entrée2 .checkbox i, #entrée .entrée3 .checkbox i {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: rotate(0deg); }
+        @media screen and (min-width: 599px) {
+          #entrée .entrée1 .checkbox i, #entrée .entrée2 .checkbox i, #entrée .entrée3 .checkbox i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: rotate(0deg);
+            transform: scale(1.5); } }
 
 #plat {
   background: #f6f6f6;
@@ -618,6 +696,20 @@ main {
     height: 75px;
     margin-top: 5%;
     margin-bottom: 0%; }
+    @media screen and (min-width: 599px) {
+      #plat .plat1, #plat .plat2, #plat .plat3 {
+        position: relative;
+        overflow: hidden;
+        height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 768px) {
+      #plat .plat1, #plat .plat2, #plat .plat3 {
+        position: relative;
+        overflow: hidden;
+        height: 115px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
     #plat .plat1 .monplat, #plat .plat2 .monplat, #plat .plat3 .monplat {
       display: flex;
       justify-content: flex-start;
@@ -705,7 +797,18 @@ main {
               transition-delay: 355ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
+          @media screen and (min-width: 411px) {
+            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 75%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 500ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 425px) {
             #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
               overflow: hidden;
               text-overflow: ellipsis;
@@ -714,6 +817,17 @@ main {
               cursor: pointer;
               transition-property: all;
               transition-delay: 550ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 599px) {
+            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 80%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
         #plat .plat1 .monplat .leprix p, #plat .plat2 .monplat .leprix p, #plat .plat3 .monplat .leprix p {
@@ -773,6 +887,14 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 411px) {
+        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
+          left: 341px;
+          top: -76px;
+          height: 77px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center; } }
       @media screen and (min-width: 425px) {
         #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
           left: 354px;
@@ -781,11 +903,36 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 599px) {
+        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
+          left: 490px;
+          top: -94px;
+          height: 95px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
+      @media screen and (min-width: 768px) {
+        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
+          left: 630px;
+          top: -110px;
+          height: 110px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       #plat .plat1 .checkbox i, #plat .plat2 .checkbox i, #plat .plat3 .checkbox i {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: rotate(0deg); }
+        @media screen and (min-width: 599px) {
+          #plat .plat1 .checkbox i, #plat .plat2 .checkbox i, #plat .plat3 .checkbox i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: rotate(0deg);
+            transform: scale(1.5); } }
 
 #dessert {
   background: #f6f6f6;
@@ -805,6 +952,20 @@ main {
     height: 75px;
     margin-top: 5%;
     margin-bottom: 0%; }
+    @media screen and (min-width: 599px) {
+      #dessert .dessert1 {
+        position: relative;
+        overflow: hidden;
+        height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 768px) {
+      #dessert .dessert1 {
+        position: relative;
+        overflow: hidden;
+        height: 115px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
     #dessert .dessert1 .monplat {
       display: flex;
       justify-content: flex-start;
@@ -892,7 +1053,18 @@ main {
               transition-delay: 355ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
+          @media screen and (min-width: 411px) {
+            #dessert .dessert1 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 75%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 500ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 425px) {
             #dessert .dessert1 .monplat .leprix:hover > p {
               overflow: hidden;
               text-overflow: ellipsis;
@@ -901,6 +1073,17 @@ main {
               cursor: pointer;
               transition-property: all;
               transition-delay: 550ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 599px) {
+            #dessert .dessert1 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 80%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
         #dessert .dessert1 .monplat .leprix p {
@@ -960,6 +1143,14 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 411px) {
+        #dessert .dessert1 .checkbox {
+          left: 341px;
+          top: -76px;
+          height: 77px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center; } }
       @media screen and (min-width: 425px) {
         #dessert .dessert1 .checkbox {
           left: 354px;
@@ -968,17 +1159,56 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 599px) {
+        #dessert .dessert1 .checkbox {
+          left: 490px;
+          top: -94px;
+          height: 95px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
+      @media screen and (min-width: 768px) {
+        #dessert .dessert1 .checkbox {
+          left: 630px;
+          top: -110px;
+          height: 110px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       #dessert .dessert1 .checkbox i {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: rotate(0deg); }
+        @media screen and (min-width: 599px) {
+          #dessert .dessert1 .checkbox i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: rotate(0deg);
+            transform: scale(1.5); } }
   #dessert .dessert2 {
     position: relative;
     overflow: hidden;
     height: 75px;
     margin-top: 5%;
     margin-bottom: 0%; }
+    @media screen and (min-width: 599px) {
+      #dessert .dessert2 {
+        position: relative;
+        overflow: hidden;
+        height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 768px) {
+      #dessert .dessert2 {
+        position: relative;
+        overflow: hidden;
+        height: 115px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
     #dessert .dessert2 .monplat {
       display: flex;
       justify-content: flex-start;
@@ -1066,7 +1296,18 @@ main {
               transition-delay: 355ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
+          @media screen and (min-width: 411px) {
+            #dessert .dessert2 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 75%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 500ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 425px) {
             #dessert .dessert2 .monplat .leprix:hover > p {
               overflow: hidden;
               text-overflow: ellipsis;
@@ -1075,6 +1316,17 @@ main {
               cursor: pointer;
               transition-property: all;
               transition-delay: 550ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 599px) {
+            #dessert .dessert2 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 80%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
         #dessert .dessert2 .monplat .leprix p {
@@ -1134,6 +1386,14 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 411px) {
+        #dessert .dessert2 .checkbox {
+          left: 341px;
+          top: -76px;
+          height: 77px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center; } }
       @media screen and (min-width: 425px) {
         #dessert .dessert2 .checkbox {
           left: 354px;
@@ -1142,17 +1402,56 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 599px) {
+        #dessert .dessert2 .checkbox {
+          left: 490px;
+          top: -94px;
+          height: 95px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
+      @media screen and (min-width: 768px) {
+        #dessert .dessert2 .checkbox {
+          left: 630px;
+          top: -110px;
+          height: 110px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       #dessert .dessert2 .checkbox i {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: rotate(0deg); }
+        @media screen and (min-width: 599px) {
+          #dessert .dessert2 .checkbox i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: rotate(0deg);
+            transform: scale(1.5); } }
   #dessert .dessert3 {
     position: relative;
     overflow: hidden;
     height: 75px;
     margin-top: 5%;
     margin-bottom: 0%; }
+    @media screen and (min-width: 599px) {
+      #dessert .dessert3 {
+        position: relative;
+        overflow: hidden;
+        height: 95px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
+    @media screen and (min-width: 768px) {
+      #dessert .dessert3 {
+        position: relative;
+        overflow: hidden;
+        height: 115px;
+        margin-top: 5%;
+        margin-bottom: 0%; } }
     #dessert .dessert3 .monplat {
       display: flex;
       justify-content: flex-start;
@@ -1240,7 +1539,18 @@ main {
               transition-delay: 355ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
+          @media screen and (min-width: 411px) {
+            #dessert .dessert3 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 75%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 500ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 425px) {
             #dessert .dessert3 .monplat .leprix:hover > p {
               overflow: hidden;
               text-overflow: ellipsis;
@@ -1249,6 +1559,17 @@ main {
               cursor: pointer;
               transition-property: all;
               transition-delay: 550ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
+          @media screen and (min-width: 599px) {
+            #dessert .dessert3 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 80%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
         #dessert .dessert3 .monplat .leprix p {
@@ -1308,6 +1629,14 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 411px) {
+        #dessert .dessert3 .checkbox {
+          left: 341px;
+          top: -76px;
+          height: 77px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center; } }
       @media screen and (min-width: 425px) {
         #dessert .dessert3 .checkbox {
           left: 354px;
@@ -1316,11 +1645,36 @@ main {
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center; } }
+      @media screen and (min-width: 599px) {
+        #dessert .dessert3 .checkbox {
+          left: 490px;
+          top: -94px;
+          height: 95px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
+      @media screen and (min-width: 768px) {
+        #dessert .dessert3 .checkbox {
+          left: 630px;
+          top: -110px;
+          height: 110px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       #dessert .dessert3 .checkbox i {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: rotate(0deg); }
+        @media screen and (min-width: 599px) {
+          #dessert .dessert3 .checkbox i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: rotate(0deg);
+            transform: scale(1.5); } }
 
 .order {
   display: flex;

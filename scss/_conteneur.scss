@@ -278,8 +278,20 @@
                 padding-left: 160px;
                
             }
+            @include breakpoint(411px){
+                padding-left: 200px;
+               
+            }
             @include breakpoint(425px){
                 padding-left: 206px;
+               
+            }
+            @include breakpoint(599px){
+                padding-left: 340px;
+               
+            }
+            @include breakpoint(768px){
+                padding-left: 480px;
                
             }
         }

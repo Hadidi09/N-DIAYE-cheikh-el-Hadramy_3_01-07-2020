@@ -53,7 +53,23 @@
         overflow: hidden;
         height: 75px;
         margin-top: 5%;
-        margin-bottom: 0%;  
+        margin-bottom: 0%;
+        @include breakpoint(599px){
+            position: relative;
+           overflow: hidden;
+           height: 95px;
+           margin-top: 5%;
+           margin-bottom: 0%;
+
+        }
+        @include breakpoint(768px){
+            position: relative;
+           overflow: hidden;
+           height: 115px;
+           margin-top: 5%;
+           margin-bottom: 0%;
+
+        }    
         
     }
 
@@ -132,7 +148,18 @@
         transition-duration: 0.6s;
         transition-timing-function: ease-in;
     }
-    @include breakpoint(375px){
+    @include breakpoint(411px){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 75%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 500ms;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in;
+    }
+    @include breakpoint(425px){
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -143,6 +170,18 @@
         transition-duration: 0.6s;
         transition-timing-function: ease-in;
     }
+    @include breakpoint(599px){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 80%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 400ms;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in;
+    }
+
 
    
     
@@ -219,6 +258,15 @@
         transform-origin: center center;
         
      }
+     @include breakpoint(411px){
+        left: 341px;
+        top: -76px;
+        height: 77px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transform-origin: center center;
+        
+     }
      @include breakpoint(425px){
         left: 354px;
         top: -77px;
@@ -226,6 +274,26 @@
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
         transform-origin: center center;
+        
+     }
+     @include breakpoint(599px){
+        left: 490px;
+        top: -94px;
+        height: 95px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transform-origin: center center;
+        width: 13%;
+        
+     }
+     @include breakpoint(768px){
+        left: 630px;
+        top: -110px;
+        height: 110px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transform-origin: center center;
+        width: 13%;
         
      }
     
@@ -237,6 +305,13 @@
     top: 50%;
     left: 50%;
     transform: rotate(0deg);
+    @include breakpoint(599px){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg);
+        transform: scale(1.5);
+    }
     
     
 }
@@ -525,14 +600,15 @@
    
     from{
         
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+
         opacity: 1;
    
         
     }
 
     100%{
-        transform:rotate(360deg) ;
+        transform:rotate(360deg) scale(1.5) ;
         opacity: 1;
     }
   }
