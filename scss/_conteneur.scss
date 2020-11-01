@@ -270,6 +270,18 @@
 
         i{
             padding-left: 200px;
+            @include breakpoint(280px){
+                padding-left: 80px;
+               
+            }
+            @include breakpoint(375px){
+                padding-left: 160px;
+               
+            }
+            @include breakpoint(425px){
+                padding-left: 206px;
+               
+            }
         }
 
     }

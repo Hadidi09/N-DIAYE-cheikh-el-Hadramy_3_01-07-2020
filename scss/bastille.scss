@@ -55,6 +55,7 @@ main{
                 }
                 .leprix{
                     @include prix;
+                   
                     &:hover > p  {
                     @include hoverp;
                     
@@ -64,6 +65,7 @@ main{
                     p{
                     
                         @include param;
+                       
                     }
                     span{
                         @include span;
@@ -123,6 +125,7 @@ main{
                    p{
                    
                        @include param;
+                       
                    }
                    span{
                        @include span;
@@ -176,6 +179,7 @@ main{
                    p{
                    
                        @include param;
+                       
                    }
                    span{
                        @include span;
@@ -211,6 +215,7 @@ main{
                    p{
                    
                        @include param;
+                      
                    }
                    span{
                        @include span;
@@ -246,6 +251,7 @@ main{
                    p{
                    
                        @include param;
+                      
                    }
                    span{
                        @include span;

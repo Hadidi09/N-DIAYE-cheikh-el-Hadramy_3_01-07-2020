@@ -75,6 +75,12 @@
     transition-delay: 450ms;
     transition-duration: 1s;
     transition-timing-function: ease-in;
+    @include breakpoint(280px){
+        width: 95%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+     }
    
     
    
@@ -90,9 +96,54 @@
     width: 70%;
     cursor: pointer;
     transition-property: all;
-    transition-delay: 450ms;
-    transition-duration: 1s;
+    transition-delay: 400ms;
+    transition-duration: 0.8s;
     transition-timing-function: ease-in;
+    @include breakpoint(280px){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 60%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 390ms;
+        transition-duration: 0.7s;
+        transition-timing-function: ease-in;
+    }
+    @include breakpoint(320px){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 70%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 370ms;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in;
+    }
+    @include breakpoint(375px){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 75%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 355ms;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in;
+    }
+    @include breakpoint(375px){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 75%;
+        cursor: pointer;
+        transition-property: all;
+        transition-delay: 550ms;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in;
+    }
+
    
     
    
@@ -108,8 +159,16 @@
         font-weight: 400;
         color: rgb(158,158,158);
         width: 85%;
-       /* background-color: chartreuse;*/
-        
+        @include breakpoint(280px){
+            width: 85%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        @include breakpoint(320px){
+            width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
 
@@ -133,7 +192,43 @@
     border-top-right-radius: 17px;
     transform: translateX(100px);
     opacity: 0;
-   
+    @include breakpoint(280px){
+       left: 216px;
+       top: -64px;
+       height: 64px;
+       border-bottom-right-radius: 15px;
+       border-top-right-radius: 15px;
+       transform-origin: center center;
+       
+    }
+    @include breakpoint(320px){
+        left: 254px;
+        top: -68px;
+        height: 68px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transform-origin: center center;
+        
+     }
+     @include breakpoint(375px){
+        left: 306px;
+        top: -72px;
+        height: 72px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transform-origin: center center;
+        
+     }
+     @include breakpoint(425px){
+        left: 354px;
+        top: -77px;
+        height: 78px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transform-origin: center center;
+        
+     }
+    
     
 }
 
@@ -406,18 +501,25 @@
 
   @keyframes check{
       0%{
-          
-          transform: translateX(100px);
-          opacity: 0;
+       
+            transform-origin: center center;
+            opacity: 0;
+        
+         
           
       }
    
       
       100%{
-        transform: translateX(0px);
-        opacity: 1;
+    
+            transform-origin: center center;
+            transform: scale(1);
+            opacity: 1;
+        }
+      
         
-    }
+        
+    
   }
   @keyframes lol{
    
