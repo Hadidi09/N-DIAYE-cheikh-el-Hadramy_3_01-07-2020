@@ -72,10 +72,32 @@
 
 @keyframes bodymenu {
   0% {
-    transform: scale(0);
+    transform: translateY(-30px);
     opacity: 0; }
   100% {
-    transform: scale(1);
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuX {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0; }
+  90% {
+    transform: translateX(5%);
+    opacity: 1; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuY {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  90% {
+    transform: translateY(5%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0px);
     opacity: 1; } }
 
 @keyframes section {
@@ -88,10 +110,13 @@
 
 @keyframes sectionmenu {
   0% {
-    transform: scale(0);
+    transform: translateY(-1000%);
     opacity: 0; }
+  85% {
+    transform: translateY(10%);
+    opacity: 1; }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
     opacity: 1; } }
 
 @keyframes icones {
@@ -197,10 +222,10 @@ body {
     font-size: 2.5em;
     font-weight: normal;
     text-align: center;
-    margin: 0%; }
-    @media screen and (min-width: 280px) {
-      .header1 h1 {
-        font-size: 2em; } }
+    margin: 0%;
+    /* @include breakpoint(280px){
+                font-size: 2em;
+            }*/ }
   .header1 .fa-arrow-left {
     align-self: center;
     color: #212121; }
@@ -278,10 +303,32 @@ body {
 
 @keyframes bodymenu {
   0% {
-    transform: scale(0);
+    transform: translateY(-30px);
     opacity: 0; }
   100% {
-    transform: scale(1);
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuX {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0; }
+  90% {
+    transform: translateX(5%);
+    opacity: 1; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuY {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  90% {
+    transform: translateY(5%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0px);
     opacity: 1; } }
 
 @keyframes section {
@@ -294,10 +341,13 @@ body {
 
 @keyframes sectionmenu {
   0% {
-    transform: scale(0);
+    transform: translateY(-1000%);
     opacity: 0; }
+  85% {
+    transform: translateY(10%);
+    opacity: 1; }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
     opacity: 1; } }
 
 @keyframes icones {
@@ -494,10 +544,32 @@ main {
 
 @keyframes bodymenu {
   0% {
-    transform: scale(0);
+    transform: translateY(-30px);
     opacity: 0; }
   100% {
-    transform: scale(1);
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuX {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0; }
+  90% {
+    transform: translateX(5%);
+    opacity: 1; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuY {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  90% {
+    transform: translateY(5%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0px);
     opacity: 1; } }
 
 @keyframes section {
@@ -510,10 +582,13 @@ main {
 
 @keyframes sectionmenu {
   0% {
-    transform: scale(0);
+    transform: translateY(-1000%);
     opacity: 0; }
+  85% {
+    transform: translateY(10%);
+    opacity: 1; }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
     opacity: 1; } }
 
 @keyframes icones {
@@ -557,37 +632,40 @@ main {
   background: #f6f6f6;
   padding-bottom: 10%;
   padding-bottom: 35px;
-  transform: scale(0);
+  transform: translateY(-1000%);
   opacity: 0;
-  animation-name: bodymenu;
-  animation-delay: 4s;
-  animation-duration: 10s;
+  animation-name: sectionmenu;
+  animation-delay: 2.5s;
+  animation-duration: 2s;
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards; }
-  #entrée #entrée:first-child {
-    transform: scale(0);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 5s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; }
-  #entrée #entrée:nth-child(-n+2) {
-    transform: scale(0);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 7s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; }
-  #entrée #entrée:nth-child(-n+3) {
-    transform: scale(0);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 9s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  /*#entrée:first-child{
+            transform: scale(0);
+            opacity: 0;
+            animation-name: sectionmenu;
+            animation-delay: 4s;
+            animation-duration: 100ms;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          }     */
+  /* #entrée:nth-child(-n+2){
+            transform: scale(0);
+            opacity: 0;
+            animation-name: sectionmenu;
+            animation-delay: 5s;
+            animation-duration: 100ms;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          }*/
+  /*#entrée:nth-child(-n+3){
+            transform: scale(0);
+            opacity: 0;
+            animation-name: sectionmenu;
+            animation-delay: 5.7s;
+            animation-duration: 100ms;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          } */ }
   @media screen and (min-width: 992px) {
     #entrée {
       margin-top: 50px; } }
@@ -757,6 +835,17 @@ main {
               transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
+          @media screen and (min-width: 992px) {
+            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 70%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
       #entrée .entrée1 .monplat p, #entrée .entrée2 .monplat p, #entrée .entrée3 .monplat p {
         margin-bottom: 3.5%;
         font-family: 'Roboto', sans-serif;
@@ -857,6 +946,15 @@ main {
           border-top-right-radius: 15px;
           transform-origin: center center;
           width: 13%; } }
+      @media screen and (min-width: 992px) {
+        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
+          left: 268px;
+          top: -68px;
+          height: 68px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       #entrée .entrée1 .checkbox i, #entrée .entrée2 .checkbox i, #entrée .entrée3 .checkbox i {
         position: absolute;
         top: 50%;
@@ -873,37 +971,41 @@ main {
 #plat {
   background: #f6f6f6;
   padding-bottom: 10%;
-  transform: scale(0);
+  transform: translateY(-1000%);
   opacity: 0;
-  animation-name: bodymenu;
-  animation-delay: 4s;
-  animation-duration: 10s;
+  animation-name: sectionmenu;
+  animation-delay: 3.6s;
+  animation-duration: 2s;
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards; }
-  #plat #plat:first-child {
-    transform: scale(0);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 5s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; }
-  #plat #plat:nth-child(-n+2) {
-    transform: scale(0);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 7s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; }
-  #plat #plat:nth-child(-n+3) {
-    transform: scale(0);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 9s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  /* #plat:first-child{
+            transform: translateY(-30px);
+            opacity: 0;
+            animation-name: bodymenu;
+            animation-delay: 7s;
+           
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          }      
+         /* #plat:nth-child(-n+2){
+            transform: translateY(-30px);
+            opacity: 0;
+            animation-name: bodymenu;
+            animation-delay: 9s;
+           
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          }  */
+  /* #plat:nth-child(-n+3){
+            
+            transform: translateY(-30px);
+            opacity: 0;
+            animation-name: bodymenu;
+            animation-delay: 12s;
+            
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          } */ }
   @media screen and (min-width: 992px) {
     #plat {
       grid-column: 2;
@@ -1075,6 +1177,17 @@ main {
               transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
+          @media screen and (min-width: 992px) {
+            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 70%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
         #plat .plat1 .monplat .leprix p, #plat .plat2 .monplat .leprix p, #plat .plat3 .monplat .leprix p {
           margin-bottom: 3.5%;
           font-family: 'Roboto', sans-serif;
@@ -1175,6 +1288,15 @@ main {
           border-top-right-radius: 15px;
           transform-origin: center center;
           width: 13%; } }
+      @media screen and (min-width: 992px) {
+        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
+          left: 268px;
+          top: -68px;
+          height: 68px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       #plat .plat1 .checkbox i, #plat .plat2 .checkbox i, #plat .plat3 .checkbox i {
         position: absolute;
         top: 50%;
@@ -1191,37 +1313,40 @@ main {
 #dessert {
   background: #f6f6f6;
   padding-bottom: 10%;
-  transform: scale(0);
+  transform: translateY(-1000%);
   opacity: 0;
-  animation-name: bodymenu;
-  animation-delay: 10s;
+  animation-name: sectionmenu;
+  animation-delay: 4.4s;
   animation-duration: 2s;
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards; }
-  #dessert #dessert:first-child {
-    transform: scale(0);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 10s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; }
-  #dessert #dessert:nth-child(-n+2) {
-    transform: scale(0);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 10s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; }
-  #dessert #dessert:nth-child(-n+3) {
-    transform: scale(0);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 10s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  /* #dessert:first-child{
+            transform: scale(0);
+            opacity: 0;
+            animation-name: sectionmenu;
+            animation-delay: 10s;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          }      
+          #dessert:nth-child(-n+2){
+            transform:scale(0);
+            opacity: 0;
+            animation-name: sectionmenu;
+            animation-delay: 10s;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          }      
+          #dessert:nth-child(-n+3){
+            transform:scale(0);
+            opacity: 0;
+            animation-name: sectionmenu;
+            animation-delay: 10s;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          }  */ }
   @media screen and (min-width: 992px) {
     #dessert {
       grid-column: 3;
@@ -1392,6 +1517,17 @@ main {
               transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
+          @media screen and (min-width: 992px) {
+            #dessert .dessert1 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 70%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
         #dessert .dessert1 .monplat .leprix p {
           margin-bottom: 3.5%;
           font-family: 'Roboto', sans-serif;
@@ -1488,6 +1624,15 @@ main {
           left: 630px;
           top: -110px;
           height: 110px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
+      @media screen and (min-width: 992px) {
+        #dessert .dessert1 .checkbox {
+          left: 268px;
+          top: -68px;
+          height: 68px;
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center;
@@ -1651,6 +1796,17 @@ main {
               transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
+          @media screen and (min-width: 992px) {
+            #dessert .dessert2 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 70%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
         #dessert .dessert2 .monplat .leprix p {
           margin-bottom: 3.5%;
           font-family: 'Roboto', sans-serif;
@@ -1747,6 +1903,15 @@ main {
           left: 630px;
           top: -110px;
           height: 110px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
+      @media screen and (min-width: 992px) {
+        #dessert .dessert2 .checkbox {
+          left: 268px;
+          top: -68px;
+          height: 68px;
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px;
           transform-origin: center center;
@@ -1910,6 +2075,17 @@ main {
               transition-delay: 400ms;
               transition-duration: 0.6s;
               transition-timing-function: ease-in; } }
+          @media screen and (min-width: 992px) {
+            #dessert .dessert3 .monplat .leprix:hover > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 70%;
+              cursor: pointer;
+              transition-property: all;
+              transition-delay: 400ms;
+              transition-duration: 0.6s;
+              transition-timing-function: ease-in; } }
         #dessert .dessert3 .monplat .leprix p {
           margin-bottom: 3.5%;
           font-family: 'Roboto', sans-serif;
@@ -2010,6 +2186,15 @@ main {
           border-top-right-radius: 15px;
           transform-origin: center center;
           width: 13%; } }
+      @media screen and (min-width: 992px) {
+        #dessert .dessert3 .checkbox {
+          left: 268px;
+          top: -68px;
+          height: 68px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          transform-origin: center center;
+          width: 13%; } }
       #dessert .dessert3 .checkbox i {
         position: absolute;
         top: 50%;
@@ -2075,3 +2260,12 @@ footer {
     padding-right: 3px; }
   footer a {
     color: white; }
+
+footer {
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-name: body;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }

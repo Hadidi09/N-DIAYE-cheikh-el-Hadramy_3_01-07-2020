@@ -82,40 +82,40 @@ main{
         background: $bg-colormain;
         padding-bottom: 10%;
         padding-bottom: 35px;
-        transform: scale(0);
+        transform: translateY(-1000%);
         opacity: 0;
-        animation-name: bodymenu;
-        animation-delay: 4s;
-        animation-duration: 10s;
+        animation-name: sectionmenu;
+        animation-delay: 2.5s;
+        animation-duration: 2s;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
-        #entrée:first-child{
+        /*#entrée:first-child{
+            transform: scale(0);
+            opacity: 0;
+            animation-name: sectionmenu;
+            animation-delay: 4s;
+            animation-duration: 100ms;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          }     */ 
+         /* #entrée:nth-child(-n+2){
             transform: scale(0);
             opacity: 0;
             animation-name: sectionmenu;
             animation-delay: 5s;
-            animation-duration: 1s;
+            animation-duration: 100ms;
             animation-timing-function: ease-in;
             animation-fill-mode: forwards;
-          }      
-          #entrée:nth-child(-n+2){
-            transform:scale(0);
+          }*/      
+          /*#entrée:nth-child(-n+3){
+            transform: scale(0);
             opacity: 0;
             animation-name: sectionmenu;
-            animation-delay: 7s;
-            animation-duration: 1s;
+            animation-delay: 5.7s;
+            animation-duration: 100ms;
             animation-timing-function: ease-in;
             animation-fill-mode: forwards;
-          }      
-          #entrée:nth-child(-n+3){
-            transform:scale(0);
-            opacity: 0;
-            animation-name: sectionmenu;
-            animation-delay: 9s;
-            animation-duration: 1s;
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          }      
+          } */     
         @include breakpoint(992px){
             margin-top: 50px;
          }
@@ -180,42 +180,43 @@ main{
 
 
 #plat{ 
-    background: $bg-colormain;
-    padding-bottom: 10%;
-        transform: scale(0);
+        background: $bg-colormain;
+        padding-bottom: 10%;
+        transform: translateY(-1000%);
         opacity: 0;
-        animation-name: bodymenu;
-        animation-delay: 4s;
-        animation-duration: 10s;
+        animation-name: sectionmenu;
+        animation-delay: 3.6s;
+        animation-duration: 2s;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
-        #plat:first-child{
-            transform: scale(0);
+       /* #plat:first-child{
+            transform: translateY(-30px);
             opacity: 0;
-            animation-name: sectionmenu;
-            animation-delay: 5s;
-            animation-duration: 1s;
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          }      
-          #plat:nth-child(-n+2){
-            transform:scale(0);
-            opacity: 0;
-            animation-name: sectionmenu;
+            animation-name: bodymenu;
             animation-delay: 7s;
-            animation-duration: 1s;
+           
             animation-timing-function: ease-in;
             animation-fill-mode: forwards;
           }      
-          #plat:nth-child(-n+3){
-            transform:scale(0);
+         /* #plat:nth-child(-n+2){
+            transform: translateY(-30px);
             opacity: 0;
-            animation-name: sectionmenu;
+            animation-name: bodymenu;
             animation-delay: 9s;
-            animation-duration: 1s;
+           
             animation-timing-function: ease-in;
             animation-fill-mode: forwards;
-          }      
+          }  */    
+         /* #plat:nth-child(-n+3){
+            
+            transform: translateY(-30px);
+            opacity: 0;
+            animation-name: bodymenu;
+            animation-delay: 12s;
+            
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+          } */     
     @include breakpoint(992px){
         grid-column: 2;
         margin-bottom: 0px;
@@ -276,14 +277,14 @@ main{
 #dessert{ 
     background: $bg-colormain;
     padding-bottom: 10%;
-    transform: scale(0);
+    transform: translateY(-1000%);
         opacity: 0;
-        animation-name: bodymenu;
-        animation-delay: 10s;
+        animation-name: sectionmenu;
+        animation-delay: 4.4s;
         animation-duration: 2s;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
-        #dessert:first-child{
+       /* #dessert:first-child{
             transform: scale(0);
             opacity: 0;
             animation-name: sectionmenu;
@@ -309,7 +310,7 @@ main{
             animation-duration: 1s;
             animation-timing-function: ease-in;
             animation-fill-mode: forwards;
-          }      
+          }  */    
     @include breakpoint(992px){
         grid-column: 3;
         margin-top: 50px;
@@ -438,4 +439,11 @@ main{
 footer
 {
  @extend %footer;
+ transform: translateY(-30px);
+    opacity: 0;
+    animation-name: body;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;      
 }

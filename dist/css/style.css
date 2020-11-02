@@ -78,6 +78,36 @@ header {
     transform: translateY(0px);
     opacity: 1; } }
 
+@keyframes bodymenu {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuX {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0; }
+  90% {
+    transform: translateX(5%);
+    opacity: 1; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuY {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  90% {
+    transform: translateY(5%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
 @keyframes section {
   0% {
     transform: translateX(-30px);
@@ -86,11 +116,53 @@ header {
     transform: translateX(0px);
     opacity: 1; } }
 
+@keyframes sectionmenu {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  85% {
+    transform: translateY(10%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }
+
 @keyframes icones {
   0% {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
+
+@keyframes check {
+  0% {
+    transform-origin: center center;
+    opacity: 0; }
+  100% {
+    transform-origin: center center;
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes lol {
+  from {
+    transform: rotate(0deg) scale(1);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 1; } }
+
+@keyframes prixel {
+  from {
+    padding-left: 3%;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer; }
+  to {
+    padding-left: 3%;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer; } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
@@ -184,7 +256,7 @@ body {
         #localbook .book button {
           width: 80%; } }
     #localbook .book button:hover {
-      box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid; }
+      box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid, 0 0 45px mediumorchid, 0 0 65px mediumorchid; }
 
 #choix {
   background-color: white;
@@ -324,6 +396,36 @@ body {
     transform: translateY(0px);
     opacity: 1; } }
 
+@keyframes bodymenu {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuX {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0; }
+  90% {
+    transform: translateX(5%);
+    opacity: 1; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuY {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  90% {
+    transform: translateY(5%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
 @keyframes section {
   0% {
     transform: translateX(-30px);
@@ -332,11 +434,53 @@ body {
     transform: translateX(0px);
     opacity: 1; } }
 
+@keyframes sectionmenu {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  85% {
+    transform: translateY(10%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }
+
 @keyframes icones {
   0% {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
+
+@keyframes check {
+  0% {
+    transform-origin: center center;
+    opacity: 0; }
+  100% {
+    transform-origin: center center;
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes lol {
+  from {
+    transform: rotate(0deg) scale(1);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 1; } }
+
+@keyframes prixel {
+  from {
+    padding-left: 3%;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer; }
+  to {
+    padding-left: 3%;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer; } }
 
 .loader {
   margin: 0;
@@ -422,7 +566,8 @@ main {
     margin-top: 64px;
     width: 100%;
     height: 67vh;
-    border-radius: 13px; } }
+    border-radius: 13px;
+    padding-left: 0%; } }
 
 #lesmenus {
   padding-bottom: 35px;
@@ -562,6 +707,36 @@ main {
     transform: translateY(0px);
     opacity: 1; } }
 
+@keyframes bodymenu {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuX {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0; }
+  90% {
+    transform: translateX(5%);
+    opacity: 1; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuY {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  90% {
+    transform: translateY(5%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
 @keyframes section {
   0% {
     transform: translateX(-30px);
@@ -570,11 +745,53 @@ main {
     transform: translateX(0px);
     opacity: 1; } }
 
+@keyframes sectionmenu {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  85% {
+    transform: translateY(10%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }
+
 @keyframes icones {
   0% {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
+
+@keyframes check {
+  0% {
+    transform-origin: center center;
+    opacity: 0; }
+  100% {
+    transform-origin: center center;
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes lol {
+  from {
+    transform: rotate(0deg) scale(1);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 1; } }
+
+@keyframes prixel {
+  from {
+    padding-left: 3%;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer; }
+  to {
+    padding-left: 3%;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer; } }
 
 @keyframes coeur {
   0% {
@@ -647,6 +864,36 @@ main {
     transform: translateY(0px);
     opacity: 1; } }
 
+@keyframes bodymenu {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuX {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0; }
+  90% {
+    transform: translateX(5%);
+    opacity: 1; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuY {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  90% {
+    transform: translateY(5%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
 @keyframes section {
   0% {
     transform: translateX(-30px);
@@ -655,11 +902,53 @@ main {
     transform: translateX(0px);
     opacity: 1; } }
 
+@keyframes sectionmenu {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  85% {
+    transform: translateY(10%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }
+
 @keyframes icones {
   0% {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
+
+@keyframes check {
+  0% {
+    transform-origin: center center;
+    opacity: 0; }
+  100% {
+    transform-origin: center center;
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes lol {
+  from {
+    transform: rotate(0deg) scale(1);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 1; } }
+
+@keyframes prixel {
+  from {
+    padding-left: 3%;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer; }
+  to {
+    padding-left: 3%;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer; } }
 
 #menu1 .images figure, #menu2 .images figure, #menu3 .images figure, #menu4 .images figure {
   width: 100%;
@@ -753,7 +1042,7 @@ body {
         #localbook .book button {
           width: 80%; } }
     #localbook .book button:hover {
-      box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid; }
+      box-shadow: 0 0 5px mediumorchid, 0 0 15px mediumorchid, 0 0 45px mediumorchid, 0 0 65px mediumorchid; }
 
 #choix {
   background-color: white;
@@ -928,12 +1217,15 @@ body {
         @media screen and (min-width: 992px) {
           #menu1 .food1 .jaimenew button {
             width: 102px;
-            bottom: 288%;
-            left: 19%; } }
+            bottom: 305%;
+            left: -19%; } }
       #menu1 .food1 .jaimenew .fa-heart {
         position: relative;
         top: 20%;
         left: 26px; }
+        @media screen and (min-width: 992px) {
+          #menu1 .food1 .jaimenew .fa-heart {
+            margin: 12px; } }
 
 #menu2 {
   background-color: white;
@@ -1043,10 +1335,18 @@ body {
             width: 102px;
             bottom: 307%;
             left: -10%; } }
+        @media screen and (min-width: 992px) {
+          #menu2 .food1 .jaimenew button {
+            width: 102px;
+            bottom: 326%;
+            left: -10%; } }
       #menu2 .food1 .jaimenew .fa-heart {
         position: relative;
         top: 20%;
         left: 26px; }
+        @media screen and (min-width: 992px) {
+          #menu2 .food1 .jaimenew .fa-heart {
+            margin: 12px; } }
 
 #menu3 {
   background-color: white;
@@ -1126,6 +1426,9 @@ body {
         position: relative;
         top: 20%;
         left: 26px; }
+        @media screen and (min-width: 992px) {
+          #menu3 .food1 .jaimenew .fa-heart {
+            margin: 12px; } }
 
 #menu4 {
   background-color: white;
@@ -1206,6 +1509,9 @@ body {
         position: relative;
         top: 20%;
         left: 26px; }
+        @media screen and (min-width: 992px) {
+          #menu4 .food1 .jaimenew .fa-heart {
+            margin: 12px; } }
 
 footer {
   background-color: #212121;
@@ -1217,6 +1523,10 @@ footer {
   flex-direction: column;
   width: 100%;
   font-family: 'Roboto', sans-serif; }
+  @media screen and (min-width: 992px) {
+    footer {
+      align-items: center;
+      padding-left: 0%; } }
   footer h2 {
     font-family: 'Shrikhand', cursive;
     font-weight: 400;

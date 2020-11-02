@@ -28,9 +28,9 @@
             font-weight: normal;
             text-align: center;
             margin:0%;
-            @include breakpoint(280px){
+           /* @include breakpoint(280px){
                 font-size: 2em;
-            }
+            }*/
         }
         .fa-arrow-left{
             align-self: center;
