@@ -340,6 +340,100 @@
     }
 }
 
+//menu le gourmand
+
+%mainlegourmand{
+    background: $bg-colormain;
+    @include breakpoint(992px){
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 40% 40% 20%;
+        grid-auto-flow: column;
+
+    }
+
+    
+   
+    h2{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0%;
+        padding-top: 8.5%;
+        padding-bottom: 7.8%;
+        padding-right: 0%;
+        padding-left: 6%;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.7em;
+        font-weight: normal;
+        font-style: oblique;
+        border-radius: 45px 45px 0px 0px;
+        background-color: $bg-colormain;
+        position: relative;
+        bottom: 30px;
+        width: 100%;
+        @include breakpoint(992px){
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 0%;
+            margin-top: 30px;
+            padding-top: 8.5%;
+            padding-right: 0%;
+            padding-left: 6%;
+            font-family: 'Shrikhand', cursive;
+            font-size: 1.7em;
+            font-weight: normal;
+            font-style: oblique;
+            border-radius: 45px 45px 0px 0px;
+            background-color: #f6f6f6;
+            position: relative;
+            width: 30%;
+            grid-column: 1;
+            grid-row: 1;
+           
+        }
+
+        i{
+            padding-left: 50%;
+            @include breakpoint(280px){
+                padding-left: 9%;
+               
+            }
+            @include breakpoint(320px){
+                padding-left: 15%;
+               
+            }
+            @include breakpoint(375px){
+                padding-left: 24%;
+               
+            }
+            @include breakpoint(425px){
+                padding-left: 30%;
+               
+            }
+            @include breakpoint(599px){
+                padding-left: 46%;
+               
+            }
+            @include breakpoint(667px){
+                padding-left: 50%;
+               
+            }
+            @include breakpoint(768px){
+                padding-left: 55%;
+               
+            }
+            @include breakpoint(992px){
+                padding-left: 686px;
+               padding-top: 391px;
+            }
+               
+            
+        }
+
+    }
+}
+
 %image{
     
     img{

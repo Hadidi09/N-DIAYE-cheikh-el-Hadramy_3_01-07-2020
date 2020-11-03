@@ -23,7 +23,7 @@ body{
 @import './conteneur.scss';
 
 main{
-    @extend %main;
+    @extend %mainlegourmand;
 }
 
 .photoplat{
@@ -36,6 +36,7 @@ main{
 #entrée{
     background: $bg-colormain;
     padding-bottom: 10%;
+   
     h3{
         @include titre;
     }
@@ -43,63 +44,101 @@ main{
         @include trait;
     }
     .entrée1{
-        @include carpaccio;
-        h4{
-            @include titre4;
+        
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            
         }
-        .prix{
-            @include prix;
-            &:hover > p {
-                @include hoverp;
-                }
-            h5{
-                @include titre5($margin-right: 32%);
-            }
-            p{
-                @include para($paddingleft: 50px);
-            }
+    h4{
+        @include titre4;
+    }
+    .prix{
+        @include prix;
+       
+        p{
+                    
+            @include param;
+           
         }
+        span{
+            @include span;
+        } 
         .checkbox{
             @include checkbox;
             i{
-                @include faicon;
-                
+                @include faicon;  
+
+            }       
+                    
+        }        
+    }
+       
+    }
+}
+
+.entrée2{
+    @include titreplat; 
+    
+    article{
+        @include carpaccio;
+        
+    }
+    h4{
+        @include titre4;
+    }
+    .prix{
+        @include prix;
+        p{
+                    
+            @include param;
+           
+        }
+        span{
+            @include span;
+        }  
+        .checkbox{
+            @include checkbox;
+            i{
+                @include faicon;  
 
             }       
                     
         }       
     }
-}
-
-.entrée2{
-    @include carpaccio;
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-        h5{
-            @include titre5($margin-right: 17%);
-        }
-        p{
-            @include para($paddingleft: 63px);
-        }
-    }
 
 }
 .entrée3{
-    @include carpaccio;
+    
+    @include titreplat;
+    article{
+        @include carpaccio;
+        
+    }
     h4{
         @include titre4;
     }
     .prix{
         @include prix;
-        h5{
-            @include titre5($margin-right: 62%);
-        }
+       
+       
         p{
-            @include para($paddingleft: 0px);
+                    
+            @include param;
+           
         }
+        span{
+            @include span;
+        }  
+        .checkbox{
+            @include checkbox;
+            i{
+                @include faicon;  
+
+            }       
+                    
+        }       
     }
 
 }
@@ -113,50 +152,100 @@ main{
         @include trait;
     }
     .plat1{
-        
-        @include carpaccio;
-        h4{
-            @include titre4;
+        @include titreplat($hauteur:96px);
+
+        article{
+            @include carpaccio;
+            
         }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 32%);
-            }
-            p{
-                @include para($paddingleft: 55px);
-            }
-        }   
+    h4{
+        @include titre4;
+    }
+    .prix{
+        @include prix;
+       
+        p{
+                    
+            @include param;
+           
+        }
+        span{
+            @include span;
+        } 
+        .checkbox{
+            @include checkbox($heighter: 84%, $topop: 14%);
+            i{
+                @include faicon;  
+
+            }       
+                    
+        }        
+    }
+       
     }
     .plat2{
-        @include carpaccio;
-        h4{
-            @include titre4;
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            
         }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 36%);
-            }
-            p{
-                @include para($paddingleft: 0px);
-            }
-        }   
+    h4{
+        @include titre4;
+    }
+    .prix{
+        @include prix;
+       
+        p{
+                    
+            @include param;
+           
+        }
+        span{
+            @include span;
+        } 
+        .checkbox{
+            @include checkbox;
+            i{
+                @include faicon;  
+
+            }       
+                    
+        }        
+    }
+       
     }
     .plat3{
-        @include carpaccio;
-        h4{
-            @include titre4;
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            
         }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 41%);
-            }
-            p{
-                @include para($paddingleft: 0px);
-            }
-        }   
+    h4{
+        @include titre4;
+    }
+    .prix{
+        @include prix;
+       
+        p{
+                    
+            @include param;
+           
+        }
+        span{
+            @include span;
+        } 
+        .checkbox{
+            @include checkbox;
+            i{
+                @include faicon;  
+
+            }       
+                    
+        }        
+    }
+       
     }
 }    
 #dessert{ 
@@ -170,49 +259,100 @@ main{
     }
     .dessert1{
         
-        @include carpaccio;
-        h4{
-            @include titre4;
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            
         }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 50%);
-            }
-            p{
-                @include para($paddingleft: 30px);
-            }
-        }   
+    h4{
+        @include titre4;
+    }
+    .prix{
+        @include prix;
+       
+        p{
+                    
+            @include param;
+           
+        }
+        span{
+            @include span;
+        } 
+        .checkbox{
+            @include checkbox;
+            i{
+                @include faicon;  
+
+            }       
+                    
+        }        
+    }
+       
     }
     .dessert2{
-        @include carpaccio;
-        h4{
-            @include titre4;
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            
         }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 55%);
-            }
-            p{
-                @include para($paddingleft: 40px);
-            }
-        }   
+    h4{
+        @include titre4;
+    }
+    .prix{
+        @include prix;
+       
+        p{
+                    
+            @include param;
+           
+        }
+        span{
+            @include span;
+        } 
+        .checkbox{
+            @include checkbox;
+            i{
+                @include faicon;  
+
+            }       
+                    
+        }        
+    }
+       
     }
     .dessert3{
-        @include carpaccio;
-        h4{
-            @include titre4;
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            
         }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 59%);
-            }
-            p{
-                @include para($paddingleft: 0px);
-            }
-        }   
+    h4{
+        @include titre4;
+    }
+    .prix{
+        @include prix;
+       
+        p{
+                    
+            @include param;
+           
+        }
+        span{
+            @include span;
+        } 
+        .checkbox{
+            @include checkbox;
+            i{
+                @include faicon;  
+
+            }       
+                    
+        }        
+    }
+       
     }
 } 
 .order{

@@ -29,45 +29,75 @@
         flex-direction: column;
         border-radius: 15px;
         width: 90%;
-        margin: 0% 5%;
+        margin: 5% 5%;
         background:  rgba(255,255,255 ,1);
         transition-delay: 200ms;
+        &:hover .checkbox{
+            animation-name: check ;
+            animation-duration: 1s;
+            animation-delay: 50ms;
+            animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
+            animation-fill-mode: both;
+            animation-direction: alternate;
+        
+        i{
+            animation-name: lol ;
+            animation-duration: 0.5s;
+            animation-delay: 0.5s;
+            animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
+            animation-fill-mode: forwards;
+        }  
+    }
+    &:hover > .prix {
+        @include hoverp;
+        }
 
         
-        &:hover + .checkbox{
-                animation-name: check ;
-                animation-duration: 1s;
-                animation-delay: 50ms;
-                animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
-                animation-fill-mode: both;
-                animation-direction: alternate;
-            
-            i{
-                animation-name: lol ;
-                animation-duration: 0.5s;
-                animation-delay: 0.5s;
-                animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
-                animation-fill-mode: forwards;
-            }
-            
-        }
-       
+        
         
        
        
-     }   
+     }  
+     
+     // checkbox mixins
+ 
+
     /// titre plat entrée dessert
     
-    @mixin titreplat {
+    @mixin titreplat($hauteur: 75px) {
         position: relative;
         overflow: hidden;
-        height: 75px;
+        height: $hauteur;
         margin-top: 5%;
         margin-bottom: 0%;
+        @include breakpoint(320px){
+            position: relative;
+           overflow: hidden;
+           height: 85px;
+           margin-top: 5%;
+           margin-bottom: 0%;
+
+        }
+        @include breakpoint(375px){
+            position: relative;
+           overflow: hidden;
+           height: 91px;
+           margin-top: 5%;
+           margin-bottom: 0%;
+
+        }
+        @include breakpoint(425px){
+            position: relative;
+           overflow: hidden;
+           height: 98px;
+           margin-top: 5%;
+           margin-bottom: 0%;
+
+        }
         @include breakpoint(599px){
             position: relative;
            overflow: hidden;
-           height: 95px;
+           height: 123px;
            margin-top: 5%;
            margin-bottom: 0%;
 
@@ -75,7 +105,7 @@
         @include breakpoint(667px){
             position: relative;
            overflow: hidden;
-           height: 99px;
+           height: 132px;
            margin-top: 5%;
            margin-bottom: 0%;
 
@@ -83,7 +113,7 @@
         @include breakpoint(768px){
             position: relative;
            overflow: hidden;
-           height: 115px;
+           height: 147px;
            margin-top: 5%;
            margin-bottom: 0%;
 
@@ -122,8 +152,6 @@
     @mixin hoverp {
       
        
-    
-    
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -142,7 +170,9 @@
         transition-property: all;
         transition-delay: 390ms;
         transition-duration: 0.7s;
-        transition-timing-function: ease-in;
+        transition-timing-function: ease-in; 
+    
+   
     }
     @include breakpoint(320px){
         overflow: hidden;
@@ -248,101 +278,79 @@
     
         
 }
-@mixin checkbox {
-    position: relative;
-    left: 354px;
+@mixin checkbox($heighter: 83%, $topop: 17%) {
+    position: absolute;
+    top: $topop;
+    left: 81%;
     background: aqua;
-    width: 50px;
-    height: 77px;
-    display: block;
-    top: -78px;
-    border-bottom-right-radius: 17px;
-    border-top-right-radius: 17px;
-    transform: translateX(100px);
-    opacity: 0;
-    @include breakpoint(280px){
-       left: 216px;
-       top: -64px;
-       height: 64px;
+    width: 15%;
+    height: $heighter;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    transform: translateX(0px);
+    opacity: 1;
+  
+   @include breakpoint(320px){
+       left: 81%;
+       top: 17%;
+       height: 82%;
        border-bottom-right-radius: 15px;
        border-top-right-radius: 15px;
-       transform-origin: center center;
-       
-    }
-    @include breakpoint(320px){
-        left: 254px;
-        top: -68px;
-        height: 68px;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-        transform-origin: center center;
         
      }
      @include breakpoint(375px){
-        left: 306px;
-        top: -72px;
-        height: 72px;
+        left: 81%;
+        top: 19%;
+        height: 83%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform-origin: center center;
+        
         
      }
      @include breakpoint(411px){
-        left: 341px;
-        top: -76px;
-        height: 77px;
+        left: 81%;
+        top: 21%;
+        height: 80%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform-origin: center center;
-        
      }
      @include breakpoint(425px){
-        left: 354px;
-        top: -77px;
-        height: 78px;
+        left: 81%;
+        top: 22%;
+        height: 80%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform-origin: center center;
         
      }
      @include breakpoint(599px){
-        left: 490px;
-        top: -94px;
-        height: 95px;
+        left: 81%;
+        top: 24%;
+        height: 76%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform-origin: center center;
-        width: 13%;
         
      }
      @include breakpoint(667px){
-        left: 547px;
-        top: -99px;
-        height: 100px;
+        left: 81%;
+        top: 26%;
+        height: 77%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform-origin: center center;
-        width: 13%;
-        
      }
      @include breakpoint(768px){
-        left: 630px;
-        top: -110px;
-        height: 110px;
+        left: 81%;
+        top: 26%;
+        height: 74%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform-origin: center center;
-        width: 13%;
         
      }
      @include breakpoint(992px){
-        left: 268px;
-        top: -68px;
-        height: 68px;
+        left: 81%;
+        top: 17%;
+        height: 82%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform-origin: center center;
-        width: 13%;
 
      }
     
