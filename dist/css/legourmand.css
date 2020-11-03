@@ -1,4 +1,203 @@
 @charset "UTF-8";
+@keyframes coeur {
+  0% {
+    color: #FF79DA;
+    opacity: 0;
+    transform: scale(0.25); }
+  15% {
+    color: #FF79DA;
+    opacity: 0.45;
+    transform: scale(0.25); }
+  50% {
+    color: #FF79DA;
+    opacity: 0.65;
+    transform: scale(0.5); }
+  75% {
+    color: #FF79DA;
+    opacity: 1;
+    transform: scale(0.75); }
+  100% {
+    color: #FF79DA;
+    opacity: 0.80;
+    transform: scale(1.1); } }
+
+@keyframes opabutton {
+  0% {
+    background: mediumorchid;
+    opacity: 1; }
+  100% {
+    background: mediumorchid;
+    opacity: 2;
+    box-shadow: 0 0 5px #9e9e9e; } }
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+    opacity: 1; }
+  25% {
+    transform: rotate(360deg); }
+  55% {
+    transform: rotate(360deg); }
+  75% {
+    transform: rotate(360deg); }
+  100% {
+    transform: translate(-1000%);
+    opacity: 1; } }
+
+@keyframes load {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.35; }
+  25% {
+    opacity: 0.35; }
+  35% {
+    opacity: 0.35; }
+  50% {
+    opacity: 0.35; }
+  85% {
+    opacity: 0.35; }
+  95% {
+    opacity: 0.50; }
+  100% {
+    opacity: 1; } }
+
+@keyframes body {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes bodymenu {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuX {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0; }
+  90% {
+    transform: translateX(5%);
+    opacity: 1; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes bodymenuY {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  90% {
+    transform: translateY(5%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes section {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes sectionmenu {
+  0% {
+    transform: translateY(-1000%);
+    opacity: 0; }
+  85% {
+    transform: translateY(10%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }
+
+@keyframes icones {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes check {
+  0% {
+    transform-origin: center center;
+    opacity: 0; }
+  100% {
+    transform-origin: center center;
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes lol {
+  from {
+    transform: rotate(0deg) scale(1);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 1; } }
+
+@keyframes prixel {
+  from {
+    padding-left: 3%;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer; }
+  to {
+    padding-left: 3%;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer; } }
+
+.loader {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: 1;
+  animation-name: load;
+  animation-duration: 4s;
+  animation-delay: 20ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards; }
+
+.spinner {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-bottom: 16px solid #9356DC;
+  border-left: 16px solid #99E2D0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  line-height: 90px;
+  padding-left: 5px;
+  font-size: 16px;
+  opacity: 1;
+  animation-name: spinner;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: cubic-bezier(1, 0.44, 0.34, -0.23);
+  animation-fill-mode: forwards; }
+
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -365,6 +564,8 @@ main {
     font-size: 1.7em;
     font-weight: normal;
     font-style: oblique;
+    text-transform: uppercase;
+    text-align: center;
     border-radius: 45px 45px 0px 0px;
     background-color: #f6f6f6;
     position: relative;
@@ -415,11 +616,20 @@ main {
           padding-left: 55%; } }
       @media screen and (min-width: 992px) {
         main h2 i {
-          padding-left: 686px;
-          padding-top: 391px; } }
+          padding-left: 800%;
+          padding-top: 446%; } }
+
+@media screen and (min-width: 992px) {
+  .photoplat {
+    grid-column: 2 / span 4; } }
 
 .photoplat img {
   width: 100%; }
+  @media screen and (min-width: 992px) {
+    .photoplat img {
+      margin-top: 20px;
+      width: 80%;
+      border-radius: 74px; } }
 
 @keyframes coeur {
   0% {
@@ -580,7 +790,17 @@ main {
 
 #entrée {
   background: #f6f6f6;
-  padding-bottom: 10%; }
+  padding-bottom: 10%;
+  transform: translateY(-1000%);
+  opacity: 0;
+  animation-name: sectionmenu;
+  animation-delay: 2.5s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+  @media screen and (min-width: 992px) {
+    #entrée {
+      margin-top: 12%; } }
   #entrée h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -809,8 +1029,8 @@ main {
         height: 83%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform: translateX(0px);
-        opacity: 1; }
+        transform: translateX(100px);
+        opacity: 0; }
         @media screen and (min-width: 320px) {
           #entrée .entrée1 .prix .checkbox {
             left: 81%;
@@ -863,8 +1083,8 @@ main {
         @media screen and (min-width: 992px) {
           #entrée .entrée1 .prix .checkbox {
             left: 81%;
-            top: 17%;
-            height: 82%;
+            top: 11%;
+            height: 45%;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px; } }
         #entrée .entrée1 .prix .checkbox i {
@@ -1089,8 +1309,8 @@ main {
       height: 83%;
       border-bottom-right-radius: 15px;
       border-top-right-radius: 15px;
-      transform: translateX(0px);
-      opacity: 1; }
+      transform: translateX(100px);
+      opacity: 0; }
       @media screen and (min-width: 320px) {
         .entrée2 .prix .checkbox {
           left: 81%;
@@ -1143,8 +1363,8 @@ main {
       @media screen and (min-width: 992px) {
         .entrée2 .prix .checkbox {
           left: 81%;
-          top: 17%;
-          height: 82%;
+          top: 11%;
+          height: 45%;
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px; } }
       .entrée2 .prix .checkbox i {
@@ -1369,8 +1589,8 @@ main {
       height: 83%;
       border-bottom-right-radius: 15px;
       border-top-right-radius: 15px;
-      transform: translateX(0px);
-      opacity: 1; }
+      transform: translateX(100px);
+      opacity: 0; }
       @media screen and (min-width: 320px) {
         .entrée3 .prix .checkbox {
           left: 81%;
@@ -1423,8 +1643,8 @@ main {
       @media screen and (min-width: 992px) {
         .entrée3 .prix .checkbox {
           left: 81%;
-          top: 17%;
-          height: 82%;
+          top: 11%;
+          height: 45%;
           border-bottom-right-radius: 15px;
           border-top-right-radius: 15px; } }
       .entrée3 .prix .checkbox i {
@@ -1442,7 +1662,19 @@ main {
 
 #plat {
   background: #f6f6f6;
-  padding-bottom: 10%; }
+  padding-bottom: 10%;
+  transform: translateY(-1000%);
+  opacity: 0;
+  animation-name: sectionmenu;
+  animation-delay: 3.6s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+  @media screen and (min-width: 992px) {
+    #plat {
+      grid-column: 2;
+      margin-bottom: 0px;
+      margin-top: 12%; } }
   #plat h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -1671,8 +1903,8 @@ main {
         height: 84%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform: translateX(0px);
-        opacity: 1; }
+        transform: translateX(100px);
+        opacity: 0; }
         @media screen and (min-width: 320px) {
           #plat .plat1 .prix .checkbox {
             left: 81%;
@@ -1725,8 +1957,8 @@ main {
         @media screen and (min-width: 992px) {
           #plat .plat1 .prix .checkbox {
             left: 81%;
-            top: 17%;
-            height: 82%;
+            top: 11%;
+            height: 45%;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px; } }
         #plat .plat1 .prix .checkbox i {
@@ -1950,8 +2182,8 @@ main {
         height: 83%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform: translateX(0px);
-        opacity: 1; }
+        transform: translateX(100px);
+        opacity: 0; }
         @media screen and (min-width: 320px) {
           #plat .plat2 .prix .checkbox {
             left: 81%;
@@ -2004,8 +2236,8 @@ main {
         @media screen and (min-width: 992px) {
           #plat .plat2 .prix .checkbox {
             left: 81%;
-            top: 17%;
-            height: 82%;
+            top: 11%;
+            height: 45%;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px; } }
         #plat .plat2 .prix .checkbox i {
@@ -2229,8 +2461,8 @@ main {
         height: 83%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform: translateX(0px);
-        opacity: 1; }
+        transform: translateX(100px);
+        opacity: 0; }
         @media screen and (min-width: 320px) {
           #plat .plat3 .prix .checkbox {
             left: 81%;
@@ -2283,8 +2515,8 @@ main {
         @media screen and (min-width: 992px) {
           #plat .plat3 .prix .checkbox {
             left: 81%;
-            top: 17%;
-            height: 82%;
+            top: 11%;
+            height: 45%;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px; } }
         #plat .plat3 .prix .checkbox i {
@@ -2302,7 +2534,18 @@ main {
 
 #dessert {
   background: #f6f6f6;
-  padding-bottom: 10%; }
+  padding-bottom: 10%;
+  transform: translateY(-1000%);
+  opacity: 0;
+  animation-name: sectionmenu;
+  animation-delay: 4.4s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+  @media screen and (min-width: 992px) {
+    #dessert {
+      grid-column: 3;
+      margin-top: 12%; } }
   #dessert h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -2531,8 +2774,8 @@ main {
         height: 83%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform: translateX(0px);
-        opacity: 1; }
+        transform: translateX(100px);
+        opacity: 0; }
         @media screen and (min-width: 320px) {
           #dessert .dessert1 .prix .checkbox {
             left: 81%;
@@ -2585,8 +2828,8 @@ main {
         @media screen and (min-width: 992px) {
           #dessert .dessert1 .prix .checkbox {
             left: 81%;
-            top: 17%;
-            height: 82%;
+            top: 11%;
+            height: 45%;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px; } }
         #dessert .dessert1 .prix .checkbox i {
@@ -2810,8 +3053,8 @@ main {
         height: 83%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform: translateX(0px);
-        opacity: 1; }
+        transform: translateX(100px);
+        opacity: 0; }
         @media screen and (min-width: 320px) {
           #dessert .dessert2 .prix .checkbox {
             left: 81%;
@@ -2864,8 +3107,8 @@ main {
         @media screen and (min-width: 992px) {
           #dessert .dessert2 .prix .checkbox {
             left: 81%;
-            top: 17%;
-            height: 82%;
+            top: 11%;
+            height: 45%;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px; } }
         #dessert .dessert2 .prix .checkbox i {
@@ -3089,8 +3332,8 @@ main {
         height: 83%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        transform: translateX(0px);
-        opacity: 1; }
+        transform: translateX(100px);
+        opacity: 0; }
         @media screen and (min-width: 320px) {
           #dessert .dessert3 .prix .checkbox {
             left: 81%;
@@ -3143,8 +3386,8 @@ main {
         @media screen and (min-width: 992px) {
           #dessert .dessert3 .prix .checkbox {
             left: 81%;
-            top: 17%;
-            height: 82%;
+            top: 11%;
+            height: 45%;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px; } }
         #dessert .dessert3 .prix .checkbox i {
@@ -3212,3 +3455,12 @@ footer {
     padding-right: 3px; }
   footer a {
     color: white; }
+
+footer {
+  transform: translateY(-30px);
+  opacity: 0;
+  animation-name: body;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }

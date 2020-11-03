@@ -287,8 +287,8 @@
     height: $heighter;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-    transform: translateX(0px);
-    opacity: 1;
+    transform: translateX(100px);
+    opacity: 0;
   
    @include breakpoint(320px){
        left: 81%;
@@ -347,8 +347,8 @@
      }
      @include breakpoint(992px){
         left: 81%;
-        top: 17%;
-        height: 82%;
+        top: 11%;
+        height: 45%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
 

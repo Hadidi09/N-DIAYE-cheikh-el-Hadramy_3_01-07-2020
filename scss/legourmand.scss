@@ -1,4 +1,43 @@
 @import './variables';
+@import './mixins';
+
+
+.loader{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: $bg-colorwhite;
+    opacity: 1;
+    animation-name: load;
+    animation-duration: 4s;
+    animation-delay: 20ms;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;  
+}
+.spinner{
+    position: absolute;
+    top: 65%; left: 50%; right: 0; bottom: 0;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-bottom:16px solid $color-primary;
+    border-left:16px solid $color-tertiary; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    line-height: 90px;
+    padding-left: 5px;
+    font-size: 16px;
+    opacity: 1;
+    animation-name: spinner ;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(1, 0.44, 0.34,-0.23);
+    animation-fill-mode: forwards;   
+}
 
 *{
     box-sizing: border-box;
@@ -27,8 +66,16 @@ main{
 }
 
 .photoplat{
+    @include breakpoint(992px){
+        grid-column: 2 / span 4;
+    }    
     img{
         width: 100%;
+        @include breakpoint(992px){
+            margin-top: 20px;
+            width: 80%;
+            border-radius: 74px;
+        }
     }
 }
 @import './mixins';
@@ -36,7 +83,17 @@ main{
 #entrée{
     background: $bg-colormain;
     padding-bottom: 10%;
-   
+    transform: translateY(-1000%);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 2.5s;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+
+        @include breakpoint(992px){
+            margin-top: 12%;
+         }
     h3{
         @include titre;
     }
@@ -145,6 +202,18 @@ main{
 #plat{ 
     background: $bg-colormain;
     padding-bottom: 10%;
+    transform: translateY(-1000%);
+    opacity: 0;
+    animation-name: sectionmenu;
+    animation-delay: 3.6s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    @include breakpoint(992px){
+        grid-column: 2;
+        margin-bottom: 0px;
+        margin-top: 12%;
+     }
     h3{
         @include titre;
     }
@@ -251,6 +320,19 @@ main{
 #dessert{ 
     background: $bg-colormain;
     padding-bottom: 10%;
+    transform: translateY(-1000%);
+    opacity: 0;
+    animation-name: sectionmenu;
+    animation-delay: 4.4s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+    @include breakpoint(992px){
+        grid-column: 3;
+        margin-top: 12%;
+     }
+
     h3{
         @include titre;
     }
@@ -364,4 +446,12 @@ main{
 footer
 {
  @extend %footer;
+    transform: translateY(-30px);
+    opacity: 0;
+    animation-name: body;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards; 
+
 }

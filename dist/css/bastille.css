@@ -583,6 +583,8 @@ main {
         font-size: 1.7em;
         font-weight: normal;
         font-style: oblique;
+        text-transform: uppercase;
+        text-align: center;
         border-radius: 45px 45px 0px 0px;
         background-color: #f6f6f6;
         position: relative;
@@ -626,7 +628,8 @@ main {
   @media screen and (min-width: 992px) {
     .photoplat img {
       margin-top: 20px;
-      width: 80%; } }
+      width: 80%;
+      border-radius: 74px; } }
 
 @keyframes coeur {
   0% {
@@ -788,44 +791,16 @@ main {
 #entrée {
   background: #f6f6f6;
   padding-bottom: 10%;
-  padding-bottom: 35px;
   transform: translateY(-1000%);
   opacity: 0;
   animation-name: sectionmenu;
   animation-delay: 2.5s;
   animation-duration: 2s;
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  /*#entrée:first-child{
-            transform: scale(0);
-            opacity: 0;
-            animation-name: sectionmenu;
-            animation-delay: 4s;
-            animation-duration: 100ms;
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          }     */
-  /* #entrée:nth-child(-n+2){
-            transform: scale(0);
-            opacity: 0;
-            animation-name: sectionmenu;
-            animation-delay: 5s;
-            animation-duration: 100ms;
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          }*/
-  /*#entrée:nth-child(-n+3){
-            transform: scale(0);
-            opacity: 0;
-            animation-name: sectionmenu;
-            animation-delay: 5.7s;
-            animation-duration: 100ms;
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          } */ }
+  animation-fill-mode: forwards; }
   @media screen and (min-width: 992px) {
     #entrée {
-      margin-top: 50px; } }
+      margin-top: 12%; } }
   #entrée h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -893,7 +868,7 @@ main {
         height: 147px;
         margin-top: 5%;
         margin-bottom: 0%; } }
-    #entrée .entrée1 .monplat, #entrée .entrée2 .monplat, #entrée .entrée3 .monplat {
+    #entrée .entrée1 article, #entrée .entrée2 article, #entrée .entrée3 article {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
@@ -902,20 +877,20 @@ main {
       margin: 5% 5%;
       background: white;
       transition-delay: 200ms; }
-      #entrée .entrée1 .monplat:hover .checkbox, #entrée .entrée2 .monplat:hover .checkbox, #entrée .entrée3 .monplat:hover .checkbox {
+      #entrée .entrée1 article:hover .checkbox, #entrée .entrée2 article:hover .checkbox, #entrée .entrée3 article:hover .checkbox {
         animation-name: check;
         animation-duration: 1s;
         animation-delay: 50ms;
         animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
         animation-fill-mode: both;
         animation-direction: alternate; }
-        #entrée .entrée1 .monplat:hover .checkbox i, #entrée .entrée2 .monplat:hover .checkbox i, #entrée .entrée3 .monplat:hover .checkbox i {
+        #entrée .entrée1 article:hover .checkbox i, #entrée .entrée2 article:hover .checkbox i, #entrée .entrée3 article:hover .checkbox i {
           animation-name: lol;
           animation-duration: 0.5s;
           animation-delay: 0.5s;
           animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
           animation-fill-mode: forwards; }
-      #entrée .entrée1 .monplat:hover > .prix, #entrée .entrée2 .monplat:hover > .prix, #entrée .entrée3 .monplat:hover > .prix {
+      #entrée .entrée1 article:hover > .prix, #entrée .entrée2 article:hover > .prix, #entrée .entrée3 article:hover > .prix {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -926,7 +901,7 @@ main {
         transition-duration: 0.8s;
         transition-timing-function: ease-in; }
         @media screen and (min-width: 280px) {
-          #entrée .entrée1 .monplat:hover > .prix, #entrée .entrée2 .monplat:hover > .prix, #entrée .entrée3 .monplat:hover > .prix {
+          #entrée .entrée1 article:hover > .prix, #entrée .entrée2 article:hover > .prix, #entrée .entrée3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -937,7 +912,7 @@ main {
             transition-duration: 0.7s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 320px) {
-          #entrée .entrée1 .monplat:hover > .prix, #entrée .entrée2 .monplat:hover > .prix, #entrée .entrée3 .monplat:hover > .prix {
+          #entrée .entrée1 article:hover > .prix, #entrée .entrée2 article:hover > .prix, #entrée .entrée3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -948,7 +923,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 375px) {
-          #entrée .entrée1 .monplat:hover > .prix, #entrée .entrée2 .monplat:hover > .prix, #entrée .entrée3 .monplat:hover > .prix {
+          #entrée .entrée1 article:hover > .prix, #entrée .entrée2 article:hover > .prix, #entrée .entrée3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -959,7 +934,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 411px) {
-          #entrée .entrée1 .monplat:hover > .prix, #entrée .entrée2 .monplat:hover > .prix, #entrée .entrée3 .monplat:hover > .prix {
+          #entrée .entrée1 article:hover > .prix, #entrée .entrée2 article:hover > .prix, #entrée .entrée3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -970,7 +945,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 425px) {
-          #entrée .entrée1 .monplat:hover > .prix, #entrée .entrée2 .monplat:hover > .prix, #entrée .entrée3 .monplat:hover > .prix {
+          #entrée .entrée1 article:hover > .prix, #entrée .entrée2 article:hover > .prix, #entrée .entrée3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -981,7 +956,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 599px) {
-          #entrée .entrée1 .monplat:hover > .prix, #entrée .entrée2 .monplat:hover > .prix, #entrée .entrée3 .monplat:hover > .prix {
+          #entrée .entrée1 article:hover > .prix, #entrée .entrée2 article:hover > .prix, #entrée .entrée3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -992,7 +967,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 992px) {
-          #entrée .entrée1 .monplat:hover > .prix, #entrée .entrée2 .monplat:hover > .prix, #entrée .entrée3 .monplat:hover > .prix {
+          #entrée .entrée1 article:hover > .prix, #entrée .entrée2 article:hover > .prix, #entrée .entrée3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1002,215 +977,128 @@ main {
             transition-delay: 400ms;
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
-      #entrée .entrée1 .monplat h4, #entrée .entrée2 .monplat h4, #entrée .entrée3 .monplat h4 {
-        margin-top: 4%;
-        margin-bottom: 3%;
-        padding-left: 3%; }
-      #entrée .entrée1 .monplat .leprix, #entrée .entrée2 .monplat .leprix, #entrée .entrée3 .monplat .leprix {
-        display: flex;
-        flex-direction: row;
-        padding-left: 3%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 450ms;
-        transition-duration: 1s;
-        transition-timing-function: ease-in; }
-        @media screen and (min-width: 280px) {
-          #entrée .entrée1 .monplat .leprix, #entrée .entrée2 .monplat .leprix, #entrée .entrée3 .monplat .leprix {
-            width: 95%;
-            overflow: hidden;
-            text-overflow: ellipsis; } }
-        #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
+    #entrée .entrée1 h4, #entrée .entrée2 h4, #entrée .entrée3 h4 {
+      margin-top: 4%;
+      margin-bottom: 3%;
+      padding-left: 3%; }
+    #entrée .entrée1 .prix, #entrée .entrée2 .prix, #entrée .entrée3 .prix {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      cursor: pointer;
+      transition-property: all;
+      transition-delay: 450ms;
+      transition-duration: 1s;
+      transition-timing-function: ease-in; }
+      @media screen and (min-width: 280px) {
+        #entrée .entrée1 .prix, #entrée .entrée2 .prix, #entrée .entrée3 .prix {
+          width: 95%;
           overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          width: 70%;
-          cursor: pointer;
-          transition-property: all;
-          transition-delay: 400ms;
-          transition-duration: 0.8s;
-          transition-timing-function: ease-in; }
-          @media screen and (min-width: 280px) {
-            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 60%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 390ms;
-              transition-duration: 0.7s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 320px) {
-            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 370ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
-            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 355ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 411px) {
-            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 500ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 425px) {
-            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 550ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 599px) {
-            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 80%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 992px) {
-            #entrée .entrée1 .monplat .leprix:hover > p, #entrée .entrée2 .monplat .leprix:hover > p, #entrée .entrée3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-      #entrée .entrée1 .monplat p, #entrée .entrée2 .monplat p, #entrée .entrée3 .monplat p {
+          text-overflow: ellipsis; } }
+      #entrée .entrée1 .prix p, #entrée .entrée2 .prix p, #entrée .entrée3 .prix p {
         margin-bottom: 3.5%;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         color: #9e9e9e;
         width: 85%; }
         @media screen and (min-width: 280px) {
-          #entrée .entrée1 .monplat p, #entrée .entrée2 .monplat p, #entrée .entrée3 .monplat p {
+          #entrée .entrée1 .prix p, #entrée .entrée2 .prix p, #entrée .entrée3 .prix p {
             width: 85%;
             overflow: hidden;
             text-overflow: ellipsis; } }
         @media screen and (min-width: 320px) {
-          #entrée .entrée1 .monplat p, #entrée .entrée2 .monplat p, #entrée .entrée3 .monplat p {
+          #entrée .entrée1 .prix p, #entrée .entrée2 .prix p, #entrée .entrée3 .prix p {
             width: 90%;
             overflow: hidden;
             text-overflow: ellipsis; } }
-      #entrée .entrée1 .monplat span, #entrée .entrée2 .monplat span, #entrée .entrée3 .monplat span {
+      #entrée .entrée1 .prix span, #entrée .entrée2 .prix span, #entrée .entrée3 .prix span {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         padding-right: 0px;
         padding-left: 10px; }
-    #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
-      position: absolute;
-      top: 17%;
-      left: 81%;
-      background: aqua;
-      width: 15%;
-      height: 83%;
-      border-bottom-right-radius: 15px;
-      border-top-right-radius: 15px;
-      transform: translateX(0px);
-      opacity: 1; }
-      @media screen and (min-width: 320px) {
-        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 375px) {
-        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
-          left: 81%;
-          top: 19%;
-          height: 83%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 411px) {
-        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
-          left: 81%;
-          top: 21%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 425px) {
-        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
-          left: 81%;
-          top: 22%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 599px) {
-        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
-          left: 81%;
-          top: 24%;
-          height: 76%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 667px) {
-        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 77%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 768px) {
-        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 74%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 992px) {
-        #entrée .entrée1 .checkbox, #entrée .entrée2 .checkbox, #entrée .entrée3 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      #entrée .entrée1 .checkbox i, #entrée .entrée2 .checkbox i, #entrée .entrée3 .checkbox i {
+      #entrée .entrée1 .prix .checkbox, #entrée .entrée2 .prix .checkbox, #entrée .entrée3 .prix .checkbox {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: rotate(0deg); }
+        top: 17%;
+        left: 81%;
+        background: aqua;
+        width: 15%;
+        height: 83%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transform: translateX(100px);
+        opacity: 0; }
+        @media screen and (min-width: 320px) {
+          #entrée .entrée1 .prix .checkbox, #entrée .entrée2 .prix .checkbox, #entrée .entrée3 .prix .checkbox {
+            left: 81%;
+            top: 17%;
+            height: 82%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 375px) {
+          #entrée .entrée1 .prix .checkbox, #entrée .entrée2 .prix .checkbox, #entrée .entrée3 .prix .checkbox {
+            left: 81%;
+            top: 19%;
+            height: 83%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 411px) {
+          #entrée .entrée1 .prix .checkbox, #entrée .entrée2 .prix .checkbox, #entrée .entrée3 .prix .checkbox {
+            left: 81%;
+            top: 21%;
+            height: 80%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 425px) {
+          #entrée .entrée1 .prix .checkbox, #entrée .entrée2 .prix .checkbox, #entrée .entrée3 .prix .checkbox {
+            left: 81%;
+            top: 22%;
+            height: 80%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
         @media screen and (min-width: 599px) {
-          #entrée .entrée1 .checkbox i, #entrée .entrée2 .checkbox i, #entrée .entrée3 .checkbox i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: rotate(0deg);
-            transform: scale(1.5); } }
+          #entrée .entrée1 .prix .checkbox, #entrée .entrée2 .prix .checkbox, #entrée .entrée3 .prix .checkbox {
+            left: 81%;
+            top: 24%;
+            height: 76%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 667px) {
+          #entrée .entrée1 .prix .checkbox, #entrée .entrée2 .prix .checkbox, #entrée .entrée3 .prix .checkbox {
+            left: 81%;
+            top: 26%;
+            height: 77%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 768px) {
+          #entrée .entrée1 .prix .checkbox, #entrée .entrée2 .prix .checkbox, #entrée .entrée3 .prix .checkbox {
+            left: 81%;
+            top: 26%;
+            height: 74%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 992px) {
+          #entrée .entrée1 .prix .checkbox, #entrée .entrée2 .prix .checkbox, #entrée .entrée3 .prix .checkbox {
+            left: 81%;
+            top: 11%;
+            height: 45%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        #entrée .entrée1 .prix .checkbox i, #entrée .entrée2 .prix .checkbox i, #entrée .entrée3 .prix .checkbox i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: rotate(0deg); }
+          @media screen and (min-width: 599px) {
+            #entrée .entrée1 .prix .checkbox i, #entrée .entrée2 .prix .checkbox i, #entrée .entrée3 .prix .checkbox i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: rotate(0deg);
+              transform: scale(1.5); } }
 
 #plat {
   background: #f6f6f6;
@@ -1221,40 +1109,12 @@ main {
   animation-delay: 3.6s;
   animation-duration: 2s;
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  /* #plat:first-child{
-            transform: translateY(-30px);
-            opacity: 0;
-            animation-name: bodymenu;
-            animation-delay: 7s;
-           
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          }      
-         /* #plat:nth-child(-n+2){
-            transform: translateY(-30px);
-            opacity: 0;
-            animation-name: bodymenu;
-            animation-delay: 9s;
-           
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          }  */
-  /* #plat:nth-child(-n+3){
-            
-            transform: translateY(-30px);
-            opacity: 0;
-            animation-name: bodymenu;
-            animation-delay: 12s;
-            
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          } */ }
+  animation-fill-mode: forwards; }
   @media screen and (min-width: 992px) {
     #plat {
       grid-column: 2;
       margin-bottom: 0px;
-      margin-top: 50px; } }
+      margin-top: 12%; } }
   #plat h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -1322,7 +1182,7 @@ main {
         height: 147px;
         margin-top: 5%;
         margin-bottom: 0%; } }
-    #plat .plat1 .monplat, #plat .plat2 .monplat, #plat .plat3 .monplat {
+    #plat .plat1 article, #plat .plat2 article, #plat .plat3 article {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
@@ -1331,20 +1191,20 @@ main {
       margin: 5% 5%;
       background: white;
       transition-delay: 200ms; }
-      #plat .plat1 .monplat:hover .checkbox, #plat .plat2 .monplat:hover .checkbox, #plat .plat3 .monplat:hover .checkbox {
+      #plat .plat1 article:hover .checkbox, #plat .plat2 article:hover .checkbox, #plat .plat3 article:hover .checkbox {
         animation-name: check;
         animation-duration: 1s;
         animation-delay: 50ms;
         animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
         animation-fill-mode: both;
         animation-direction: alternate; }
-        #plat .plat1 .monplat:hover .checkbox i, #plat .plat2 .monplat:hover .checkbox i, #plat .plat3 .monplat:hover .checkbox i {
+        #plat .plat1 article:hover .checkbox i, #plat .plat2 article:hover .checkbox i, #plat .plat3 article:hover .checkbox i {
           animation-name: lol;
           animation-duration: 0.5s;
           animation-delay: 0.5s;
           animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
           animation-fill-mode: forwards; }
-      #plat .plat1 .monplat:hover > .prix, #plat .plat2 .monplat:hover > .prix, #plat .plat3 .monplat:hover > .prix {
+      #plat .plat1 article:hover > .prix, #plat .plat2 article:hover > .prix, #plat .plat3 article:hover > .prix {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -1355,7 +1215,7 @@ main {
         transition-duration: 0.8s;
         transition-timing-function: ease-in; }
         @media screen and (min-width: 280px) {
-          #plat .plat1 .monplat:hover > .prix, #plat .plat2 .monplat:hover > .prix, #plat .plat3 .monplat:hover > .prix {
+          #plat .plat1 article:hover > .prix, #plat .plat2 article:hover > .prix, #plat .plat3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1366,7 +1226,7 @@ main {
             transition-duration: 0.7s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 320px) {
-          #plat .plat1 .monplat:hover > .prix, #plat .plat2 .monplat:hover > .prix, #plat .plat3 .monplat:hover > .prix {
+          #plat .plat1 article:hover > .prix, #plat .plat2 article:hover > .prix, #plat .plat3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1377,7 +1237,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 375px) {
-          #plat .plat1 .monplat:hover > .prix, #plat .plat2 .monplat:hover > .prix, #plat .plat3 .monplat:hover > .prix {
+          #plat .plat1 article:hover > .prix, #plat .plat2 article:hover > .prix, #plat .plat3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1388,7 +1248,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 411px) {
-          #plat .plat1 .monplat:hover > .prix, #plat .plat2 .monplat:hover > .prix, #plat .plat3 .monplat:hover > .prix {
+          #plat .plat1 article:hover > .prix, #plat .plat2 article:hover > .prix, #plat .plat3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1399,7 +1259,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 425px) {
-          #plat .plat1 .monplat:hover > .prix, #plat .plat2 .monplat:hover > .prix, #plat .plat3 .monplat:hover > .prix {
+          #plat .plat1 article:hover > .prix, #plat .plat2 article:hover > .prix, #plat .plat3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1410,7 +1270,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 599px) {
-          #plat .plat1 .monplat:hover > .prix, #plat .plat2 .monplat:hover > .prix, #plat .plat3 .monplat:hover > .prix {
+          #plat .plat1 article:hover > .prix, #plat .plat2 article:hover > .prix, #plat .plat3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1421,7 +1281,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 992px) {
-          #plat .plat1 .monplat:hover > .prix, #plat .plat2 .monplat:hover > .prix, #plat .plat3 .monplat:hover > .prix {
+          #plat .plat1 article:hover > .prix, #plat .plat2 article:hover > .prix, #plat .plat3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1431,215 +1291,128 @@ main {
             transition-delay: 400ms;
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
-      #plat .plat1 .monplat h4, #plat .plat2 .monplat h4, #plat .plat3 .monplat h4 {
-        margin-top: 4%;
-        margin-bottom: 3%;
-        padding-left: 3%; }
-      #plat .plat1 .monplat .leprix, #plat .plat2 .monplat .leprix, #plat .plat3 .monplat .leprix {
-        display: flex;
-        flex-direction: row;
-        padding-left: 3%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 450ms;
-        transition-duration: 1s;
-        transition-timing-function: ease-in; }
+    #plat .plat1 h4, #plat .plat2 h4, #plat .plat3 h4 {
+      margin-top: 4%;
+      margin-bottom: 3%;
+      padding-left: 3%; }
+    #plat .plat1 .prix, #plat .plat2 .prix, #plat .plat3 .prix {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      cursor: pointer;
+      transition-property: all;
+      transition-delay: 450ms;
+      transition-duration: 1s;
+      transition-timing-function: ease-in; }
+      @media screen and (min-width: 280px) {
+        #plat .plat1 .prix, #plat .plat2 .prix, #plat .plat3 .prix {
+          width: 95%;
+          overflow: hidden;
+          text-overflow: ellipsis; } }
+      #plat .plat1 .prix p, #plat .plat2 .prix p, #plat .plat3 .prix p {
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e;
+        width: 85%; }
         @media screen and (min-width: 280px) {
-          #plat .plat1 .monplat .leprix, #plat .plat2 .monplat .leprix, #plat .plat3 .monplat .leprix {
-            width: 95%;
+          #plat .plat1 .prix p, #plat .plat2 .prix p, #plat .plat3 .prix p {
+            width: 85%;
             overflow: hidden;
             text-overflow: ellipsis; } }
-        #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          width: 70%;
-          cursor: pointer;
-          transition-property: all;
-          transition-delay: 400ms;
-          transition-duration: 0.8s;
-          transition-timing-function: ease-in; }
-          @media screen and (min-width: 280px) {
-            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 60%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 390ms;
-              transition-duration: 0.7s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 320px) {
-            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 370ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
-            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 355ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 411px) {
-            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 500ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 425px) {
-            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 550ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 599px) {
-            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 80%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 992px) {
-            #plat .plat1 .monplat .leprix:hover > p, #plat .plat2 .monplat .leprix:hover > p, #plat .plat3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-        #plat .plat1 .monplat .leprix p, #plat .plat2 .monplat .leprix p, #plat .plat3 .monplat .leprix p {
-          margin-bottom: 3.5%;
-          font-family: 'Roboto', sans-serif;
-          font-weight: 400;
-          color: #9e9e9e;
-          width: 85%; }
-          @media screen and (min-width: 280px) {
-            #plat .plat1 .monplat .leprix p, #plat .plat2 .monplat .leprix p, #plat .plat3 .monplat .leprix p {
-              width: 85%;
-              overflow: hidden;
-              text-overflow: ellipsis; } }
-          @media screen and (min-width: 320px) {
-            #plat .plat1 .monplat .leprix p, #plat .plat2 .monplat .leprix p, #plat .plat3 .monplat .leprix p {
-              width: 90%;
-              overflow: hidden;
-              text-overflow: ellipsis; } }
-        #plat .plat1 .monplat .leprix span, #plat .plat2 .monplat .leprix span, #plat .plat3 .monplat .leprix span {
-          font-family: 'Roboto', sans-serif;
-          font-weight: 400;
-          padding-right: 0px;
-          padding-left: 10px; }
-    #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
-      position: absolute;
-      top: 17%;
-      left: 81%;
-      background: aqua;
-      width: 15%;
-      height: 83%;
-      border-bottom-right-radius: 15px;
-      border-top-right-radius: 15px;
-      transform: translateX(0px);
-      opacity: 1; }
-      @media screen and (min-width: 320px) {
-        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 375px) {
-        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
-          left: 81%;
-          top: 19%;
-          height: 83%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 411px) {
-        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
-          left: 81%;
-          top: 21%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 425px) {
-        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
-          left: 81%;
-          top: 22%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 599px) {
-        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
-          left: 81%;
-          top: 24%;
-          height: 76%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 667px) {
-        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 77%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 768px) {
-        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 74%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 992px) {
-        #plat .plat1 .checkbox, #plat .plat2 .checkbox, #plat .plat3 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      #plat .plat1 .checkbox i, #plat .plat2 .checkbox i, #plat .plat3 .checkbox i {
+        @media screen and (min-width: 320px) {
+          #plat .plat1 .prix p, #plat .plat2 .prix p, #plat .plat3 .prix p {
+            width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis; } }
+      #plat .plat1 .prix span, #plat .plat2 .prix span, #plat .plat3 .prix span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        padding-right: 0px;
+        padding-left: 10px; }
+      #plat .plat1 .prix .checkbox, #plat .plat2 .prix .checkbox, #plat .plat3 .prix .checkbox {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: rotate(0deg); }
+        top: 17%;
+        left: 81%;
+        background: aqua;
+        width: 15%;
+        height: 83%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transform: translateX(100px);
+        opacity: 0; }
+        @media screen and (min-width: 320px) {
+          #plat .plat1 .prix .checkbox, #plat .plat2 .prix .checkbox, #plat .plat3 .prix .checkbox {
+            left: 81%;
+            top: 17%;
+            height: 82%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 375px) {
+          #plat .plat1 .prix .checkbox, #plat .plat2 .prix .checkbox, #plat .plat3 .prix .checkbox {
+            left: 81%;
+            top: 19%;
+            height: 83%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 411px) {
+          #plat .plat1 .prix .checkbox, #plat .plat2 .prix .checkbox, #plat .plat3 .prix .checkbox {
+            left: 81%;
+            top: 21%;
+            height: 80%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 425px) {
+          #plat .plat1 .prix .checkbox, #plat .plat2 .prix .checkbox, #plat .plat3 .prix .checkbox {
+            left: 81%;
+            top: 22%;
+            height: 80%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
         @media screen and (min-width: 599px) {
-          #plat .plat1 .checkbox i, #plat .plat2 .checkbox i, #plat .plat3 .checkbox i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: rotate(0deg);
-            transform: scale(1.5); } }
+          #plat .plat1 .prix .checkbox, #plat .plat2 .prix .checkbox, #plat .plat3 .prix .checkbox {
+            left: 81%;
+            top: 24%;
+            height: 76%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 667px) {
+          #plat .plat1 .prix .checkbox, #plat .plat2 .prix .checkbox, #plat .plat3 .prix .checkbox {
+            left: 81%;
+            top: 26%;
+            height: 77%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 768px) {
+          #plat .plat1 .prix .checkbox, #plat .plat2 .prix .checkbox, #plat .plat3 .prix .checkbox {
+            left: 81%;
+            top: 26%;
+            height: 74%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 992px) {
+          #plat .plat1 .prix .checkbox, #plat .plat2 .prix .checkbox, #plat .plat3 .prix .checkbox {
+            left: 81%;
+            top: 11%;
+            height: 45%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        #plat .plat1 .prix .checkbox i, #plat .plat2 .prix .checkbox i, #plat .plat3 .prix .checkbox i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: rotate(0deg); }
+          @media screen and (min-width: 599px) {
+            #plat .plat1 .prix .checkbox i, #plat .plat2 .prix .checkbox i, #plat .plat3 .prix .checkbox i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: rotate(0deg);
+              transform: scale(1.5); } }
 
 #dessert {
   background: #f6f6f6;
@@ -1650,38 +1423,11 @@ main {
   animation-delay: 4.4s;
   animation-duration: 2s;
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  /* #dessert:first-child{
-            transform: scale(0);
-            opacity: 0;
-            animation-name: sectionmenu;
-            animation-delay: 10s;
-            animation-duration: 1s;
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          }      
-          #dessert:nth-child(-n+2){
-            transform:scale(0);
-            opacity: 0;
-            animation-name: sectionmenu;
-            animation-delay: 10s;
-            animation-duration: 1s;
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          }      
-          #dessert:nth-child(-n+3){
-            transform:scale(0);
-            opacity: 0;
-            animation-name: sectionmenu;
-            animation-delay: 10s;
-            animation-duration: 1s;
-            animation-timing-function: ease-in;
-            animation-fill-mode: forwards;
-          }  */ }
+  animation-fill-mode: forwards; }
   @media screen and (min-width: 992px) {
     #dessert {
       grid-column: 3;
-      margin-top: 50px; } }
+      margin-top: 12%; } }
   #dessert h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
@@ -1701,55 +1447,55 @@ main {
         width: 6%;
         margin-left: 5%;
         border: 1px solid #99E2D0; } }
-  #dessert .dessert1 {
+  #dessert .dessert1, #dessert .dessert2, #dessert .dessert3 {
     position: relative;
     overflow: hidden;
     height: 75px;
     margin-top: 5%;
     margin-bottom: 0%; }
     @media screen and (min-width: 320px) {
-      #dessert .dessert1 {
+      #dessert .dessert1, #dessert .dessert2, #dessert .dessert3 {
         position: relative;
         overflow: hidden;
         height: 85px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 375px) {
-      #dessert .dessert1 {
+      #dessert .dessert1, #dessert .dessert2, #dessert .dessert3 {
         position: relative;
         overflow: hidden;
         height: 91px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 425px) {
-      #dessert .dessert1 {
+      #dessert .dessert1, #dessert .dessert2, #dessert .dessert3 {
         position: relative;
         overflow: hidden;
         height: 98px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 599px) {
-      #dessert .dessert1 {
+      #dessert .dessert1, #dessert .dessert2, #dessert .dessert3 {
         position: relative;
         overflow: hidden;
         height: 123px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 667px) {
-      #dessert .dessert1 {
+      #dessert .dessert1, #dessert .dessert2, #dessert .dessert3 {
         position: relative;
         overflow: hidden;
         height: 132px;
         margin-top: 5%;
         margin-bottom: 0%; } }
     @media screen and (min-width: 768px) {
-      #dessert .dessert1 {
+      #dessert .dessert1, #dessert .dessert2, #dessert .dessert3 {
         position: relative;
         overflow: hidden;
         height: 147px;
         margin-top: 5%;
         margin-bottom: 0%; } }
-    #dessert .dessert1 .monplat {
+    #dessert .dessert1 article, #dessert .dessert2 article, #dessert .dessert3 article {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
@@ -1758,20 +1504,20 @@ main {
       margin: 5% 5%;
       background: white;
       transition-delay: 200ms; }
-      #dessert .dessert1 .monplat:hover .checkbox {
+      #dessert .dessert1 article:hover .checkbox, #dessert .dessert2 article:hover .checkbox, #dessert .dessert3 article:hover .checkbox {
         animation-name: check;
         animation-duration: 1s;
         animation-delay: 50ms;
         animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
         animation-fill-mode: both;
         animation-direction: alternate; }
-        #dessert .dessert1 .monplat:hover .checkbox i {
+        #dessert .dessert1 article:hover .checkbox i, #dessert .dessert2 article:hover .checkbox i, #dessert .dessert3 article:hover .checkbox i {
           animation-name: lol;
           animation-duration: 0.5s;
           animation-delay: 0.5s;
           animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
           animation-fill-mode: forwards; }
-      #dessert .dessert1 .monplat:hover > .prix {
+      #dessert .dessert1 article:hover > .prix, #dessert .dessert2 article:hover > .prix, #dessert .dessert3 article:hover > .prix {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -1782,7 +1528,7 @@ main {
         transition-duration: 0.8s;
         transition-timing-function: ease-in; }
         @media screen and (min-width: 280px) {
-          #dessert .dessert1 .monplat:hover > .prix {
+          #dessert .dessert1 article:hover > .prix, #dessert .dessert2 article:hover > .prix, #dessert .dessert3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1793,7 +1539,7 @@ main {
             transition-duration: 0.7s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 320px) {
-          #dessert .dessert1 .monplat:hover > .prix {
+          #dessert .dessert1 article:hover > .prix, #dessert .dessert2 article:hover > .prix, #dessert .dessert3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1804,7 +1550,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 375px) {
-          #dessert .dessert1 .monplat:hover > .prix {
+          #dessert .dessert1 article:hover > .prix, #dessert .dessert2 article:hover > .prix, #dessert .dessert3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1815,7 +1561,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 411px) {
-          #dessert .dessert1 .monplat:hover > .prix {
+          #dessert .dessert1 article:hover > .prix, #dessert .dessert2 article:hover > .prix, #dessert .dessert3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1826,7 +1572,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 425px) {
-          #dessert .dessert1 .monplat:hover > .prix {
+          #dessert .dessert1 article:hover > .prix, #dessert .dessert2 article:hover > .prix, #dessert .dessert3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1837,7 +1583,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 599px) {
-          #dessert .dessert1 .monplat:hover > .prix {
+          #dessert .dessert1 article:hover > .prix, #dessert .dessert2 article:hover > .prix, #dessert .dessert3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1848,7 +1594,7 @@ main {
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
         @media screen and (min-width: 992px) {
-          #dessert .dessert1 .monplat:hover > .prix {
+          #dessert .dessert1 article:hover > .prix, #dessert .dessert2 article:hover > .prix, #dessert .dessert3 article:hover > .prix {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1858,947 +1604,128 @@ main {
             transition-delay: 400ms;
             transition-duration: 0.6s;
             transition-timing-function: ease-in; } }
-      #dessert .dessert1 .monplat h4 {
-        margin-top: 4%;
-        margin-bottom: 3%;
-        padding-left: 3%; }
-      #dessert .dessert1 .monplat .leprix {
-        display: flex;
-        flex-direction: row;
-        padding-left: 3%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 450ms;
-        transition-duration: 1s;
-        transition-timing-function: ease-in; }
-        @media screen and (min-width: 280px) {
-          #dessert .dessert1 .monplat .leprix {
-            width: 95%;
-            overflow: hidden;
-            text-overflow: ellipsis; } }
-        #dessert .dessert1 .monplat .leprix:hover > p {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          width: 70%;
-          cursor: pointer;
-          transition-property: all;
-          transition-delay: 400ms;
-          transition-duration: 0.8s;
-          transition-timing-function: ease-in; }
-          @media screen and (min-width: 280px) {
-            #dessert .dessert1 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 60%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 390ms;
-              transition-duration: 0.7s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 320px) {
-            #dessert .dessert1 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 370ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
-            #dessert .dessert1 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 355ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 411px) {
-            #dessert .dessert1 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 500ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 425px) {
-            #dessert .dessert1 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 550ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 599px) {
-            #dessert .dessert1 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 80%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 992px) {
-            #dessert .dessert1 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-        #dessert .dessert1 .monplat .leprix p {
-          margin-bottom: 3.5%;
-          font-family: 'Roboto', sans-serif;
-          font-weight: 400;
-          color: #9e9e9e;
-          width: 85%; }
-          @media screen and (min-width: 280px) {
-            #dessert .dessert1 .monplat .leprix p {
-              width: 85%;
-              overflow: hidden;
-              text-overflow: ellipsis; } }
-          @media screen and (min-width: 320px) {
-            #dessert .dessert1 .monplat .leprix p {
-              width: 90%;
-              overflow: hidden;
-              text-overflow: ellipsis; } }
-        #dessert .dessert1 .monplat .leprix span {
-          font-family: 'Roboto', sans-serif;
-          font-weight: 400;
-          padding-right: 0px;
-          padding-left: 10px; }
-    #dessert .dessert1 .checkbox {
-      position: absolute;
-      top: 17%;
-      left: 81%;
-      background: aqua;
-      width: 15%;
-      height: 83%;
-      border-bottom-right-radius: 15px;
-      border-top-right-radius: 15px;
-      transform: translateX(0px);
-      opacity: 1; }
-      @media screen and (min-width: 320px) {
-        #dessert .dessert1 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 375px) {
-        #dessert .dessert1 .checkbox {
-          left: 81%;
-          top: 19%;
-          height: 83%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 411px) {
-        #dessert .dessert1 .checkbox {
-          left: 81%;
-          top: 21%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 425px) {
-        #dessert .dessert1 .checkbox {
-          left: 81%;
-          top: 22%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 599px) {
-        #dessert .dessert1 .checkbox {
-          left: 81%;
-          top: 24%;
-          height: 76%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 667px) {
-        #dessert .dessert1 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 77%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 768px) {
-        #dessert .dessert1 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 74%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 992px) {
-        #dessert .dessert1 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      #dessert .dessert1 .checkbox i {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: rotate(0deg); }
-        @media screen and (min-width: 599px) {
-          #dessert .dessert1 .checkbox i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: rotate(0deg);
-            transform: scale(1.5); } }
-  #dessert .dessert2 {
-    position: relative;
-    overflow: hidden;
-    height: 75px;
-    margin-top: 5%;
-    margin-bottom: 0%; }
-    @media screen and (min-width: 320px) {
-      #dessert .dessert2 {
-        position: relative;
-        overflow: hidden;
-        height: 85px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 375px) {
-      #dessert .dessert2 {
-        position: relative;
-        overflow: hidden;
-        height: 91px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 425px) {
-      #dessert .dessert2 {
-        position: relative;
-        overflow: hidden;
-        height: 98px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 599px) {
-      #dessert .dessert2 {
-        position: relative;
-        overflow: hidden;
-        height: 123px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 667px) {
-      #dessert .dessert2 {
-        position: relative;
-        overflow: hidden;
-        height: 132px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 768px) {
-      #dessert .dessert2 {
-        position: relative;
-        overflow: hidden;
-        height: 147px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    #dessert .dessert2 .monplat {
+    #dessert .dessert1 h4, #dessert .dessert2 h4, #dessert .dessert3 h4 {
+      margin-top: 4%;
+      margin-bottom: 3%;
+      padding-left: 3%; }
+    #dessert .dessert1 .prix, #dessert .dessert2 .prix, #dessert .dessert3 .prix {
       display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      border-radius: 15px;
-      width: 90%;
-      margin: 5% 5%;
-      background: white;
-      transition-delay: 200ms; }
-      #dessert .dessert2 .monplat:hover .checkbox {
-        animation-name: check;
-        animation-duration: 1s;
-        animation-delay: 50ms;
-        animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
-        animation-fill-mode: both;
-        animation-direction: alternate; }
-        #dessert .dessert2 .monplat:hover .checkbox i {
-          animation-name: lol;
-          animation-duration: 0.5s;
-          animation-delay: 0.5s;
-          animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
-          animation-fill-mode: forwards; }
-      #dessert .dessert2 .monplat:hover > .prix {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 70%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 400ms;
-        transition-duration: 0.8s;
-        transition-timing-function: ease-in; }
+      flex-direction: row;
+      padding-left: 3%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      cursor: pointer;
+      transition-property: all;
+      transition-delay: 450ms;
+      transition-duration: 1s;
+      transition-timing-function: ease-in; }
+      @media screen and (min-width: 280px) {
+        #dessert .dessert1 .prix, #dessert .dessert2 .prix, #dessert .dessert3 .prix {
+          width: 95%;
+          overflow: hidden;
+          text-overflow: ellipsis; } }
+      #dessert .dessert1 .prix p, #dessert .dessert2 .prix p, #dessert .dessert3 .prix p {
+        margin-bottom: 3.5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #9e9e9e;
+        width: 85%; }
         @media screen and (min-width: 280px) {
-          #dessert .dessert2 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 60%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 390ms;
-            transition-duration: 0.7s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 320px) {
-          #dessert .dessert2 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 70%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 370ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 375px) {
-          #dessert .dessert2 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 75%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 355ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 411px) {
-          #dessert .dessert2 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 75%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 500ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 425px) {
-          #dessert .dessert2 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 75%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 550ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 599px) {
-          #dessert .dessert2 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 80%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 400ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 992px) {
-          #dessert .dessert2 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 70%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 400ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-      #dessert .dessert2 .monplat h4 {
-        margin-top: 4%;
-        margin-bottom: 3%;
-        padding-left: 3%; }
-      #dessert .dessert2 .monplat .leprix {
-        display: flex;
-        flex-direction: row;
-        padding-left: 3%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 450ms;
-        transition-duration: 1s;
-        transition-timing-function: ease-in; }
-        @media screen and (min-width: 280px) {
-          #dessert .dessert2 .monplat .leprix {
-            width: 95%;
+          #dessert .dessert1 .prix p, #dessert .dessert2 .prix p, #dessert .dessert3 .prix p {
+            width: 85%;
             overflow: hidden;
             text-overflow: ellipsis; } }
-        #dessert .dessert2 .monplat .leprix:hover > p {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          width: 70%;
-          cursor: pointer;
-          transition-property: all;
-          transition-delay: 400ms;
-          transition-duration: 0.8s;
-          transition-timing-function: ease-in; }
-          @media screen and (min-width: 280px) {
-            #dessert .dessert2 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 60%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 390ms;
-              transition-duration: 0.7s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 320px) {
-            #dessert .dessert2 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 370ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
-            #dessert .dessert2 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 355ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 411px) {
-            #dessert .dessert2 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 500ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 425px) {
-            #dessert .dessert2 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 550ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 599px) {
-            #dessert .dessert2 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 80%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 992px) {
-            #dessert .dessert2 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-        #dessert .dessert2 .monplat .leprix p {
-          margin-bottom: 3.5%;
-          font-family: 'Roboto', sans-serif;
-          font-weight: 400;
-          color: #9e9e9e;
-          width: 85%; }
-          @media screen and (min-width: 280px) {
-            #dessert .dessert2 .monplat .leprix p {
-              width: 85%;
-              overflow: hidden;
-              text-overflow: ellipsis; } }
-          @media screen and (min-width: 320px) {
-            #dessert .dessert2 .monplat .leprix p {
-              width: 90%;
-              overflow: hidden;
-              text-overflow: ellipsis; } }
-        #dessert .dessert2 .monplat .leprix span {
-          font-family: 'Roboto', sans-serif;
-          font-weight: 400;
-          padding-right: 0px;
-          padding-left: 10px; }
-    #dessert .dessert2 .checkbox {
-      position: absolute;
-      top: 17%;
-      left: 81%;
-      background: aqua;
-      width: 15%;
-      height: 83%;
-      border-bottom-right-radius: 15px;
-      border-top-right-radius: 15px;
-      transform: translateX(0px);
-      opacity: 1; }
-      @media screen and (min-width: 320px) {
-        #dessert .dessert2 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 375px) {
-        #dessert .dessert2 .checkbox {
-          left: 81%;
-          top: 19%;
-          height: 83%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 411px) {
-        #dessert .dessert2 .checkbox {
-          left: 81%;
-          top: 21%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 425px) {
-        #dessert .dessert2 .checkbox {
-          left: 81%;
-          top: 22%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 599px) {
-        #dessert .dessert2 .checkbox {
-          left: 81%;
-          top: 24%;
-          height: 76%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 667px) {
-        #dessert .dessert2 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 77%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 768px) {
-        #dessert .dessert2 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 74%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 992px) {
-        #dessert .dessert2 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      #dessert .dessert2 .checkbox i {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: rotate(0deg); }
-        @media screen and (min-width: 599px) {
-          #dessert .dessert2 .checkbox i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: rotate(0deg);
-            transform: scale(1.5); } }
-  #dessert .dessert3 {
-    position: relative;
-    overflow: hidden;
-    height: 75px;
-    margin-top: 5%;
-    margin-bottom: 0%; }
-    @media screen and (min-width: 320px) {
-      #dessert .dessert3 {
-        position: relative;
-        overflow: hidden;
-        height: 85px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 375px) {
-      #dessert .dessert3 {
-        position: relative;
-        overflow: hidden;
-        height: 91px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 425px) {
-      #dessert .dessert3 {
-        position: relative;
-        overflow: hidden;
-        height: 98px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 599px) {
-      #dessert .dessert3 {
-        position: relative;
-        overflow: hidden;
-        height: 123px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 667px) {
-      #dessert .dessert3 {
-        position: relative;
-        overflow: hidden;
-        height: 132px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    @media screen and (min-width: 768px) {
-      #dessert .dessert3 {
-        position: relative;
-        overflow: hidden;
-        height: 147px;
-        margin-top: 5%;
-        margin-bottom: 0%; } }
-    #dessert .dessert3 .monplat {
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      border-radius: 15px;
-      width: 90%;
-      margin: 5% 5%;
-      background: white;
-      transition-delay: 200ms; }
-      #dessert .dessert3 .monplat:hover .checkbox {
-        animation-name: check;
-        animation-duration: 1s;
-        animation-delay: 50ms;
-        animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
-        animation-fill-mode: both;
-        animation-direction: alternate; }
-        #dessert .dessert3 .monplat:hover .checkbox i {
-          animation-name: lol;
-          animation-duration: 0.5s;
-          animation-delay: 0.5s;
-          animation-timing-function: cubic-bezier(0.34, 0.16, 0.64, 0.9);
-          animation-fill-mode: forwards; }
-      #dessert .dessert3 .monplat:hover > .prix {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 70%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 400ms;
-        transition-duration: 0.8s;
-        transition-timing-function: ease-in; }
-        @media screen and (min-width: 280px) {
-          #dessert .dessert3 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 60%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 390ms;
-            transition-duration: 0.7s;
-            transition-timing-function: ease-in; } }
         @media screen and (min-width: 320px) {
-          #dessert .dessert3 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 70%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 370ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 375px) {
-          #dessert .dessert3 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 75%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 355ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 411px) {
-          #dessert .dessert3 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 75%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 500ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 425px) {
-          #dessert .dessert3 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 75%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 550ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 599px) {
-          #dessert .dessert3 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 80%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 400ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-        @media screen and (min-width: 992px) {
-          #dessert .dessert3 .monplat:hover > .prix {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 70%;
-            cursor: pointer;
-            transition-property: all;
-            transition-delay: 400ms;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in; } }
-      #dessert .dessert3 .monplat h4 {
-        margin-top: 4%;
-        margin-bottom: 3%;
-        padding-left: 3%; }
-      #dessert .dessert3 .monplat .leprix {
-        display: flex;
-        flex-direction: row;
-        padding-left: 3%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 450ms;
-        transition-duration: 1s;
-        transition-timing-function: ease-in; }
-        @media screen and (min-width: 280px) {
-          #dessert .dessert3 .monplat .leprix {
-            width: 95%;
+          #dessert .dessert1 .prix p, #dessert .dessert2 .prix p, #dessert .dessert3 .prix p {
+            width: 90%;
             overflow: hidden;
             text-overflow: ellipsis; } }
-        #dessert .dessert3 .monplat .leprix:hover > p {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          width: 70%;
-          cursor: pointer;
-          transition-property: all;
-          transition-delay: 400ms;
-          transition-duration: 0.8s;
-          transition-timing-function: ease-in; }
-          @media screen and (min-width: 280px) {
-            #dessert .dessert3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 60%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 390ms;
-              transition-duration: 0.7s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 320px) {
-            #dessert .dessert3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 370ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 375px) {
-            #dessert .dessert3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 355ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 411px) {
-            #dessert .dessert3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 500ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 425px) {
-            #dessert .dessert3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 75%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 550ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 599px) {
-            #dessert .dessert3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 80%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-          @media screen and (min-width: 992px) {
-            #dessert .dessert3 .monplat .leprix:hover > p {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              width: 70%;
-              cursor: pointer;
-              transition-property: all;
-              transition-delay: 400ms;
-              transition-duration: 0.6s;
-              transition-timing-function: ease-in; } }
-        #dessert .dessert3 .monplat .leprix p {
-          margin-bottom: 3.5%;
-          font-family: 'Roboto', sans-serif;
-          font-weight: 400;
-          color: #9e9e9e;
-          width: 85%; }
-          @media screen and (min-width: 280px) {
-            #dessert .dessert3 .monplat .leprix p {
-              width: 85%;
-              overflow: hidden;
-              text-overflow: ellipsis; } }
-          @media screen and (min-width: 320px) {
-            #dessert .dessert3 .monplat .leprix p {
-              width: 90%;
-              overflow: hidden;
-              text-overflow: ellipsis; } }
-        #dessert .dessert3 .monplat .leprix span {
-          font-family: 'Roboto', sans-serif;
-          font-weight: 400;
-          padding-right: 0px;
-          padding-left: 10px; }
-    #dessert .dessert3 .checkbox {
-      position: absolute;
-      top: 17%;
-      left: 81%;
-      background: aqua;
-      width: 15%;
-      height: 83%;
-      border-bottom-right-radius: 15px;
-      border-top-right-radius: 15px;
-      transform: translateX(0px);
-      opacity: 1; }
-      @media screen and (min-width: 320px) {
-        #dessert .dessert3 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 375px) {
-        #dessert .dessert3 .checkbox {
-          left: 81%;
-          top: 19%;
-          height: 83%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 411px) {
-        #dessert .dessert3 .checkbox {
-          left: 81%;
-          top: 21%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 425px) {
-        #dessert .dessert3 .checkbox {
-          left: 81%;
-          top: 22%;
-          height: 80%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 599px) {
-        #dessert .dessert3 .checkbox {
-          left: 81%;
-          top: 24%;
-          height: 76%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 667px) {
-        #dessert .dessert3 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 77%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 768px) {
-        #dessert .dessert3 .checkbox {
-          left: 81%;
-          top: 26%;
-          height: 74%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      @media screen and (min-width: 992px) {
-        #dessert .dessert3 .checkbox {
-          left: 81%;
-          top: 17%;
-          height: 82%;
-          border-bottom-right-radius: 15px;
-          border-top-right-radius: 15px; } }
-      #dessert .dessert3 .checkbox i {
+      #dessert .dessert1 .prix span, #dessert .dessert2 .prix span, #dessert .dessert3 .prix span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        padding-right: 0px;
+        padding-left: 10px; }
+      #dessert .dessert1 .prix .checkbox, #dessert .dessert2 .prix .checkbox, #dessert .dessert3 .prix .checkbox {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: rotate(0deg); }
+        top: 17%;
+        left: 81%;
+        background: aqua;
+        width: 15%;
+        height: 83%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transform: translateX(100px);
+        opacity: 0; }
+        @media screen and (min-width: 320px) {
+          #dessert .dessert1 .prix .checkbox, #dessert .dessert2 .prix .checkbox, #dessert .dessert3 .prix .checkbox {
+            left: 81%;
+            top: 17%;
+            height: 82%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 375px) {
+          #dessert .dessert1 .prix .checkbox, #dessert .dessert2 .prix .checkbox, #dessert .dessert3 .prix .checkbox {
+            left: 81%;
+            top: 19%;
+            height: 83%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 411px) {
+          #dessert .dessert1 .prix .checkbox, #dessert .dessert2 .prix .checkbox, #dessert .dessert3 .prix .checkbox {
+            left: 81%;
+            top: 21%;
+            height: 80%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 425px) {
+          #dessert .dessert1 .prix .checkbox, #dessert .dessert2 .prix .checkbox, #dessert .dessert3 .prix .checkbox {
+            left: 81%;
+            top: 22%;
+            height: 80%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
         @media screen and (min-width: 599px) {
-          #dessert .dessert3 .checkbox i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: rotate(0deg);
-            transform: scale(1.5); } }
+          #dessert .dessert1 .prix .checkbox, #dessert .dessert2 .prix .checkbox, #dessert .dessert3 .prix .checkbox {
+            left: 81%;
+            top: 24%;
+            height: 76%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 667px) {
+          #dessert .dessert1 .prix .checkbox, #dessert .dessert2 .prix .checkbox, #dessert .dessert3 .prix .checkbox {
+            left: 81%;
+            top: 26%;
+            height: 77%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 768px) {
+          #dessert .dessert1 .prix .checkbox, #dessert .dessert2 .prix .checkbox, #dessert .dessert3 .prix .checkbox {
+            left: 81%;
+            top: 26%;
+            height: 74%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        @media screen and (min-width: 992px) {
+          #dessert .dessert1 .prix .checkbox, #dessert .dessert2 .prix .checkbox, #dessert .dessert3 .prix .checkbox {
+            left: 81%;
+            top: 11%;
+            height: 45%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px; } }
+        #dessert .dessert1 .prix .checkbox i, #dessert .dessert2 .prix .checkbox i, #dessert .dessert3 .prix .checkbox i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: rotate(0deg); }
+          @media screen and (min-width: 599px) {
+            #dessert .dessert1 .prix .checkbox i, #dessert .dessert2 .prix .checkbox i, #dessert .dessert3 .prix .checkbox i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: rotate(0deg);
+              transform: scale(1.5); } }
 
 .order {
   display: flex;

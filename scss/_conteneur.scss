@@ -290,6 +290,8 @@
             font-size: 1.7em;
             font-weight: normal;
             font-style: oblique;
+            text-transform: uppercase;
+            text-align: center;
             border-radius: 45px 45px 0px 0px;
             background-color: #f6f6f6;
             position: relative;
@@ -366,6 +368,8 @@
         font-size: 1.7em;
         font-weight: normal;
         font-style: oblique;
+        text-transform: uppercase;
+        text-align: center;
         border-radius: 45px 45px 0px 0px;
         background-color: $bg-colormain;
         position: relative;
@@ -424,8 +428,8 @@
                
             }
             @include breakpoint(992px){
-                padding-left: 686px;
-               padding-top: 391px;
+                padding-left: 800%;
+               padding-top: 446%;
             }
                
             

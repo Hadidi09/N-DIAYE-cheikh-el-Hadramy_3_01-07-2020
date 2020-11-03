@@ -1,4 +1,42 @@
 @import './variables';
+@import './mixins';
+
+.loader{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: $bg-colorwhite;
+    opacity: 1;
+    animation-name: load;
+    animation-duration: 4s;
+    animation-delay: 20ms;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;  
+}
+.spinner{
+    position: absolute;
+    top: 65%; left: 50%; right: 0; bottom: 0;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-bottom:16px solid $color-primary;
+    border-left:16px solid $color-tertiary; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    line-height: 90px;
+    padding-left: 5px;
+    font-size: 16px;
+    opacity: 1;
+    animation-name: spinner ;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(1, 0.44, 0.34,-0.23);
+    animation-fill-mode: forwards;   
+}
 
 *{
     box-sizing: border-box;
@@ -27,74 +65,105 @@ main{
 }
 
 .photoplat{
+    @include breakpoint(992px){
+        grid-column: 2 / span 4;
+    }
     img{
         width: 100%;
+        @include breakpoint(992px){
+            margin-top: 20px;
+            width: 80%;
+            border-radius: 74px;
+        }
     }
 }
 @import './mixins';
 
-#entrée{
-    background: $bg-colormain;
-    padding-bottom: 10%;
-    h3{
-        @include titre;
-    }
-    hr{
-        @include trait;
-    }
+    #entrée{
+        background: $bg-colormain;
+        padding-bottom: 10%;
+       
+        transform: translateY(-1000%);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 2.5s;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        
+        @include breakpoint(992px){
+            margin-top: 12%;
+         }
+        
+        h3{
+            @include titre;
+        }
+        hr{
+            @include trait;
+        }
     .entrée1{
-        @include carpaccio;
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            
+        }
         h4{
             @include titre4;
         }
         .prix{
             @include prix;
-            h5{
-                @include titre5($margin-right: 37%);
-            }
+        
             p{
-                @include para($paddingleft: 50px);
+                        
+                @include param;
+            
             }
-        }
+            span{
+                @include span;
+            } 
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;  
 
-    }
+                }       
+                        
+            }        
+        }
+       
+    }   
+           
+            
+               
+              
+               
 }
+    .entrée2{
+        @extend .entrée1;
+       }   
 
-.entrée2{
-    @include carpaccio;
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-        h5{
-            @include titre5($margin-right: 26%);
-        }
-        p{
-            @include para($paddingleft: 63px);
-        }
-    }
+       .entrée3{
+        @extend .entrée1;
+       }   
 
-}
-.entrée3{
-    @include carpaccio;
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-        h5{
-            @include titre5($margin-right: 39%);
-        }
-        p{
-            @include para($paddingleft: 0px);
-        }
-    }
 
-}
 #plat{ 
-    background: $bg-colormain;
-    padding-bottom: 10%;
+        background: $bg-colormain;
+        padding-bottom: 10%;
+        transform: translateY(-1000%);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 3.6s;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+      
+    @include breakpoint(992px){
+        grid-column: 2;
+        margin-bottom: 0px;
+        margin-top: 12%;
+     }
     h3{
         @include titre;
     }
@@ -102,55 +171,62 @@ main{
         @include trait;
     }
     .plat1{
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            
+        }
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
         
-        @include carpaccio;
-        h4{
-            @include titre4;
-        }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 26%);
-            }
             p{
-                @include para($paddingleft: 55px);
+                        
+                @include param;
+            
             }
-        }   
-    }
+            span{
+                @include span;
+            } 
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
+        }
+       
+       
+           
+    }   
+    
+   
     .plat2{
-        @include carpaccio;
-        h4{
-            @include titre4;
-        }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 9%);
-            }
-            p{
-                @include para($paddingleft: 77px);
-            }
-        }   
-    }
-    .plat3{
-        @include carpaccio;
-        h4{
-            @include titre4;
-        }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 33%);
-            }
-            p{
-                @include para($paddingleft: 0px);
-            }
-        }   
-    }
-}    
+        @extend .plat1;
+       }   
+       .plat3{
+        @extend .plat1;
+       }
+}      
 #dessert{ 
     background: $bg-colormain;
     padding-bottom: 10%;
+        transform: translateY(-1000%);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 4.4s;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    @include breakpoint(992px){
+        grid-column: 3;
+        margin-top: 12%;
+     }
     h3{
         @include titre;
     }
@@ -158,51 +234,44 @@ main{
         @include trait;
     }
     .dessert1{
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            
+        }
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
         
-        @include carpaccio;
-        h4{
-            @include titre4;
-        }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 22%);
-            }
             p{
-                @include para($paddingleft: 30px);
+                        
+                @include param;
+            
             }
-        }   
-    }
-    .dessert2{
-        @include carpaccio;
-        h4{
-            @include titre4;
+            span{
+                @include span;
+            } 
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
         }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 41%);
-            }
-            p{
-                @include para($paddingleft: 40px);
-            }
-        }   
-    }
-    .dessert3{
-        @include carpaccio;
-        h4{
-            @include titre4;
-        }
-        .prix{
-            @include prix;
-            h5{
-                @include titre5($margin-right: 64%);
-            }
-            p{
-                @include para($paddingleft: 0px);
-            }
-        }   
-    }
+       
+       
+    }   
+       .dessert2{
+         @extend .dessert1;
+       }   
+       .dessert3{
+        @extend .dessert1;
+       }   
 } 
 .order{
     @include order;
@@ -213,4 +282,11 @@ main{
 footer
 {
  @extend %footer;
+ transform: translateY(-30px);
+    opacity: 0;
+    animation-name: body;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;      
 }
