@@ -467,7 +467,7 @@
     
 }    
 
-@mixin buttonmenu($bottom: 242%, $width: 82px, $left:-15%, $height: 27px) {
+@mixin buttonmenu($bottom: 9.7rem, $width: 3rem, $left: 1rem, $height: 1.8rem) {
     position: relative;
     bottom: $bottom;
     left: $left;
@@ -482,10 +482,10 @@
 
 @mixin  buttonjaime{
     position: relative;
-    top: 20%;
-    left: 26px; 
+    top: 1rem;
+    left: 1.7rem; 
     @include breakpoint(992px){
-        margin: 12px;
+        margin: 0.8rem;
     }
 
   

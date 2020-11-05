@@ -1292,28 +1292,25 @@ body {
       padding-left: 7%; }
     #menu1 .food1 .jaimenew {
       position: relative;
-      margin-left: 91px; }
-      @media screen and (min-width: 280px) {
-        #menu1 .food1 .jaimenew {
-          margin-left: 23px; } }
+      margin-left: 1.4rem; }
       @media screen and (min-width: 320px) {
         #menu1 .food1 .jaimenew {
-          margin-left: 55px; } }
+          margin-left: 4.4rem; } }
       @media screen and (min-width: 375px) {
         #menu1 .food1 .jaimenew {
-          margin-left: 95px; } }
+          margin-left: 6.4rem; } }
       @media screen and (min-width: 425px) {
         #menu1 .food1 .jaimenew {
-          margin-left: 137px; } }
+          margin-left: 9rem; } }
       @media screen and (min-width: 599px) {
         #menu1 .food1 .jaimenew {
-          margin-left: 270px; } }
+          margin-left: 17rem; } }
       @media screen and (min-width: 768px) {
         #menu1 .food1 .jaimenew {
-          margin-left: 390px; } }
+          margin-left: 24.2rem; } }
       @media screen and (min-width: 992px) {
         #menu1 .food1 .jaimenew {
-          margin-left: 186px; } }
+          margin-left: 11rem; } }
       #menu1 .food1 .jaimenew .icones {
         position: relative;
         top: 0px;
@@ -1333,56 +1330,56 @@ body {
           animation-fill-mode: both; }
       #menu1 .food1 .jaimenew button {
         position: relative;
-        bottom: 242%;
-        left: -15%;
-        width: 82px;
-        height: 27px;
+        bottom: 9.7rem;
+        left: 1.7rem;
+        width: 3rem;
+        height: 1.8rem;
         background-color: #99E2D0;
         border-radius: 5px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400; }
-        @media screen and (min-width: 280px) {
-          #menu1 .food1 .jaimenew button {
-            width: 50px;
-            bottom: 208%;
-            left: 45%; } }
         @media screen and (min-width: 320px) {
           #menu1 .food1 .jaimenew button {
-            width: 70px;
-            bottom: 220%;
-            left: 7%; } }
+            width: 4rem;
+            bottom: 10.5rem;
+            left: -0.4rem; } }
         @media screen and (min-width: 375px) {
           #menu1 .food1 .jaimenew button {
-            width: 70px;
-            bottom: 220px;
-            left: 7px; } }
+            width: 4rem;
+            bottom: 11.8rem;
+            left: 0.3rem; } }
         @media screen and (min-width: 425px) {
           #menu1 .food1 .jaimenew button {
-            width: 70px;
-            bottom: 260%;
-            left: 10%; } }
+            width: 4rem;
+            bottom: 13rem;
+            left: -0.1rem; } }
         @media screen and (min-width: 599px) {
           #menu1 .food1 .jaimenew button {
-            width: 90px;
-            bottom: 328%;
-            left: -18%; } }
+            width: 6rem;
+            bottom: 16.5rem;
+            left: -1.5rem; } }
         @media screen and (min-width: 768px) {
           #menu1 .food1 .jaimenew button {
-            width: 102px;
-            bottom: 394%;
-            left: -6%; } }
+            width: 7rem;
+            bottom: 20.1rem;
+            left: -2.5rem; } }
         @media screen and (min-width: 992px) {
           #menu1 .food1 .jaimenew button {
-            width: 102px;
-            bottom: 305%;
-            left: -19%; } }
+            width: 6rem;
+            bottom: 16.5rem;
+            left: -0.5rem; } }
       #menu1 .food1 .jaimenew .fa-heart {
         position: relative;
-        top: 20%;
-        left: 26px; }
+        top: 1rem;
+        left: 1.7rem; }
         @media screen and (min-width: 992px) {
           #menu1 .food1 .jaimenew .fa-heart {
-            margin: 12px; } }
+            margin: 0.8rem; } }
+        @media screen and (min-width: 320px) {
+          #menu1 .food1 .jaimenew .fa-heart {
+            position: relative;
+            top: 1rem;
+            left: 0.9rem; } }
 
 #menu2 {
   background-color: white;
@@ -1408,28 +1405,25 @@ body {
       padding-left: 7%; }
     #menu2 .food1 .jaimenew {
       position: relative;
-      margin-left: 50px; }
-      @media screen and (min-width: 280px) {
-        #menu2 .food1 .jaimenew {
-          margin-left: -17px; } }
+      margin-left: -1rem; }
       @media screen and (min-width: 320px) {
         #menu2 .food1 .jaimenew {
-          margin-left: 17px; } }
+          margin-left: 1.1rem; } }
       @media screen and (min-width: 375px) {
         #menu2 .food1 .jaimenew {
-          margin-left: 53px; } }
+          margin-left: 3.7rem; } }
       @media screen and (min-width: 425px) {
         #menu2 .food1 .jaimenew {
-          margin-left: 98px; } }
+          margin-left: 6rem; } }
       @media screen and (min-width: 599px) {
         #menu2 .food1 .jaimenew {
-          margin-left: 230px; } }
+          margin-left: 14rem; } }
       @media screen and (min-width: 768px) {
         #menu2 .food1 .jaimenew {
-          margin-left: 346px; } }
+          margin-left: 22rem; } }
       @media screen and (min-width: 992px) {
         #menu2 .food1 .jaimenew {
-          margin-left: 144px; } }
+          margin-left: 9rem; } }
       #menu2 .food1 .jaimenew .icones {
         position: relative;
         top: 0px;
@@ -1449,61 +1443,51 @@ body {
           animation-fill-mode: both; }
       #menu2 .food1 .jaimenew button {
         position: relative;
-        bottom: 219%;
-        left: -8%;
-        width: 82px;
-        height: 27px;
+        bottom: 9.7rem;
+        left: 1.7rem;
+        width: 3rem;
+        height: 1.8rem;
         background-color: #99E2D0;
         border-radius: 5px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400; }
-        @media screen and (min-width: 280px) {
-          #menu2 .food1 .jaimenew button {
-            width: 50px;
-            bottom: 206%;
-            left: 45%; } }
         @media screen and (min-width: 320px) {
           #menu2 .food1 .jaimenew button {
-            width: 70px;
-            bottom: 224%;
-            left: 5%; } }
+            width: 4rem;
+            bottom: 10.7rem;
+            left: 0.3rem; } }
         @media screen and (min-width: 375px) {
           #menu2 .food1 .jaimenew button {
-            width: 70px;
-            bottom: 250%;
-            left: 5%; } }
+            width: 4rem;
+            bottom: 12.2rem;
+            left: 0.5rem; } }
         @media screen and (min-width: 425px) {
           #menu2 .food1 .jaimenew button {
-            width: 70px;
-            bottom: 274%;
-            left: 10%; } }
+            width: 4rem;
+            bottom: 13.5rem;
+            left: 0.5rem; } }
         @media screen and (min-width: 599px) {
           #menu2 .food1 .jaimenew button {
-            width: 90px;
-            bottom: 350%;
-            left: -8%; } }
+            width: 6rem;
+            bottom: 18.2rem;
+            left: -0.3rem; } }
         @media screen and (min-width: 768px) {
           #menu2 .food1 .jaimenew button {
-            width: 102px;
-            bottom: 434%;
-            left: -10%; } }
-        @media screen and (min-width: 768px) {
-          #menu2 .food1 .jaimenew button {
-            width: 102px;
-            bottom: 307%;
-            left: -10%; } }
+            width: 7rem;
+            bottom: 22.6rem;
+            left: -1rem; } }
         @media screen and (min-width: 992px) {
           #menu2 .food1 .jaimenew button {
-            width: 102px;
-            bottom: 326%;
-            left: -10%; } }
+            width: 6rem;
+            bottom: 17rem;
+            left: -0.5rem; } }
       #menu2 .food1 .jaimenew .fa-heart {
         position: relative;
-        top: 20%;
-        left: 26px; }
+        top: 1rem;
+        left: 1.7rem; }
         @media screen and (min-width: 992px) {
           #menu2 .food1 .jaimenew .fa-heart {
-            margin: 12px; } }
+            margin: 0.8rem; } }
 
 #menu3 {
   background-color: white;
@@ -1581,11 +1565,11 @@ body {
         opacity: 0; }
       #menu3 .food1 .jaimenew .fa-heart {
         position: relative;
-        top: 20%;
-        left: 26px; }
+        top: 1rem;
+        left: 1.7rem; }
         @media screen and (min-width: 992px) {
           #menu3 .food1 .jaimenew .fa-heart {
-            margin: 12px; } }
+            margin: 0.8rem; } }
 
 #menu4 {
   background-color: white;
@@ -1664,11 +1648,11 @@ body {
         opacity: 0; }
       #menu4 .food1 .jaimenew .fa-heart {
         position: relative;
-        top: 20%;
-        left: 26px; }
+        top: 1rem;
+        left: 1.7rem; }
         @media screen and (min-width: 992px) {
           #menu4 .food1 .jaimenew .fa-heart {
-            margin: 12px; } }
+            margin: 0.8rem; } }
 
 footer {
   background-color: #212121;
