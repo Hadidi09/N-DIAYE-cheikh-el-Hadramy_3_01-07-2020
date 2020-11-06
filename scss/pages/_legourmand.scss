@@ -1,5 +1,5 @@
-@import './variables';
-@import './mixins';
+@import '../utils/variables';
+@import '../utils/mixins';
 
 
 .loader{
@@ -53,13 +53,13 @@ body{
 
 //header
 
-@import './header';
+@import '../layout/header';
 
 .header1{
     @extend %headermenu;
  }
 
-@import './conteneur.scss';
+@import '../utils/conteneur';
 
 main{
     @extend %mainlegourmand;
@@ -78,7 +78,7 @@ main{
         }
     }
 }
-@import './mixins';
+@import '../utils/mixins';
 
 #entrée{
     background: $bg-colormain;
@@ -442,7 +442,7 @@ main{
 }   
 
 // footer
-@import './footer';
+@import '../layout/footer';
 footer
 {
  @extend %footer;

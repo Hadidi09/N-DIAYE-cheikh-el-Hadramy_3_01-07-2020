@@ -4,17 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass --source-map true scss/main.scss dist/css/style.css --output-style compressed",
-    "compile2": "node-sass --source-map true scss/bastille.scss dist/css/bastille.css --output-style compressed",
-    "legourmand": "node-sass --source-map true scss/legourmand.scss dist/css/legourmand.css --output-style compressed",
-    "enchanted": "node-sass --source-map true scss/enchanted.scss dist/css/enchanted.css --output-style compressed",
-    "thefull": "node-sass --source-map true scss/thefull.scss dist/css/thefull.css --output-style compressed",
+    "compile": "node-sass --source-map true scss/main.scss dist/css/style.css",
     "watch": "node-sass scss/main.scss dist/css/style.css -w",
-    "watch2": "node-sass scss/bastille.scss dist/css/bastille.css -w",
-    "watch3": "node-sass scss/legourmand.scss dist/css/legourmand.css -w",
-    "watch4": "node-sass scss/enchanted.scss dist/css/enchanted.css -w",
-    "watch5": "node-sass scss/thefull.scss dist/css/thefull.css -w",
-    "prefix": "postcss dist/css/style.css dist/css/bastille.css dist/css/legourmand.css dist/css/enchanted.css dist/css/thefull.css --use autoprefixer -d dist/css/prefixed/"
+    "prefix": "postcss dist/css/style.css --use autoprefixer -d dist/css/prefixed/"
   },
   "author": "",
   "license": "ISC",

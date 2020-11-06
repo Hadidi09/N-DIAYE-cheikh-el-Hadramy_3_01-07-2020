@@ -1,5 +1,8 @@
-@import './variables';
-@import './mixins';
+@import '../utils/variables';
+@import '../utils/mixins';
+
+
+// section 1 accueil
 
 
 // image page principale
@@ -47,16 +50,6 @@
      position: relative;
 }
 
-//button j'aime
-
-%fa-heart{
-    position: relative;
-    top: 20%;
-    left: 62%;   
-}
-
-// section 1 accueil
-
 %section1{
     text-align: center;
     transform: translateY(-30px);
@@ -66,8 +59,13 @@
     animation-duration: 4s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    @include breakpoint(992px){
+        grid-column: 3 / span 6;
+        height: 1vh;
+        grid-row: 2;
+      }
 
-    .localisation{
+    #localisation{
         background: $bg-localisation;
         display: flex;
         align-items: center;
@@ -147,6 +145,17 @@
           
      }
 }
+//button j'aime
+
+%fa-heart{
+    position: relative;
+    top: 20%;
+    left: 62%;   
+}
+
+
+
+
 
 //section 2 accueil
 
@@ -160,10 +169,15 @@
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     @include breakpoint(992px){
-        margin-left: 30px;
-        padding-left: 25px;
-        width: 95%;
+        grid-row: 1;
+        grid-column: 1/span 2;
+        margin-top: 64px;
+        width: 100%;
+        height: 67vh;
+        border-radius: 13px;
+        padding-left: 0%;
     }
+  
        
         h2{
             font-family: 'Roboto', sans-serif;
@@ -449,94 +463,3 @@
 
 
 
-%entrée{
-    background: rgb(238,238,238);
-    padding-bottom: 10%;
-    @include breakpoint(992px){
-       margin-top: 50px;
-    }
-    
-    h3{
-        margin-left: 5%;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600;
-        text-transform: capitalize;
-        
-        
-    }
-    hr{
-        width: 15%;
-        margin-left: 5%;
-        border: 1px solid  #15DEA5;
-    }
-    #carpaccio{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        border-radius: 15px;
-        width: 90%;
-        margin: 5%;
-        background:  rgba(255,255,255 ,1);
-        h4{ 
-            margin-top: 4%;
-            margin-bottom: 3%;
-            padding-left: 3%;
-        }
-        .prix{
-            display: flex;
-            flex-direction: row;
-            padding-left: 3%;
-            h5{
-                margin-right: 50%;
-                margin-bottom: 3.5%;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                color: rgb(158,158,158);
-            }
-            p{
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400; 
-            }
-        }
-    }
-}
-
-%entrée2{
-    @extend #carpaccio;
-   .prix{
-    h5{
-        margin-right: 23%;
-    }
-}
-    
-    
-}
-%entrée3{
-    @extend #carpaccio;
-    .prix{
-        h5{
-            margin-right: 71%;
-        }
-    }
-
-}
-
-%prix{
-    border: 5px solid transparent;
-    background: #AED6D1;
-    color: #55706D;
-    border-radius: 40px;
-    padding: 15px 30px;
-    overflow: hidden;
-    width: 200px;
-    transition: 
-      all        1.2s,
-      border     0.5s 1.2s,
-      box-shadow 0.3s 1.5s;
-    white-space: nowrap;
-    text-indent: 23px;
-    font-weight: bold;
-}
-
-
-/////////@mixin 
