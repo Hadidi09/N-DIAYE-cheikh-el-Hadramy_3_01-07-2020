@@ -78,14 +78,7 @@ body {
 
     // main
     main{
-        background-color: $bg-colormain; 
-        @include breakpoint(992px){
-            display: grid;
-            grid-template-columns: repeat(4, 3fr);
-            grid-template-rows: repeat(6, 270px);
-            overflow: hidden;
-            
-        }
+        @extend %mainaccueil;
     } 
     
    

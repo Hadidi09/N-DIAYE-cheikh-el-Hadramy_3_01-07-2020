@@ -1,15 +1,14 @@
 @import './utils/variables';
 @import './utils/mixins';
-@import './utils/conteneur';
-@import './base/box-sizing';
 @import './base/animations';
+@import './base/box-sizing';
 @import './components/loader';
+
+@import './pages/accueil';
+@import './utils/conteneur';
 @import './components/buttons';
 @import './layout/header';
 @import './layout/footer';
-@import './pages/accueil';
-@import './pages/bastille';
-@import './pages/enchanted';
-@import './pages/legourmand';
-@import './pages/thefull';
+
+
 
