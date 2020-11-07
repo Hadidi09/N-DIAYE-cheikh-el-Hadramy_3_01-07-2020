@@ -75,9 +75,9 @@ body {
         font-size: 2em;
     }
    }
-
+@import '../layout/mainaccueil';
     // main
-    main{
+    #pagesoffone{
         @extend %mainaccueil;
     } 
     

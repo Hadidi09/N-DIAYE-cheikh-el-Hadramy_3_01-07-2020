@@ -1,42 +1,11 @@
 @import '../utils/variables';
 @import '../utils/mixins';
 
-
 .loader{
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: $bg-colorwhite;
-    opacity: 1;
-    animation-name: load;
-    animation-duration: 4s;
-    animation-delay: 20ms;
-    animation-timing-function: linear;
-    animation-fill-mode: backwards;  
+    @extend %loader;
 }
 .spinner{
-    position: absolute;
-    top: 65%; left: 50%; right: 0; bottom: 0;
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-bottom:16px solid $color-primary;
-    border-left:16px solid $color-tertiary; 
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    line-height: 90px;
-    padding-left: 5px;
-    font-size: 16px;
-    opacity: 1;
-    animation-name: spinner ;
-    animation-duration: 4s;
-    animation-delay: 1s;
-    animation-timing-function: cubic-bezier(1, 0.44, 0.34,-0.23);
-    animation-fill-mode: forwards;   
+    @extend %spinner;
 }
 
 *{
@@ -53,18 +22,20 @@ body{
 
 //header
 
-@import '../layout/header';
+@import '../layout/hearderplat';
 
-.header1{
+#header1{
     @extend %headermenu;
  }
 
-@import '../utils/conteneur';
+ @import '../layout/mainmenu';
 
-main{
-    @extend %mainlegourmand;
+#pagesdemenus{
+    @extend %maindesplats;
+    h2{
+        @extend %h2menus; 
+    }
 }
-
 .photoplat{
     @include breakpoint(992px){
         grid-column: 2 / span 4;

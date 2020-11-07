@@ -1,7 +1,7 @@
 @import '../utils/variables';
 
 
-%mainlegourmand{
+%maindesplats{
     background: $bg-colormain;
     @include breakpoint(992px){
         display: grid;

@@ -29,10 +29,13 @@ body{
     @extend %headermenu;
  }
 
-@import '../utils/conteneur';
+ @import '../layout/mainmenu';
 
-main{
-    @extend %main;
+#pagesdemenus{
+    @extend %maindesplats;
+    h2{
+        @extend %h2menus; 
+    }
 }
 
 .photoplat{
