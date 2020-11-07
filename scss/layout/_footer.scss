@@ -10,6 +10,9 @@
     flex-direction: column;
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    @include breakpoint(768px){
+       align-items: center;
+    }
     @include breakpoint(992px){
         align-items: center;
         padding-left: 0%;

@@ -54,7 +54,7 @@ body{
 #entrée{
     background: $bg-colormain;
     padding-bottom: 10%;
-    transform: translateY(-1000%);
+    transform: translateY(-30%);
         opacity: 0;
         animation-name: sectionmenu;
         animation-delay: 2.5s;
@@ -173,7 +173,7 @@ body{
 #plat{ 
     background: $bg-colormain;
     padding-bottom: 10%;
-    transform: translateY(-1000%);
+    transform: translateY(-30%);
     opacity: 0;
     animation-name: sectionmenu;
     animation-delay: 3.6s;
@@ -291,12 +291,12 @@ body{
 #dessert{ 
     background: $bg-colormain;
     padding-bottom: 10%;
-    transform: translateY(-1000%);
+    transform: translateY(-30%);
     opacity: 0;
     animation-name: sectionmenu;
     animation-delay: 4.4s;
     animation-duration: 2s;
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.18, 0.61, 0.84, 0.48);
     animation-fill-mode: forwards;
 
     @include breakpoint(992px){
