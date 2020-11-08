@@ -277,7 +277,8 @@ body {
         margin-left: 1rem;
         margin-right: 0.5rem;
         border-radius: 50px;
-        padding-left: 10rem; } }
+        padding-left: 10rem;
+        width: 90%; } }
     #localbook #localisation i {
       margin-right: 6%; }
   #localbook .book {
@@ -329,7 +330,8 @@ body {
       grid-row: 1;
       grid-column: 1/span 2;
       margin-top: 64px;
-      width: 100%;
+      margin-left: 5%;
+      width: 95%;
       height: 34vh;
       border-radius: 50px;
       padding-left: 0%; } }
@@ -619,9 +621,38 @@ header {
     @media screen and (min-width: 992px) {
       #lesmenus h2 {
         position: relative;
-        left: 25rem;
-        top: -60rem;
-        font-size: 2em; } }
+        left: 24rem;
+        top: -64rem;
+        font-size: 2em;
+        border: 20px solid #FF79DA;
+        border-top: 20px solid #9356DC;
+        border-bottom: 20px solid #99E2D0;
+        color: #9356DC;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 28px;
+        width: 50%;
+        background-color: #f6f6f6; } }
+    @media screen and (min-width: 1280px) {
+      #lesmenus h2 {
+        position: relative;
+        left: 29rem;
+        top: -72rem;
+        font-size: 2em;
+        border: 20px solid #FF79DA;
+        border-top: 20px solid #9356DC;
+        border-bottom: 20px solid #99E2D0;
+        color: #9356DC;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 28px;
+        width: 50%;
+        background-color: #f6f6f6; } }
+    @media screen and (min-width: 1366px) {
+      #lesmenus h2 {
+        position: relative;
+        left: 32rem;
+        top: -75rem; } }
 
 #lesmenus:first-child {
   transform: translateX(-30px);
