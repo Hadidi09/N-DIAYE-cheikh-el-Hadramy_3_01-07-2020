@@ -23,7 +23,7 @@
     padding-right: 0%;
     padding-left: 6%;
     font-family: 'Shrikhand', cursive;
-    font-size: 1.7em;
+    font-size: 1.2em;
     font-weight: normal;
     font-style: oblique;
     text-transform: uppercase;
@@ -33,6 +33,12 @@
     position: relative;
     bottom: 30px;
     width: 100%;
+    @include breakpoint(599px){
+        font-size: 1.4em;
+    }
+    @include breakpoint(768px){
+        font-size: 1.81em;
+    }
     @include breakpoint(992px){
         display: flex;
         justify-content: flex-start;
