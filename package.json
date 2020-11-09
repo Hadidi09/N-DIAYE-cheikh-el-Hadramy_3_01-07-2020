@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass --source-map true scss/main.scss dist/css/style.css",
-    "watch": "node-sass scss/main.scss dist/css/style.css -w",
+    "compile": "node-sass --source-map true scss/main.scss dist/css/style.css --output-style compressed",
+    "watch": "node-sass scss/main.scss dist/css/style.css -w --output-style compressed",
     "prefix": "postcss dist/css/style.css --use autoprefixer -d dist/css/prefixed/"
   },
   "author": "",

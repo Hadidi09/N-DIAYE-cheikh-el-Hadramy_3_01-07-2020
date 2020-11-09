@@ -1,6 +1,17 @@
 @import '../utils/variables';
 @import '../utils/mixins';
 
+
+%headertopmenu{
+    @include breakpoint(992px){
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+}
+
 %headermenu{
     display: flex;
     justify-content: center;

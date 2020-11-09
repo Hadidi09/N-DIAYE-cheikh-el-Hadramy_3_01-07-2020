@@ -24,6 +24,9 @@ body{
 //header
 
 @import '../layout/hearderplat';
+header{
+    @extend %headertopmenu;
+}
 
 #header1{
     @extend %headermenu;
