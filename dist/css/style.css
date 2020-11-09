@@ -175,7 +175,7 @@
   background-color: white;
   opacity: 1;
   animation-name: load;
-  animation-duration: 6s;
+  animation-duration: 3s;
   animation-delay: 20ms;
   animation-timing-function: linear;
   animation-fill-mode: backwards; }
@@ -199,7 +199,7 @@
   opacity: 1;
   z-index: 1;
   animation-name: spinner;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-delay: 0.5s;
   animation-timing-function: cubic-bezier(1, 0.44, 0.34, -0.23);
   animation-fill-mode: forwards; }
@@ -519,48 +519,6 @@ header {
     text-align: center;
     margin: 0%; }
 
-.loader {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  opacity: 1;
-  animation-name: load;
-  animation-duration: 6s;
-  animation-delay: 20ms;
-  animation-timing-function: linear;
-  animation-fill-mode: backwards; }
-
-.spinner {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  right: 0;
-  bottom: 0;
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
-  border-bottom: 16px solid #9356DC;
-  border-left: 16px solid #99E2D0;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  line-height: 90px;
-  padding-left: 5px;
-  font-size: 16px;
-  opacity: 1;
-  animation-name: spinner;
-  animation-duration: 7s;
-  animation-delay: 1s;
-  animation-timing-function: cubic-bezier(1, 0.44, 0.34, -0.23);
-  animation-fill-mode: forwards; }
-
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -605,50 +563,58 @@ header {
       grid-column: 1 /span 6;
       display: grid;
       grid-template-columns: 50% 50%;
+      grid-template-rows: 26% 37% 37%;
       padding-bottom: 0px;
-      width: 100%;
-      padding-top: 272px; } }
+      padding-top: 0px;
+      margin-bottom: 60px;
+      width: 100%; } }
   #lesmenus h2 {
     margin-top: 15%;
     padding-left: 5%;
     padding-bottom: 6%;
     font-family: 'Roboto', sans-serif;
-    font-weight: bolder; }
+    font-weight: bolder;
+    /* @include breakpoint(1280px){
+            position: relative;
+            left: 29rem;
+            top: -72rem;
+            font-size: 2em;
+            border: 20px solid $color-secondary;
+            border-top: 20px solid $color-primary;
+            border-bottom: 20px solid $color-tertiary;
+            color: $color-primary;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 28px;
+            width: 50%;
+            background-color: $bg-colormain;
+
+          }
+          @include breakpoint(1366px){
+            position: relative;
+            left: 32rem;
+            top: -75rem;
+          }*/ }
     @media screen and (min-width: 992px) {
       #lesmenus h2 {
-        position: relative;
-        left: 24rem;
-        top: -64rem;
+        margin-bottom: 85px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        width: 23%;
+        height: 23%;
+        background-color: #f6f6f6;
         font-size: 2em;
-        border: 20px solid #FF79DA;
-        border-top: 20px solid #9356DC;
-        border-bottom: 20px solid #99E2D0;
+        border-top: 8px solid #FF79DA;
+        border-bottom: 8px solid #99E2D0;
         color: #9356DC;
         border-radius: 50%;
-        text-align: center;
-        padding-top: 28px;
-        width: 50%;
-        background-color: #f6f6f6; } }
-    @media screen and (min-width: 1280px) {
-      #lesmenus h2 {
-        position: relative;
-        left: 29rem;
-        top: -72rem;
-        font-size: 2em;
-        border: 20px solid #FF79DA;
-        border-top: 20px solid #9356DC;
-        border-bottom: 20px solid #99E2D0;
-        color: #9356DC;
-        border-radius: 50%;
-        text-align: center;
-        padding-top: 28px;
-        width: 50%;
-        background-color: #f6f6f6; } }
-    @media screen and (min-width: 1366px) {
-      #lesmenus h2 {
-        position: relative;
-        left: 32rem;
-        top: -75rem; } }
+        grid-row: 1;
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center; } }
 
 #lesmenus:first-child {
   transform: translateX(-30px);
@@ -695,7 +661,7 @@ header {
   width: 90%; }
   @media screen and (min-width: 992px) {
     .menu1 {
-      grid-row: 1;
+      grid-row: 2;
       grid-column: 1; } }
   .menu1 .food1 {
     display: flex;
@@ -808,7 +774,7 @@ header {
   width: 90%; }
   @media screen and (min-width: 992px) {
     .menu2 {
-      grid-row: 1;
+      grid-row: 2;
       grid-column: 2; } }
   .menu2 .food1 {
     display: flex;
@@ -916,7 +882,7 @@ header {
   width: 90%; }
   @media screen and (min-width: 992px) {
     .menu3 {
-      grid-row: 2; } }
+      grid-row: 3; } }
   .menu3 .food1 {
     display: flex;
     justify-content: flex-start;
@@ -995,7 +961,7 @@ header {
   width: 90%; }
   @media screen and (min-width: 992px) {
     .menu4 {
-      grid-row: 2;
+      grid-row: 3;
       grid-column: 2; } }
   .menu4 .food1 {
     display: flex;

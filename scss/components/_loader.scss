@@ -12,7 +12,7 @@
     background-color: $bg-colorwhite;
     opacity: 1;
     animation-name: load;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-delay: 20ms;
     animation-timing-function: linear;
     animation-fill-mode: backwards;  
@@ -33,7 +33,7 @@
     opacity: 1;
     z-index: 1;
     animation-name: spinner ;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-delay: 0.5s;
     animation-timing-function: cubic-bezier(1, 0.44, 0.34,-0.23);
     animation-fill-mode: forwards;   
