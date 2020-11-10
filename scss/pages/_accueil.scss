@@ -198,9 +198,15 @@ body {
         grid-row: 2;
         grid-column: 1;
     }
-    .images{
-        @extend %images;
-    }
+    
+        .images{
+            @extend %images;
+            button{
+                @include buttonmenu;
+            }
+        }
+        
+
     .food1{
         @include headsection;
 
@@ -212,100 +218,32 @@ body {
             h4{
                 @extend %h4;
             }
+
+           
         }
 
-        .jaimenew{ 
-            position: relative;
-            margin-left: 1.4rem;
+        .icones{
+            @include icones;
+            
+            
+            :hover,:active{
+                
+                animation-name: coeur;
+                animation-duration: 600ms;
+                animation-delay: 10ms;
+                animation-fill-mode: both;
+
+
+            }
            
-            @include breakpoint(320px){
-                margin-left: 4.4rem;
-            }
-            @include breakpoint(375px){
-                margin-left: 6.4rem;
-            }
-            @include breakpoint(425px){
-                margin-left: 9rem;
-            }
-            @include breakpoint(599px){
-                margin-left: 17rem;
-            }
-            @include breakpoint(768px){
-                margin-left: 24.2rem;
-            }
-            @include breakpoint(992px){
-                margin-left: 11rem;
-            }
-
-            
-        
-            .icones{
-                @include icones;
-                
-                
-                :hover,:active{
-                    
-                    animation-name: coeur;
-                    animation-duration: 600ms;
-                    animation-delay: 10ms;
-                    animation-fill-mode: both;
-
-
-                }
-                
-            }
-            button{
-                @include buttonmenu($bottom: 9.7rem, $width: 3rem, $left: 1.7rem, $height: 1.8rem);
-                
-                 @include breakpoint(320px){
-                    width: 4rem;
-                   bottom: 10.5rem;
-                   left: -0.4rem;
-                }  
-                @include breakpoint(375px){
-                    width: 4rem;
-                    bottom: 11.8rem;
-                    left: 0.3rem;
-                }  
-                @include breakpoint(425px){
-                    width: 4rem;
-                    bottom: 13rem;
-                    left: -0.1rem;
-                }  
-                @include breakpoint(599px){
-                    width: 6rem;
-                    bottom: 16.5rem;
-                    left: -1.5rem;
-                }  
-                @include breakpoint(768px){
-                    width: 7rem;
-                    bottom: 20.1rem;
-                    left: -2.5rem;
-                }  
-                @include breakpoint(992px){
-                    width: 6rem;
-                   bottom: 16.5rem;
-                   left: -0.5rem;
-                }  
-            } 
-                   
-               
-                
-           
-            
-            .fa-heart{
-                @include buttonjaime;
-                @include breakpoint(320px){
-                    position: relative;
-                    top: 1rem;
-                    left: 0.9rem;
-
-                }
-
-
-            }
-            
         }
+
+        .fa-heart{
+            @include buttonjaime;
+           
+
+
+        }        
     }
 }
 
@@ -318,93 +256,50 @@ body {
     }
     .images{
         @extend %images;
-    }
-    .food1{
-        @include headsection;
-
-        .plat{
-            @include headplat;
-            h3{
-                @extend %h3;
-            }
-            h4{
-                @extend %h4;
-            }
-        }
-
-        .jaimenew{
-            position: relative;
-            margin-left: -1rem;
-            @include breakpoint(320px){
-                margin-left: 1.1rem;
-            }
-            @include breakpoint(375px){
-                margin-left: 3.7rem;
-            }
-            @include breakpoint(425px){
-                margin-left: 6rem;
-            }
-            @include breakpoint(599px){
-                margin-left: 14rem;
-            }
-            @include breakpoint(768px){
-                margin-left: 22rem;
-            }
-            @include breakpoint(992px){
-                margin-left: 9rem;
-            }
-            .icones{
-                @include icones;
-                :hover,:active{
-                    animation-name: coeur;
-                    animation-duration: 600ms;
-                    animation-delay: 10ms;
-                    animation-fill-mode: both;
-
-                }
-                
-            }
-            button{
-                @include buttonmenu($bottom: 9.7rem, $width: 3rem, $left: 1.7rem, $height: 1.8rem);
-                @include breakpoint(320px){
-                    width: 4rem;
-                    bottom: 10.7rem;
-                    left: 0.3rem;
-                }
-                @include breakpoint(375px){
-                    width: 4rem;
-                    bottom: 12.2rem;
-                    left: 0.5rem;
-                }   
-                      
-                @include breakpoint(425px){
-                    width: 4rem;
-                    bottom: 13.5rem;
-                    left: 0.5rem;
-                }       
-                @include breakpoint(599px){
-                    width: 6rem;
-                    bottom: 18.2rem;
-                    left: -0.3rem;
-                }      
-                @include breakpoint(768px){
-                    width: 7rem;
-                    bottom: 22.6rem;
-                    left: -1rem;
-                }  
-                @include breakpoint(992px){
-                    width: 6rem;
-                    bottom: 17rem;
-                    left: -0.5rem;
-                }  
-               
-                
-            }
-            .fa-heart{
-                @include buttonjaime;
-            }
+        button{
+            @include buttonmenu;
         }
     }
+    
+
+.food1{
+    @include headsection;
+
+    .plat{
+        @include headplat;
+        h3{
+            @extend %h3;
+        }
+        h4{
+            @extend %h4;
+        }
+
+       
+    }
+
+    .icones{
+        @include icones;
+        
+        
+        :hover,:active{
+            
+            animation-name: coeur;
+            animation-duration: 600ms;
+            animation-delay: 10ms;
+            animation-fill-mode: both;
+
+
+        }
+       
+    }
+
+    .fa-heart{
+        @include buttonjaime;
+       
+
+
+    }        
+  }
 }
 
 .menu3{
@@ -415,65 +310,51 @@ body {
     
     .images{
         @extend %images;
+        button{
+            @include buttonmenu;
+            display: none;
+        }
     }
-    .food1{
-        @include headsection;
+    
 
-        .plat{
-            @include headplat;
-            h3{
-                @extend %h3;
-            }
-            h4{
-                @extend %h4;
-            }
+.food1{
+    @include headsection;
+
+    .plat{
+        @include headplat;
+        h3{
+            @extend %h3;
+        }
+        h4{
+            @extend %h4;
         }
 
-        .jaimenew{
-            position: relative;
-            margin-left: 5rem;
-            @include breakpoint(320px){
-                margin-left: 7rem;
-            }
-            @include breakpoint(375px){
-                margin-left: 9.8rem;
-            }
-            @include breakpoint(425px){
-                margin-left: 12.5rem;
-            }
-            @include breakpoint(599px){
-                margin-left: 20.2rem;
-            }
-            @include breakpoint(768px){
-                margin-left: 28rem;
-            }
-            @include breakpoint(992px){
-                margin-left: 13.8rem;
+       
+    }
+
+    .icones{
+        @include icones;
         
+        
+        :hover,:active{
+            
+            animation-name: coeur;
+            animation-duration: 600ms;
+            animation-delay: 10ms;
+            animation-fill-mode: both;
 
-            }
 
-            .icones{
-                @include icones;
-                margin-top: -6px;
-                :hover,:active{
-                    animation-name: coeur;
-                    animation-duration: 600ms;
-                    animation-delay: 10ms;
-                    animation-fill-mode: both;
-
-                }
-                
-            }
-            button{
-                @include buttonmenu($bottom: 266%, $width: 100%, $left:26%, $height: 45%);
-                opacity: 0;
-            }
-            .fa-heart{
-                @include buttonjaime;
-            }
         }
+       
     }
+
+    .fa-heart{
+        @include buttonjaime;
+       
+
+
+    }        
+ }
 }
 
 .menu4{
@@ -485,64 +366,51 @@ body {
     
     .images{
         @extend %images;
-    }
-    .food1{
-        @include headsection;
-
-        .plat{
-            @include headplat;
-            h3{
-                @extend %h3;
-            }
-            h4{
-                @extend %h4;
-            }
-        }
-
-        .jaimenew{
-            position: relative;
-            margin-left: 4rem;
-            @include breakpoint(320px){
-                margin-left: 4.8rem;
-            }
-            @include breakpoint(375px){
-                margin-left: 7.6rem;
-            }
-            @include breakpoint(425px){
-                margin-left: 10rem;
-            }
-            @include breakpoint(599px){
-                margin-left: 18rem;
-            }
-            @include breakpoint(768px){
-                margin-left: 26rem;
-            }
-            @include breakpoint(992px){
-                margin-left: 11.4rem;
-
-            }
-
-            .icones{
-                @include icones;
-                margin-top: -6px;
-                :hover,:active{
-                    animation-name: coeur;
-                    animation-duration: 600ms;
-                    animation-delay: 10ms;
-                    animation-fill-mode: both;
-
-                }
-                
-            }
-            button{
-                @include buttonmenu($bottom: 266%, $width: 100%, $left:26%, $height: 45%);
-                opacity: 0;
-            }
-            .fa-heart{
-                @include buttonjaime;
-            }
+        button{
+            @include buttonmenu;
+            display: none;
         }
     }
+    
+
+.food1{
+    @include headsection;
+
+    .plat{
+        @include headplat;
+        h3{
+            @extend %h3;
+        }
+        h4{
+            @extend %h4;
+        }
+
+       
+    }
+
+    .icones{
+        @include icones;
+        
+        
+        :hover,:active{
+            
+            animation-name: coeur;
+            animation-duration: 600ms;
+            animation-delay: 10ms;
+            animation-fill-mode: both;
+
+
+        }
+       
+    }
+
+    .fa-heart{
+        @include buttonjaime;
+       
+
+
+    }        
+ }
 }
     
     

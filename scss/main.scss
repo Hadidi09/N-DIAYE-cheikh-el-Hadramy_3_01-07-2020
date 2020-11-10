@@ -1,10 +1,9 @@
 @import './utils/variables';
 @import './utils/mixins';
+@import './utils/conteneur';
 @import './base/animations';
 @import './base/box-sizing';
 @import './components/loader';
-
-@import './utils/conteneur';
 @import './components/buttons';
 @import './layout/header';
 @import './layout/mainaccueil';

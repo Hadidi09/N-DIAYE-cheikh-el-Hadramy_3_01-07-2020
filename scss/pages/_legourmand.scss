@@ -1,5 +1,6 @@
 @import '../utils/variables';
 @import '../utils/mixins';
+@import '../base/animations';
 
 .loader{
     @extend %loader;
@@ -23,11 +24,9 @@ body{
 //header
 
 @import '../layout/hearderplat';
-
 header{
     @extend %headertopmenu;
 }
-
 
 #header1{
     @extend %headermenu;
@@ -41,10 +40,11 @@ header{
         @extend %h2menus; 
     }
 }
+
 .photoplat{
     @include breakpoint(992px){
         grid-column: 2 / span 4;
-    }    
+    }
     img{
         width: 100%;
         @include breakpoint(992px){
@@ -56,135 +56,87 @@ header{
 }
 @import '../utils/mixins';
 
-#entrée{
-    background: $bg-colormain;
-    padding-bottom: 10%;
-    transform: translateY(-30%);
+    #entrée{
+        background: $bg-colormain;
+        padding-bottom: 10%;
+       
+        transform: translateY(-1000%);
         opacity: 0;
         animation-name: sectionmenu;
         animation-delay: 2.5s;
         animation-duration: 2s;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
-
+        
         @include breakpoint(992px){
             margin-top: 12%;
          }
-    h3{
-        @include titre;
-    }
-    hr{
-        @include trait;
-    }
-    .entrée1{
         
+        h3{
+            @include titre;
+        }
+        hr{
+            @include trait;
+        }
+    .entrée1{
         @include titreplat;
 
         article{
             @include carpaccio;
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
             
         }
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-       
-        p{
-                    
-            @include param;
-           
+        h4{
+            @include titre4;
         }
-        span{
-            @include span;
-        } 
-        .checkbox{
-            @include checkbox;
-            i{
-                @include faicon;  
-
-            }       
-                    
-        }        
-    }
-       
-    }
-}
-
-.entrée2{
-    @include titreplat; 
-    
-    article{
-        @include carpaccio;
+        .prix{
+            @include prix;
         
-    }
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-        p{
-                    
-            @include param;
+            p{
+                        
+                @include param;
+            
+            }
+            span{
+                @include span;
+            } 
            
         }
-        span{
-            @include span;
-        }  
-        .checkbox{
-            @include checkbox;
-            i{
-                @include faicon;  
-
-            }       
-                    
-        }       
-    }
-
-}
-.entrée3{
-    
-    @include titreplat;
-    article{
-        @include carpaccio;
-        
-    }
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
        
-       
-        p{
-                    
-            @include param;
+    }   
            
-        }
-        span{
-            @include span;
-        }  
-        .checkbox{
-            @include checkbox;
-            i{
-                @include faicon;  
-
-            }       
-                    
-        }       
-    }
-
+            
+               
+              
+               
 }
+    .entrée2{
+        @extend .entrée1;
+       }   
+
+       .entrée3{
+        @extend .entrée1;
+       }   
+
+
 #plat{ 
-    background: $bg-colormain;
-    padding-bottom: 10%;
-    transform: translateY(-30%);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 3.6s;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+        background: $bg-colormain;
+        padding-bottom: 10%;
+        transform: translateY(-1000%);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 3.6s;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+      
     @include breakpoint(992px){
         grid-column: 2;
         margin-bottom: 0px;
@@ -197,118 +149,63 @@ header{
         @include trait;
     }
     .plat1{
-        @include titreplat($hauteur:96px);
+        @include titreplat;
 
         article{
             @include carpaccio;
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
             
         }
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-       
-        p{
-                    
-            @include param;
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
+        
+            p{
+                        
+                @include param;
+            
+            }
+            span{
+                @include span;
+            } 
            
         }
-        span{
-            @include span;
-        } 
-        .checkbox{
-            @include checkbox($heighter: 84%, $topop: 14%);
-            i{
-                @include faicon;  
-
-            }       
-                    
-        }        
-    }
        
-    }
+       
+           
+    }   
+    
+   
     .plat2{
-        @include titreplat;
-
-        article{
-            @include carpaccio;
-            
-        }
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-       
-        p{
-                    
-            @include param;
-           
-        }
-        span{
-            @include span;
-        } 
-        .checkbox{
-            @include checkbox;
-            i{
-                @include faicon;  
-
-            }       
-                    
-        }        
-    }
-       
-    }
-    .plat3{
-        @include titreplat;
-
-        article{
-            @include carpaccio;
-            
-        }
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-       
-        p{
-                    
-            @include param;
-           
-        }
-        span{
-            @include span;
-        } 
-        .checkbox{
-            @include checkbox;
-            i{
-                @include faicon;  
-
-            }       
-                    
-        }        
-    }
-       
-    }
-}    
+        @extend .plat1;
+       }   
+       .plat3{
+        @extend .plat1;
+       }
+}      
 #dessert{ 
     background: $bg-colormain;
     padding-bottom: 10%;
-    transform: translateY(-30%);
-    opacity: 0;
-    animation-name: sectionmenu;
-    animation-delay: 4.4s;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.18, 0.61, 0.84, 0.48);
-    animation-fill-mode: forwards;
-
+        transform: translateY(-1000%);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 4.4s;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
     @include breakpoint(992px){
         grid-column: 3;
         margin-top: 12%;
      }
-
     h3{
         @include titre;
     }
@@ -316,102 +213,45 @@ header{
         @include trait;
     }
     .dessert1{
+        @include titreplat;
+
+        article{
+            @include carpaccio;
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
+            
+        }
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
         
-        @include titreplat;
-
-        article{
-            @include carpaccio;
+            p{
+                        
+                @include param;
             
-        }
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-       
-        p{
-                    
-            @include param;
+            }
+            span{
+                @include span;
+            } 
            
         }
-        span{
-            @include span;
-        } 
-        .checkbox{
-            @include checkbox;
-            i{
-                @include faicon;  
-
-            }       
-                    
-        }        
-    }
        
-    }
-    .dessert2{
-        @include titreplat;
-
-        article{
-            @include carpaccio;
-            
-        }
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
        
-        p{
-                    
-            @include param;
-           
-        }
-        span{
-            @include span;
-        } 
-        .checkbox{
-            @include checkbox;
-            i{
-                @include faicon;  
-
-            }       
-                    
-        }        
-    }
-       
-    }
-    .dessert3{
-        @include titreplat;
-
-        article{
-            @include carpaccio;
-            
-        }
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-       
-        p{
-                    
-            @include param;
-           
-        }
-        span{
-            @include span;
-        } 
-        .checkbox{
-            @include checkbox;
-            i{
-                @include faicon;  
-
-            }       
-                    
-        }        
-    }
-       
-    }
+    }   
+       .dessert2{
+         @extend .dessert1;
+       }   
+       .dessert3{
+        @extend .dessert1;
+       }   
 } 
 .order{
     @include order;
@@ -422,12 +262,11 @@ header{
 footer
 {
  @extend %footer;
-    transform: translateY(-30px);
+ transform: translateY(-30px);
     opacity: 0;
     animation-name: body;
     animation-delay: 3s;
     animation-duration: 5s;
     animation-timing-function: ease-in;
-    animation-fill-mode: forwards; 
-
+    animation-fill-mode: forwards;      
 }

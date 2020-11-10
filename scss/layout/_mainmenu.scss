@@ -16,7 +16,6 @@
 
 %h2menus{
     display: flex;
-    justify-content: flex-start;
     margin-left: 0%;
     padding-top: 8.5%;
     padding-bottom: 7.8%;
@@ -33,12 +32,8 @@
     position: relative;
     bottom: 30px;
     width: 100%;
-    @include breakpoint(599px){
-        font-size: 1.4em;
-    }
-    @include breakpoint(768px){
-        font-size: 1.81em;
-    }
+    
+    
     @include breakpoint(992px){
         display: flex;
         justify-content: flex-start;
@@ -62,39 +57,11 @@
     }
 
     i{
-        padding-left: 50%;
-        @include breakpoint(280px){
-            padding-left: 9%;
-           
-        }
-        @include breakpoint(320px){
-            padding-left: 15%;
-           
-        }
-        @include breakpoint(375px){
-            padding-left: 24%;
-           
-        }
-        @include breakpoint(425px){
-            padding-left: 30%;
-           
-        }
-        @include breakpoint(599px){
-            padding-left: 46%;
-           
-        }
-        @include breakpoint(667px){
-            padding-left: 50%;
-           
-        }
-        @include breakpoint(768px){
-            padding-left: 55%;
-           
-        }
-        @include breakpoint(992px){
-            padding-left: 800%;
-           padding-top: 446%;
-        }
+       width: 100%;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       padding-right: 15%;
            
         
     }

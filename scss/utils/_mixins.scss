@@ -23,13 +23,19 @@
     }
 }
 @mixin carpaccio{
-    
+        position: relative;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         border-radius: 15px;
         width: 90%;
-        margin: 5% 5%;
+        overflow: hidden;
+        height: 100%;
+      
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 0;
         background:  rgba(255,255,255 ,1);
         transition-delay: 200ms;
         &:hover .checkbox{
@@ -64,61 +70,35 @@
 
     /// titre plat entrée dessert
     
-    @mixin titreplat($hauteur: 75px) {
+    @mixin titreplat {
         position: relative;
         overflow: hidden;
-        height: $hauteur;
-        margin-top: 5%;
-        margin-bottom: 0%;
-        @include breakpoint(320px){
-            position: relative;
-           overflow: hidden;
-           height: 85px;
-           margin-top: 5%;
-           margin-bottom: 0%;
-
-        }
-        @include breakpoint(375px){
-            position: relative;
-           overflow: hidden;
-           height: 91px;
-           margin-top: 5%;
-           margin-bottom: 0%;
-
-        }
-        @include breakpoint(425px){
-            position: relative;
-           overflow: hidden;
-           height: 98px;
-           margin-top: 5%;
-           margin-bottom: 0%;
-
-        }
-        @include breakpoint(599px){
-            position: relative;
-           overflow: hidden;
-           height: 123px;
-           margin-top: 5%;
-           margin-bottom: 0%;
-
-        }
-        @include breakpoint(667px){
-            position: relative;
-           overflow: hidden;
-           height: 132px;
-           margin-top: 5%;
-           margin-bottom: 0%;
-
-        }
-        @include breakpoint(768px){
-            position: relative;
-           overflow: hidden;
-           height: 147px;
-           margin-top: 5%;
-           margin-bottom: 0%;
-
-        }    
+        height: 100%;
+        margin: 5% 5% 0% 5%;
+        border-radius: 17px;
+        background:  rgba(255,255,255 ,1);
+        transition-delay: 200ms;
+        &:hover .checkbox{
+            animation-name: check ;
+            animation-duration: 1s;
+            animation-delay: 150ms;
+            animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
+            animation-fill-mode: forwards;
+            
+            
         
+        i{
+            animation-name: lol ;
+            animation-duration: 0.5s;
+            animation-delay: 0.5s;
+            animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
+            animation-fill-mode: forwards;
+        }  
+    }
+    &:hover > .prix {
+        @include hoverp;
+        }
+
     }
 
 @mixin titre4{
@@ -136,16 +116,8 @@
     width: 100%;
     cursor: pointer;
     transition-property: all;
-    transition-delay: 450ms;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-    @include breakpoint(280px){
-        width: 95%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        
-     }
-   
+    transition-delay: 250ms;
+    
     
    
 }
@@ -160,75 +132,8 @@
     transition-property: all;
     transition-delay: 400ms;
     transition-duration: 0.8s;
-    transition-timing-function: ease-in;
-    @include breakpoint(280px){
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 60%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 390ms;
-        transition-duration: 0.7s;
-        transition-timing-function: ease-in; 
-    
+    transition-timing-function: ease-in-out;
    
-    }
-    @include breakpoint(320px){
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 70%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 370ms;
-        transition-duration: 0.6s;
-        transition-timing-function: ease-in;
-    }
-    @include breakpoint(375px){
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 75%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 355ms;
-        transition-duration: 0.6s;
-        transition-timing-function: ease-in;
-    }
-    @include breakpoint(411px){
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 75%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 500ms;
-        transition-duration: 0.6s;
-        transition-timing-function: ease-in;
-    }
-    @include breakpoint(425px){
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 75%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 550ms;
-        transition-duration: 0.6s;
-        transition-timing-function: ease-in;
-    }
-    @include breakpoint(599px){
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 80%;
-        cursor: pointer;
-        transition-property: all;
-        transition-delay: 400ms;
-        transition-duration: 0.6s;
-        transition-timing-function: ease-in;
-    }
     @include breakpoint(992px){
         overflow: hidden;
         text-overflow: ellipsis;
@@ -278,95 +183,21 @@
     
         
 }
-@mixin checkbox($heighter: 83%, $topop: 17%) {
+@mixin checkbox {
     position: absolute;
-    top: $topop;
-    left: 81%;
+    top: 0;
+    right: 0;
     background: aqua;
-    width: 15%;
-    height: $heighter;
+    width: 14%;
+    height: 100%;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translateX(100px);
     opacity: 0;
-  
-   @include breakpoint(320px){
-       left: 81%;
-       top: 17%;
-       height: 82%;
-       border-bottom-right-radius: 15px;
-       border-top-right-radius: 15px;
-        
-     }
-     @include breakpoint(375px){
-        left: 81%;
-        top: 19%;
-        height: 83%;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-        
-        
-     }
-     @include breakpoint(411px){
-        left: 81%;
-        top: 21%;
-        height: 80%;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-     }
-     @include breakpoint(425px){
-        left: 81%;
-        top: 22%;
-        height: 80%;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-        
-     }
-     @include breakpoint(599px){
-        left: 81%;
-        top: 24%;
-        height: 76%;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-        
-     }
-     @include breakpoint(667px){
-        left: 81%;
-        top: 26%;
-        height: 77%;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-     }
-     @include breakpoint(768px){
-        left: 81%;
-        top: 26%;
-        height: 74%;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-        
-     }
-     @include breakpoint(992px){
-        left: 81%;
-        top: 11%;
-        height: 45%;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-
-     }
-     @include breakpoint(1024px){
-        left: 81%;
-        top: 12%;
-        height: 45%;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-     }
-     @include breakpoint(1366px){
-        left: 81%;
-        top: 15%;
-        height: 54.5%;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-     }
+ 
     
     
 }
@@ -411,10 +242,8 @@
 }
 
 @mixin headsection {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 @mixin headplat {
@@ -427,8 +256,9 @@
 }
 //le coeurs
 @mixin icones{
-    position: relative;
-    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     .fas{
         display: none;
@@ -449,26 +279,23 @@
     
 }    
 
-@mixin buttonmenu($bottom: 9.7rem, $width: 3rem, $left: 1rem, $height: 1.8rem) {
-    position: relative;
-    bottom: $bottom;
-    left: $left;
-    width: $width;
-    height: $height;
+@mixin buttonmenu {
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    width: 20%;
     background-color: $color-tertiary;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    font-size: 19px;
     
 }
 
 @mixin  buttonjaime{
     position: relative;
-    top: 1rem;
-    left: 1.7rem; 
-    @include breakpoint(992px){
-        margin: 0.8rem;
-    }
+    left: 32px; 
+   
 
   
 }

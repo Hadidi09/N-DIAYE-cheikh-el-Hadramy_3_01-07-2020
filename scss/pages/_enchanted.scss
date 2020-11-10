@@ -1,5 +1,6 @@
 @import '../utils/variables';
 @import '../utils/mixins';
+@import '../base/animations';
 
 .loader{
     @extend %loader;
@@ -23,11 +24,9 @@ body{
 //header
 
 @import '../layout/hearderplat';
-
 header{
     @extend %headertopmenu;
 }
-
 
 #header1{
     @extend %headermenu;
@@ -84,6 +83,14 @@ header{
 
         article{
             @include carpaccio;
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
             
         }
         h4{
@@ -100,14 +107,7 @@ header{
             span{
                 @include span;
             } 
-            .checkbox{
-                @include checkbox;
-                i{
-                    @include faicon;  
-
-                }       
-                        
-            }        
+           
         }
        
     }   
@@ -153,6 +153,14 @@ header{
 
         article{
             @include carpaccio;
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
             
         }
         h4{
@@ -169,14 +177,7 @@ header{
             span{
                 @include span;
             } 
-            .checkbox{
-                @include checkbox;
-                i{
-                    @include faicon;  
-
-                }       
-                        
-            }        
+           
         }
        
        
@@ -216,6 +217,14 @@ header{
 
         article{
             @include carpaccio;
+            .checkbox{
+                @include checkbox;
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
             
         }
         h4{
@@ -232,14 +241,7 @@ header{
             span{
                 @include span;
             } 
-            .checkbox{
-                @include checkbox;
-                i{
-                    @include faicon;  
-
-                }       
-                        
-            }        
+           
         }
        
        
