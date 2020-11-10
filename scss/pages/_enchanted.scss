@@ -49,6 +49,7 @@ header{
         width: 100%;
         @include breakpoint(992px){
             margin-top: 20px;
+            margin-bottom: 120px;
             width: 80%;
             border-radius: 74px;
         }
@@ -69,7 +70,7 @@ header{
         animation-fill-mode: forwards;
         
         @include breakpoint(992px){
-            margin-top: 12%;
+            margin-top: 15%;
          }
         
         h3{
@@ -141,7 +142,8 @@ header{
     @include breakpoint(992px){
         grid-column: 2;
         margin-bottom: 0px;
-        margin-top: 12%;
+        margin-top: 15%;
+        
      }
     h3{
         @include titre;
@@ -202,7 +204,8 @@ header{
         animation-fill-mode: forwards;
     @include breakpoint(992px){
         grid-column: 3;
-        margin-top: 12%;
+        margin-top: 15%;;
+        
      }
     h3{
         @include titre;

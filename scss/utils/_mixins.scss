@@ -77,24 +77,32 @@
         margin: 5% 5% 0% 5%;
         border-radius: 17px;
         background:  rgba(255,255,255 ,1);
+        @include breakpoint(768px){
+            height: 95px;
+            
+          }
+
         @include breakpoint(992px){
-          height: 25%;
-          width: 309px;
+          height: 70px;
+          width: 93%;
         }
+        @include breakpoint(1200px){
+            height: 76px;
+            width: 90%;
+          }
         &:hover .checkbox{
-            animation-name: check ;
+           /* animation-name: check ;
             animation-duration: 0.8s;
             animation-delay: 150ms;
-            animation-timing-function:  cubicd-bezier(.34,.16,.64,.9);
             animation-fill-mode: forwards;
-            animation-direction: alternate;
-            
+            animation-direction: alternate;*/
+            transform: translateX(0);
+            opacity: 1;
         
         i{
             animation-name: lol ;
             animation-duration: 0.5s;
             animation-delay: 0.5s;
-            animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
             animation-fill-mode: forwards;
         }  
     }
@@ -138,7 +146,7 @@
     cursor: pointer;
     transition-property: width;
     transition-delay: 250ms;
-    transition-duration: 0.7s;
+    transition-duration: 1s;
     transition-timing-function: linear;
    
     @include breakpoint(768px){
@@ -147,9 +155,9 @@
         white-space: nowrap;
         width: 70%;
         cursor: pointer;
-        transition-property: all;
-        transition-delay: 400ms;
-        transition-duration: 0.6s;
+        transition-property: width;
+        transition-delay: 350ms;
+        transition-duration: 0.7s;
         transition-timing-function: linear;
     }   
 
@@ -164,6 +172,10 @@
         width: 85%;
         overflow: hidden;
         text-overflow: ellipsis;
+        @include breakpoint(768px){
+            margin-bottom: 1.5%;
+        }
+
       
     }
 
@@ -189,7 +201,8 @@
     justify-content: center;
     align-items: center;
     transform: translateX(100px);
-    opacity: 0;    
+    opacity: 0; 
+    transition: all 0.7s linear;   
 }
 
 @mixin faicon {
