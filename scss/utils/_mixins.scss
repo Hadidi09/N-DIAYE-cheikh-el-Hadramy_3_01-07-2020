@@ -77,14 +77,17 @@
         margin: 5% 5% 0% 5%;
         border-radius: 17px;
         background:  rgba(255,255,255 ,1);
-        transition-delay: 200ms;
+        @include breakpoint(992px){
+          height: 25%;
+          width: 309px;
+        }
         &:hover .checkbox{
             animation-name: check ;
-            animation-duration: 1s;
+            animation-duration: 0.8s;
             animation-delay: 150ms;
-            animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
+            animation-timing-function:  cubicd-bezier(.34,.16,.64,.9);
             animation-fill-mode: forwards;
-            
+            animation-direction: alternate;
             
         
         i{
@@ -96,7 +99,10 @@
         }  
     }
     &:hover > .prix {
-        @include hoverp;
+       p{
+           @include hoverp;
+       }
+       
         }
 
     }
@@ -115,7 +121,7 @@
     white-space: nowrap;
     width: 100%;
     cursor: pointer;
-    transition-property: all;
+    transition-property: width;
     transition-delay: 250ms;
     
     
@@ -127,14 +133,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 70%;
+    width: 68%;
+    padding-left: 0%;
     cursor: pointer;
-    transition-property: all;
-    transition-delay: 400ms;
-    transition-duration: 0.8s;
-    transition-timing-function: ease-in-out;
+    transition-property: width;
+    transition-delay: 250ms;
+    transition-duration: 0.7s;
+    transition-timing-function: linear;
    
-    @include breakpoint(992px){
+    @include breakpoint(768px){
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -143,15 +150,8 @@
         transition-property: all;
         transition-delay: 400ms;
         transition-duration: 0.6s;
-        transition-timing-function: ease-in;
-    }
-
-
-   
-    
-   
-       
-        
+        transition-timing-function: linear;
+    }   
 
     }
 
@@ -162,23 +162,16 @@
         font-weight: 400;
         color: rgb(158,158,158);
         width: 85%;
-        @include breakpoint(280px){
-            width: 85%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        @include breakpoint(320px){
-            width: 90%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+        overflow: hidden;
+        text-overflow: ellipsis;
+      
     }
 
 
 @mixin span{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    padding-right: 0px;
+    padding-right: 10px;
     padding-left: 10px; 
     
         
@@ -187,7 +180,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: aqua;
+    background: $color-tertiary;
     width: 14%;
     height: 100%;
     border-bottom-right-radius: 15px;
@@ -196,25 +189,14 @@
     justify-content: center;
     align-items: center;
     transform: translateX(100px);
-    opacity: 0;
- 
-    
-    
+    opacity: 0;    
 }
 
 @mixin faicon {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: rotate(0deg);
-    @include breakpoint(599px){
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: rotate(0deg);
-        transform: scale(1.5);
-    }
-    
     
 }
 

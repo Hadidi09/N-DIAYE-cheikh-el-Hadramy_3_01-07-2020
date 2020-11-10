@@ -84,6 +84,8 @@ header{
         
             .checkbox{
                 @include checkbox;
+             
+
                 i{
                     @include faicon;  
 

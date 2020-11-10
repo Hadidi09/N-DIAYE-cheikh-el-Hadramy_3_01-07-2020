@@ -81,10 +81,11 @@ header{
     .entrée1{
         @include titreplat;
 
-        article{
-            @include carpaccio;
+        
             .checkbox{
                 @include checkbox;
+             
+
                 i{
                     @include faicon;  
 
@@ -92,7 +93,7 @@ header{
                         
             }        
             
-        }
+        
         h4{
             @include titre4;
         }
@@ -151,8 +152,7 @@ header{
     .plat1{
         @include titreplat;
 
-        article{
-            @include carpaccio;
+        
             .checkbox{
                 @include checkbox;
                 i{
@@ -162,7 +162,7 @@ header{
                         
             }        
             
-        }
+        
         h4{
             @include titre4;
         }
@@ -179,8 +179,6 @@ header{
             } 
            
         }
-       
-       
            
     }   
     
@@ -215,34 +213,33 @@ header{
     .dessert1{
         @include titreplat;
 
-        article{
-            @include carpaccio;
-            .checkbox{
-                @include checkbox;
-                i{
-                    @include faicon;  
-
-                }       
-                        
-            }        
-            
-        }
-        h4{
-            @include titre4;
-        }
-        .prix{
-            @include prix;
         
-            p{
-                        
-                @include param;
-            
-            }
-            span{
-                @include span;
-            } 
-           
+        .checkbox{
+            @include checkbox;
+            i{
+                @include faicon;  
+
+            }       
+                    
+        }        
+        
+    
+    h4{
+        @include titre4;
+    }
+    .prix{
+        @include prix;
+    
+        p{
+                    
+            @include param;
+        
         }
+        span{
+            @include span;
+        } 
+       
+    }
        
        
     }   
