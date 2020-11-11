@@ -65,11 +65,11 @@
     }
     95%{
         transform: rotate(-360deg);
-        -webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(-360deg);
     }
     100%{
-        transform: translateZ(-1000px);
-        -webkit-transform: translateZ(-1000px);
+        transform: translateX(-1000%);
+        -webkit-transform: translateX(-1000px);
         opacity: 1;
     }
 }
