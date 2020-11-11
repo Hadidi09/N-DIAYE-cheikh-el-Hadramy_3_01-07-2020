@@ -1,6 +1,7 @@
 @import '../utils/variables';
 @import '../utils/mixins';
 @import '../layout/header';
+@import '../components/loader';
 
 
 
@@ -125,31 +126,9 @@ body {
             justify-content: center;
             align-items: center;
             justify-self: center;
-            
-          
           }
-         /* @include breakpoint(1280px){
-            position: relative;
-            left: 29rem;
-            top: -72rem;
-            font-size: 2em;
-            border: 20px solid $color-secondary;
-            border-top: 20px solid $color-primary;
-            border-bottom: 20px solid $color-tertiary;
-            color: $color-primary;
-            border-radius: 50%;
-            text-align: center;
-            padding-top: 28px;
-            width: 50%;
-            background-color: $bg-colormain;
-
-          }
-          @include breakpoint(1366px){
-            position: relative;
-            left: 32rem;
-            top: -75rem;
-          }*/
-         }
+       
+        }
     } 
     #lesmenus:first-child{
       transform: translateX(-30px);
