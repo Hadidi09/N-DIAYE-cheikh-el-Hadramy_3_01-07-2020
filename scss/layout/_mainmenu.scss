@@ -25,7 +25,9 @@
     padding-left: 5%;
     width: 100%;
     padding-top: 3%;
-    font-size: 1.7em;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+
     
     
     @include breakpoint(992px){
@@ -47,6 +49,13 @@
         width: 100%;
         grid-column: 1;
         grid-row: 1;
+        transform: scale(0);
+        opacity: 0;
+        animation-name: ofh2 ;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in;
+        animation-delay: 400ms;
+        animation-fill-mode: forwards;
        
     }
      

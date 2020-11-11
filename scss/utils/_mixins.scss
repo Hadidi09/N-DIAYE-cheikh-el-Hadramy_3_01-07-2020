@@ -22,7 +22,7 @@
         border: 1px solid $color-tertiary;
     }
 }
-@mixin carpaccio{
+/*@mixin carpaccio{
         position: relative;
         display: flex;
         justify-content: flex-start;
@@ -63,7 +63,7 @@
         
        
        
-     }  
+     }  */
      
      // checkbox mixins
  
@@ -100,7 +100,7 @@
             opacity: 1;
         
         i{
-            animation-name: lol ;
+            animation-name: rotate ;
             animation-duration: 0.5s;
             animation-delay: 0.5s;
             animation-fill-mode: forwards;
@@ -146,7 +146,7 @@
     cursor: pointer;
     transition-property: width;
     transition-delay: 250ms;
-    transition-duration: 1s;
+    transition-duration: 0.6s;
     transition-timing-function: linear;
    
     @include breakpoint(768px){
@@ -156,8 +156,8 @@
         width: 70%;
         cursor: pointer;
         transition-property: width;
-        transition-delay: 350ms;
-        transition-duration: 0.7s;
+        transition-delay: 600ms;
+        transition-duration: 300ms;
         transition-timing-function: linear;
     }   
 

@@ -52,6 +52,13 @@ header{
             margin-bottom: 120px;
             width: 80%;
             border-radius: 74px;
+            transform: scale(0) rotate(0);
+            opacity: 0;
+            animation-name:prixel ;
+            animation-duration: 2.5s;
+            animation-timing-function: ease-in;
+            animation-delay: 400ms;
+            animation-fill-mode: forwards;
         }
     }
 }
@@ -61,11 +68,11 @@ header{
         background: $bg-colormain;
         padding-bottom: 10%;
        
-        transform: translateY(-1000%);
+        transform: translateY(-30px);
         opacity: 0;
         animation-name: sectionmenu;
-        animation-delay: 2.5s;
-        animation-duration: 2s;
+        animation-delay: 2.8s;
+        animation-duration: 250ms;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
         
@@ -80,6 +87,14 @@ header{
             @include trait;
         }
     .entrée1{
+        transform: translateY(-30px);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 3s;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
         @include titreplat;
 
         
@@ -120,11 +135,92 @@ header{
                
 }
     .entrée2{
-        @extend .entrée1;
-       }   
+        transform: translateY(-30px);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 3.6s;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
+        @include titreplat;
+
+        
+            .checkbox{
+                @include checkbox;
+             
+
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
+            
+        
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
+        
+            p{
+                        
+                @include param;
+            
+            }
+            span{
+                @include span;
+            } 
+           
+        }
+       
+    }   
+           
+            
+          
 
        .entrée3{
-        @extend .entrée1;
+        transform: translateY(-30px);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 4.1s;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
+        @include titreplat;
+
+        
+            .checkbox{
+                @include checkbox;
+             
+
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
+            
+        
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
+        
+            p{
+                        
+                @include param;
+            
+            }
+            span{
+                @include span;
+            } 
+           
+        }
+       
        }   
 
 
@@ -134,10 +230,11 @@ header{
         transform: translateY(-1000%);
         opacity: 0;
         animation-name: sectionmenu;
-        animation-delay: 3.6s;
-        animation-duration: 2s;
+        animation-delay: 5s;
+        animation-duration: 200ms;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
+       
       
     @include breakpoint(992px){
         grid-column: 2;
@@ -152,11 +249,21 @@ header{
         @include trait;
     }
     .plat1{
+        transform: translateY(-30px);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 5.3s;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
         @include titreplat;
 
         
             .checkbox{
                 @include checkbox;
+             
+
                 i{
                     @include faicon;  
 
@@ -186,10 +293,86 @@ header{
     
    
     .plat2{
-        @extend .plat1;
+        transform: translateY(-30px);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 5.8s;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
+        @include titreplat;
+
+        
+            .checkbox{
+                @include checkbox;
+             
+
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
+            
+        
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
+        
+            p{
+                        
+                @include param;
+            
+            }
+            span{
+                @include span;
+            } 
+           
+        }
        }   
        .plat3{
-        @extend .plat1;
+        transform: translateY(-30px);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 6.3s;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
+        @include titreplat;
+
+        
+            .checkbox{
+                @include checkbox;
+             
+
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
+            
+        
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
+        
+            p{
+                        
+                @include param;
+            
+            }
+            span{
+                @include span;
+            } 
+           
+        }
        }
 }      
 #dessert{ 
@@ -198,10 +381,11 @@ header{
         transform: translateY(-1000%);
         opacity: 0;
         animation-name: sectionmenu;
-        animation-delay: 4.4s;
-        animation-duration: 2s;
+        animation-delay: 6.7s;
+        animation-duration: 200ms;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
+      
     @include breakpoint(992px){
         grid-column: 3;
         margin-top: 15%;;
@@ -214,43 +398,130 @@ header{
         @include trait;
     }
     .dessert1{
+        transform: translateY(-30px);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 7s;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
         @include titreplat;
 
         
-        .checkbox{
-            @include checkbox;
-            i{
-                @include faicon;  
+            .checkbox{
+                @include checkbox;
+             
 
-            }       
-                    
-        }        
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
+            
         
-    
-    h4{
-        @include titre4;
-    }
-    .prix{
-        @include prix;
-    
-        p{
-                    
-            @include param;
-        
+        h4{
+            @include titre4;
         }
-        span{
-            @include span;
-        } 
-       
+        .prix{
+            @include prix;
+        
+            p{
+                        
+                @include param;
+            
+            }
+            span{
+                @include span;
+            } 
+           
+        }
     }
        
        
-    }   
+       
        .dessert2{
-         @extend .dessert1;
+        transform: translateY(-30px);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 7.3s;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
+        @include titreplat;
+
+        
+            .checkbox{
+                @include checkbox;
+             
+
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
+            
+        
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
+        
+            p{
+                        
+                @include param;
+            
+            }
+            span{
+                @include span;
+            } 
+           
+        }
        }   
        .dessert3{
-        @extend .dessert1;
+        transform: translateY(-30px);
+        opacity: 0;
+        animation-name: sectionmenu;
+        animation-delay: 7.6s;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
+        @include titreplat;
+
+        
+            .checkbox{
+                @include checkbox;
+             
+
+                i{
+                    @include faicon;  
+
+                }       
+                        
+            }        
+            
+        
+        h4{
+            @include titre4;
+        }
+        .prix{
+            @include prix;
+        
+            p{
+                        
+                @include param;
+            
+            }
+            span{
+                @include span;
+            } 
+           
+        }
        }   
 } 
 .order{
