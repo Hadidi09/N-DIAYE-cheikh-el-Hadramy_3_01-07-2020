@@ -1,4 +1,4 @@
-
+// mixins
 
 @mixin titre {
     margin-left: 5%;
@@ -22,48 +22,7 @@
         border: 1px solid $color-tertiary;
     }
 }
-/*@mixin carpaccio{
-        position: relative;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        border-radius: 15px;
-        width: 90%;
-        overflow: hidden;
-        height: 100%;
-      
-        margin-top: 3%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 0;
-        background:  rgba(255,255,255 ,1);
-        transition-delay: 200ms;
-        &:hover .checkbox{
-            animation-name: check ;
-            animation-duration: 1s;
-            animation-delay: 50ms;
-            animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
-            animation-fill-mode: both;
-            animation-direction: alternate;
-        
-        i{
-            animation-name: lol ;
-            animation-duration: 0.5s;
-            animation-delay: 0.5s;
-            animation-timing-function:  cubic-bezier(.34,.16,.64,.9);
-            animation-fill-mode: forwards;
-        }  
-    }
-    &:hover > .prix {
-        @include hoverp;
-        }
 
-        
-        
-        
-       
-       
-     }  */
      
      // checkbox mixins
  
@@ -91,11 +50,7 @@
             width: 90%;
           }
         &:hover .checkbox{
-           /* animation-name: check ;
-            animation-duration: 0.8s;
-            animation-delay: 150ms;
-            animation-fill-mode: forwards;
-            animation-direction: alternate;*/
+           
             transform: translateX(0);
             opacity: 1;
         
@@ -114,12 +69,13 @@
         }
 
     }
-
+//
 @mixin titre4{
     margin-top: 4%;
     margin-bottom: 3%;
     padding-left: 3%;
 }
+//
 @mixin prix{
     display: flex;
     flex-direction: row;
@@ -135,6 +91,7 @@
     
    
 }
+//
     @mixin hoverp {
       
        
@@ -145,25 +102,12 @@
     padding-left: 0%;
     cursor: pointer;
     transition-property: width;
-    transition-delay: 250ms;
-    transition-duration: 0.6s;
+    transition-delay: 400ms;
+    transition-duration: 300ms;
     transition-timing-function: linear;
-   
-    @include breakpoint(768px){
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 70%;
-        cursor: pointer;
-        transition-property: width;
-        transition-delay: 600ms;
-        transition-duration: 300ms;
-        transition-timing-function: linear;
-    }   
-
     }
 
-  
+  //
     @mixin param {
         margin-bottom: 3.5%;
         font-family: 'Roboto', sans-serif;
@@ -179,7 +123,7 @@
       
     }
 
-
+//
 @mixin span{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -204,7 +148,7 @@
     opacity: 0; 
     transition: all 0.7s linear;   
 }
-
+//
 @mixin faicon {
     position: absolute;
     top: 50%;
@@ -235,12 +179,12 @@
     width: 90%;
       
 }
-
+//
 @mixin headsection {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-
+//
 @mixin headplat {
     display: flex;
     justify-content: flex-start;
@@ -273,7 +217,7 @@
     
     
 }    
-
+//
 @mixin buttonmenu {
     position: absolute;
     top: 10%;
@@ -286,7 +230,7 @@
     font-size: 19px;
     
 }
-
+//
 @mixin  buttonjaime{
     position: relative;
     left: 32px; 
@@ -302,10 +246,4 @@
     }
         
 }
- 
-@mixin maxbreakpoint($medias) {
-    @media screen and (max-width: $medias){
-        @content;
-    }
-        
-}
+
