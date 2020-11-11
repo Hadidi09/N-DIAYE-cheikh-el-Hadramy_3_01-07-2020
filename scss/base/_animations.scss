@@ -68,8 +68,8 @@
         -webkit-transform: rotate(360deg);
     }
     100%{
-        transform: translate(-1000%);
-        -webkit-transform: translate(-1000%);
+        transform: translateZ(-1000px);
+        -webkit-transform: translateZ(-1000px);
         opacity: 1;
     }
 }
