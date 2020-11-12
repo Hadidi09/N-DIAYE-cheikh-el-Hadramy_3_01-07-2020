@@ -59,22 +59,12 @@ body {
 
    
    }
-       
-      
- 
-       
-      
-     
-    
-   
-
 
    // section 2
    #choix{
     @extend %section2;
    }
 
- 
   // section3 
   #lesmenus{
      
@@ -101,32 +91,32 @@ body {
      
 
 
-      h2{
+        h2{
           margin-top: 15%;
           padding-left: 5%;
           padding-bottom: 6%;
           font-family: 'Roboto', sans-serif;
           font-weight: bolder;
-          @include breakpoint(992px){
-            margin-bottom: 120px;
-            padding-top: 0%;
-            padding-bottom: 0%;
-            padding-left: 0%;
-            width: 23%;
-            height: 23%;
-            background-color: $bg-colormain;
-            font-size: 2em;
-            border-top: 8px solid $color-secondary;
-            border-bottom: 8px solid $color-tertiary;
-            color: $color-primary;
-            border-radius: 50%;
-            grid-row: 1;
-            grid-column: 1 / 3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            justify-self: center;
-          }
+            @include breakpoint(992px){
+                margin-bottom: 120px;
+                padding-top: 0%;
+                padding-bottom: 0%;
+                padding-left: 0%;
+                width: 23%;
+                height: 23%;
+                background-color: $bg-colormain;
+                font-size: 2em;
+                border-top: 8px solid $color-secondary;
+                border-bottom: 8px solid $color-tertiary;
+                color: $color-primary;
+                border-radius: 50%;
+                grid-row: 1;
+                grid-column: 1 / 3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-self: center;
+            }
        
         }
     } 

@@ -49,7 +49,7 @@
             height: 76px;
             width: 90%;
           }
-        &:hover .checkbox{
+        &:hover .checkbox, &:active .checkbox{
            
             transform: translateX(0);
             opacity: 1;
@@ -61,7 +61,7 @@
             animation-fill-mode: forwards;
         }  
     }
-    &:hover > .prix {
+    &:hover > .prix, &:active > .prix {
        p{
            @include hoverp;
        }
@@ -86,15 +86,12 @@
     width: 100%;
     cursor: pointer;
     transition-property: width;
-    transition-delay: 250ms;
-    
-    
+    transition-delay: 250ms; 
    
 }
 //
     @mixin hoverp {
-      
-       
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -203,7 +200,7 @@
         display: none;
         color: $color-secondary ;
     }
-    &:hover{
+    &:hover, &:active{
         .far{
             display: none;
         }
