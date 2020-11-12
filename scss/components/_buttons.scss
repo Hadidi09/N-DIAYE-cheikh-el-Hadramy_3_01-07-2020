@@ -8,7 +8,9 @@
     width: 50%;
     height: 8vh;
     margin: 2% 25% 10% 25%;
-    background-color: rgb(186,85,211);
+    position: relative;
+    top: 10%;
+    background-color: $bg-colorbutton;
     border-radius: 30px;
     box-shadow: 0 0 5px $bg-colorbutton;
     transition: 300ms;
@@ -24,7 +26,9 @@
      }
     &:hover{
         box-shadow: 0px 0px 5px $bg-colorbutton,
-                    0px 0px 15px $bg-colorbutton;
+                    0px 0px 15px $bg-colorbutton,
+                    0px 0px 25px $bg-colorbutton,
+                    0px 0px 40px $bg-colorbutton;
                    
         cursor: pointer;            
     }
