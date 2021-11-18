@@ -10,8 +10,8 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "dependencies": {
-    "node-sass": "^4.14.1"
-  },
-  "browserslist": "last 4 versions"
+    "node-sass": "^6.0.1"
+  }
 }

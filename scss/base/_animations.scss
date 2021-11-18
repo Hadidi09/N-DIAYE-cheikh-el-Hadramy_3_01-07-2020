@@ -62,9 +62,9 @@
     -webkit-transform: rotate(-360deg);
   }
   100% {
-    transform: translateX(-10000%);
-    -webkit-transform: translateX(-10000px);
-    opacity: 1;
+    transform: translateX(-30000px);
+    -webkit-transform: translateX(-30000px);
+    opacity: 0;
   }
 }
 
